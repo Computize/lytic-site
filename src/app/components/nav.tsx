@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export async function Nav() {
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50 w-7/12 shadow-black shadow-2xl">
       <nav>
         <div className="flex items-center justify-between p-2">
           <Link href="/blog">BLOG</Link>
