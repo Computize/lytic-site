@@ -15,7 +15,8 @@ const config: Config = {
       },
       colors: {
         'primary-green': "#9bbc5a",
-        'secondary-green': "#758d33"
+        'secondary-green': "#758d33",
+        'background-green': "#ccdcaa",
       },
     },
     animation: {
