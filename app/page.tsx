@@ -1,5 +1,5 @@
-import { HomePageCarousel } from '~/app/components/homePageCarousel';
-import { WhatWeDo } from '~/app/components/whatWeDo';
+import { HomePageCarousel } from '~/app/components/homePage/homePageCarousel';
+import { WhatWeDo } from '~/app/components/homePage/whatWeDo';
 
 export default function Home() {
   return (
