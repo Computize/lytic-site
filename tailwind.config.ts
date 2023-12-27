@@ -14,6 +14,16 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    animation: {
+      'slide-right': 'slide-right 1s forwards'
+    },
+    keyframes: {
+      'slide-right': {
+        '100%': {
+          transform: 'translateX(50.66%)',
+        },
+      },
+    }
   },
   plugins: [],
 };

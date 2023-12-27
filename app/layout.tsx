@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex justify-center items-center">
           <Nav />
         </div>
-        <div className="min-h-screen border-2 border-red-500 px-5 lg:px-56 md:px-24 sm:px-14">{children}</div>
+        <div className="min-h-screen border-2 border-red-500 ">{children}</div>
       </body>
     </html>
   );
