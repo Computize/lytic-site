@@ -6,7 +6,9 @@ import React from 'react';
 export async function Footer() {
   return (
     <footer className="h-[355px] py-[60px] flex flex-col gap-4 items-center  bg-background-dark-gray">
-      <Image src="/main-logo.png" width={280} height={180} quality={100} alt="Lytic Group Logo" />
+      <Link href="/">
+        <Image src="/main-logo.png" width={280} height={180} quality={100} alt="Lytic Group Logo" />
+      </Link>
 
       <div className="flex flex-row text-primary-gray gap-6 items-center justify-evenly">
         <Link className="text-sm" href="/blog">

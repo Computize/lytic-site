@@ -17,8 +17,10 @@ export async function Nav() {
           <Link className="text-sm" href="/video_library">
             VIDEO LIBRARY
           </Link>
-          <div className="">
-            <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" />
+          <div>
+            <Link href="/">
+              <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" />
+            </Link>
           </div>
           <Link className="text-sm" href="/services">
             SERVICES (NOT WORKING)
