@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export async function Nav() {
   return (
-    <header className="px-20 sticky w-8/12 top-0 z-50  mt-10 shadow-black shadow-2xl">
+    <header className="bg-white px-20 w-8/12 top-0 z-50 fixed shadow-black shadow-2xl">
       <nav>
         <div className="flex items-center justify-evenly p-2">
           <Link className="text-sm" href="/blog">
