@@ -1,6 +1,7 @@
 import { Banner } from '~/app/components/blogPage/banner';
 import { BlogCategories } from '~/app/components/blogPage/blogCategories';
 import { BlogPreviewCard } from '~/app/components/blogPage/blogPreviewCard';
+import { GetOurNewsletter } from '~/app/components/blogPage/getOurNewsletter';
 
 export default async function Page() {
   return (
@@ -18,6 +19,7 @@ export default async function Page() {
         </div>
         <BlogCategories />
       </div>
+      <GetOurNewsletter />
     </main>
   );
 }
