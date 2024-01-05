@@ -18,7 +18,8 @@ const config: Config = {
         'primary-blue': '#91caee',
         'secondary-green': "#758d33",
         'background-green': "#ccdcaa",
-        'background-dark-gray': '#232323'
+        'background-dark-gray': '#232323',
+        'primary-gray': 'rgb(255,255,255,.3)'
       },
     },
     animation: {
