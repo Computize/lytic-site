@@ -1,7 +1,7 @@
 import { HomePageCarousel } from '~/app/components/homePage/homePageCarousel';
 import { Technologies } from '~/app/components/homePage/technologies';
 import { WhatWeDo } from '~/app/components/homePage/whatWeDo';
-import { OurApproachOurPeopleContainer } from './components/homePage/ourApproachOurPeopleContainer';
+import { ApproachPeopleBlogContainer } from '~/app/components/homePage/approachPeopleBlogContainer';
 import { ScriptLibrary } from '~/app/components/homePage/scriptLibrary';
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <HomePageCarousel />
       <WhatWeDo />
       <Technologies />
-      <OurApproachOurPeopleContainer />
+      <ApproachPeopleBlogContainer />
       <ScriptLibrary />
     </main>
   );
