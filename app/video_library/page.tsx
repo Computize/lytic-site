@@ -1,5 +1,4 @@
 import { PageTitle } from '~app/components/pageTitle';
-import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 
 export default async function Page() {
   return (
