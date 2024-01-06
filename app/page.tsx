@@ -3,6 +3,7 @@ import { Technologies } from '~/app/components/homePage/technologies';
 import { WhatWeDo } from '~/app/components/homePage/whatWeDo';
 import { ApproachPeopleBlogContainer } from '~/app/components/homePage/approachPeopleBlogContainer';
 import { ScriptLibrary } from '~/app/components/homePage/scriptLibrary';
+import { Testimonials } from '~/app/components/homePage/testimonials';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Technologies />
       <ApproachPeopleBlogContainer />
       <ScriptLibrary />
+      <Testimonials />
     </main>
   );
 }
