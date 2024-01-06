@@ -1,9 +1,7 @@
-import Link from 'next/link';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
 import { ScriptDescriptionAndDropDownContainer } from '~/app/components/scriptPage/scriptDescriptionAndDropDownContainer';
-import { ScriptDropDown } from '~/app/components/scriptPage/scriptDropDown';
 
 export default async function Page() {
   return (
