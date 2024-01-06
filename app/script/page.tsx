@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
