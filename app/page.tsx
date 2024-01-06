@@ -4,6 +4,7 @@ import { WhatWeDo } from '~/app/components/homePage/whatWeDo';
 import { ApproachPeopleBlogContainer } from '~/app/components/homePage/approachPeopleBlogContainer';
 import { ScriptLibrary } from '~/app/components/homePage/scriptLibrary';
 import { Testimonials } from '~/app/components/homePage/testimonials';
+import { Headquarters } from '~/app/components/homePage/headquarters';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ApproachPeopleBlogContainer />
       <ScriptLibrary />
       <Testimonials />
+      <Headquarters />
     </main>
   );
 }
