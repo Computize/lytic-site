@@ -1,3 +1,4 @@
+import { OurMission } from '~/app/components/about/ourMission';
 import { OurStory } from '~/app/components/about/ourStory';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 
@@ -15,6 +16,7 @@ export default async function Page() {
       <div className="flex justify-center">
         <p className="text-xl font-bold">“We lead with transparency, expertise, and clear communication”</p>
       </div>
+      <OurMission />
     </main>
   );
 }
