@@ -1,5 +1,7 @@
+'use server';
 import { OurMission } from '~/app/components/about/ourMission';
 import { OurStory } from '~/app/components/about/ourStory';
+import { SomeOfOurClients } from '~/app/components/about/someOfOurClients';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 
 export default async function Page() {
@@ -17,6 +19,7 @@ export default async function Page() {
         <p className="text-xl font-bold">“We lead with transparency, expertise, and clear communication”</p>
       </div>
       <OurMission />
+      <SomeOfOurClients />
     </main>
   );
 }
