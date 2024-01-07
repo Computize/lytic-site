@@ -18,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="flex justify-center items-center">
           <Nav />
         </div>
+        {/* // NOTE: possibly remove min-h-screen */}
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
