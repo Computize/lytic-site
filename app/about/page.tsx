@@ -15,7 +15,7 @@ export default async function Page() {
       <div className="flex justify-center">
         <OurStory />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-20">
         <p className="text-xl font-bold">“We lead with transparency, expertise, and clear communication”</p>
       </div>
       <OurMission />
