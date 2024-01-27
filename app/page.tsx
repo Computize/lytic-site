@@ -5,6 +5,7 @@ import { ApproachPeopleBlogContainer } from '~/app/components/homePage/approachP
 import { ScriptLibrary } from '~/app/components/homePage/scriptLibrary';
 import { Testimonials } from '~/app/components/homePage/testimonials';
 import { Headquarters } from '~/app/components/homePage/headquarters';
+import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomePageCarousel />
       <WhatWeDo />
       <Technologies />
+      <SasImageAndText />
       <ApproachPeopleBlogContainer />
       <ScriptLibrary />
       <Testimonials />
