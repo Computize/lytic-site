@@ -1,10 +1,11 @@
 export const PresidentsBlog = () => {
   return (
-    <div className="flex flex-row justify-center items-center h-[432px]">
+    <div className="flex flex-row justify-center items-center h-auto">
       <img
         src="/presidents-blog-animated.gif"
         style={{
           height: '180px',
+          width: 'auto',
         }}
       />
       <div>
