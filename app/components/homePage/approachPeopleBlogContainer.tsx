@@ -8,7 +8,7 @@ export const ApproachPeopleBlogContainer = () => {
       <div className="flex flex-col h-[532px] relative">
         <OurApproach />
       </div>
-      <div className="flex flex-col relative bottom-12">
+      <div className="flex flex-col items-center relative bottom-12">
         <OurPeople />
         <PresidentsBlog />
       </div>
