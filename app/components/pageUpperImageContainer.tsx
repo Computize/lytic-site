@@ -6,5 +6,5 @@ interface PageUpperImageContainerProps {
   children: React.ReactNode;
 }
 export const PageUpperImageContainer = ({ children }: PageUpperImageContainerProps) => {
-  return <div className="min-w-full h-[532px] static">{children}</div>;
+  return <div className="min-w-full h-[562px]">{children}</div>;
 };
