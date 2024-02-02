@@ -1,8 +1,11 @@
 export const ScriptLibrary = () => {
   return (
-    <div className="flex flex-col gap-10 w-auto h-[900px] px-36 bg-home-page-script-sec justify-center bg-cover bg-no-repeat" style={{
-      backgroundImage: "url('/home-page-script-sec.png')"
-    }}>
+    <div
+      className="flex flex-col gap-10 w-auto h-[900px] px-36 bg-home-page-script-sec justify-center bg-cover bg-no-repeat"
+      style={{
+        backgroundImage: "url('/home-page-script-sec.png')",
+      }}
+    >
       <p className="text-white text-5xl font-bold text-right">SCRIPT LIBRARY</p>
       <div className="text-gray-600 text-2xl font-bold">SHARE OUR TOOLKIT</div>
       <div>
