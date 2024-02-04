@@ -1,11 +1,22 @@
-'use server';
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export async function Nav() {
+export function Nav() {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollYPosition = window.scrollY;
+      setIsScrolled(scrollYPosition > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <header className="bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl">
+    <header className={isScrolled ? 'bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl' : 'w-10/12 top-0 z-50 fixed'}>
       <nav>
         <div className="flex justify-between items-center py-4">
           <div className="flex flex-row gap-4 pl-3">

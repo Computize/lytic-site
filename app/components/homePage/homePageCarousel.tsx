@@ -75,8 +75,8 @@ export const HomePageCarousel = () => {
             </CarouselItem>
           ))} */}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {/* <CarouselPrevious /> */}
+        {/* <CarouselNext /> */}
       </Carousel>
     </div>
   );
