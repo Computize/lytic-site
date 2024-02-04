@@ -18,31 +18,32 @@ export function Nav() {
   return (
     <header className={isScrolled ? 'bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl' : 'w-10/12 top-0 z-50 fixed'}>
       <nav>
-        <div className="flex justify-between items-center py-4">
-          <div className="flex flex-row gap-4 pl-3">
-            <Link className="text-sm" href="/blog">
+        <div className="text-xs font-bold flex justify-evenly items-center  w-full py-4">
+          <div className="flex flex-row justify-around w-full pl-3">
+            <Link className="" href="/blog">
               BLOG
             </Link>
-            <Link className="text-sm" href="/script">
+            <Link className="" href="/script">
               SCRIPT LIBRARY
             </Link>
-            <Link className="text-sm" href="/video_library">
+            <Link className="" href="/video_library">
               VIDEO LIBRARY
             </Link>
           </div>
-          <div>
+          <div className="px-14">
             <Link href="/">
-              <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" />
+              <img src="/main-logo.png" alt="Lytic Group Logo" height="auto" width="400px" />
+              {/* <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" /> */}
             </Link>
           </div>
-          <div className="flex justify-end  gap-4 pr-3">
-            <Link className="text-sm" href="/services">
-              SERVICES (NOT WORKING)
+          <div className="flex justify-around w-full pr-3">
+            <Link className="" href="/services">
+              SERVICES
             </Link>
-            <Link className="text-sm" href="/about">
+            <Link className="" href="/about">
               ABOUT
             </Link>
-            <Link className="text-sm" href="/contact">
+            <Link className="" href="/contact">
               CONTACT
             </Link>
           </div>
