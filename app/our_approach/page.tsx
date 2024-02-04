@@ -1,3 +1,5 @@
+import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
+
 const approachImageAndText = [
   {
     image: '/approach1.png',
@@ -43,7 +45,7 @@ const approachImageAndText = [
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center gap-10">
       <div
         className="min-w-full h-[462px]"
         style={{
@@ -54,7 +56,7 @@ export default function Page() {
           <p className="text-white text-3xl font-bold text-center item">The Lytic Group is a team of consultants intent on thrilling its customers with unusual transparency and a comfortable, easy experience.</p>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-10 p-20">
+      <div className="flex flex-col justify-center items-center gap-10 px-20">
         <p className="text-primary-green text-5xl font-bold">OUR APPROACH</p>
         <p className="text-center text-gray-600 text-2xl font-bold">The anchor of our proven, unique approach to IT services is open, honest communication between a project's stakeholders our staff crafting a solution for them.</p>
         <p className="text-center text-gray-500 text-lg">We accomplish this by strictly hiring the warmest and most articulate technical experts in their field, and providing always-available transparency into all aspects of our projects. The result is a family of loyal, long-term customers. The team focuses on Microsoft backend architecture, business intelligence, and database administration and optimization, offering decades of combined experience in each. Using AGILE methodologies in our projects, our work insures flexibility as customer business needs and requirements change, and allows us to respond quickly to feedback.</p>
@@ -72,6 +74,11 @@ export default function Page() {
           })}
         </div>
       </div>
+      <div className="border-t-[1px] border-gray-600 w-8/12" />
+      <div>
+        <p className="text-gray-600 text-lg text-center px-40">The Lytic Group is certified as a minority-owned (MWBE) business in NY State and New York City, and a Disadvantaged Business Enterprise (DBE) in New Jersey, Colorado, Illinois, Arizona, and Virginia.</p>
+      </div>
+      <LetsTalk />
     </main>
   );
 }
