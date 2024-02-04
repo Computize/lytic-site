@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ChevronDown } from 'lucide-react';
+import { ServicesDropDown } from '~/app/components/layout/servicesDropDown';
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -19,7 +21,7 @@ export function Nav() {
     <header className={isScrolled ? 'bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl' : 'w-10/12 top-0 z-50 fixed'}>
       <nav>
         <div className="text-xs font-bold flex justify-evenly items-center  w-full py-4">
-          <div className="flex flex-row justify-around w-full pl-3">
+          <div className="flex flex-row justify-around w-full">
             <Link className="" href="/blog">
               BLOG
             </Link>
@@ -36,10 +38,8 @@ export function Nav() {
               {/* <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" /> */}
             </Link>
           </div>
-          <div className="flex justify-around w-full pr-3">
-            <Link className="" href="/services">
-              SERVICES
-            </Link>
+          <div className="flex justify-around w-full">
+            <ServicesDropDown />
             <Link className="" href="/about">
               ABOUT
             </Link>
