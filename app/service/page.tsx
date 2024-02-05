@@ -1,7 +1,31 @@
+import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
+
 const techArray0: Array<string> = ['Data Warehouse & Data Lake', 'ETL & ELT', 'Azure Analysis Services', 'Azure DataFactory & DataBricks', 'Assessments, Monitoring'];
 const techArray1: Array<string> = ['Dashboard Development', 'Cloud & On-Prem Integration', 'Data Strategy', 'Training'];
 const techArray2: Array<string> = ['Migrations – Cloud & On-Prem', 'Governance & Compliance', 'Development & Automation Solutions', 'Sharepoint Site Planning & Architecture', 'Training'];
 
+interface TechnologyAndImageProps {
+  imageSource: string;
+  arrayOfText: Array<string>;
+}
+const TechnologyAndImage = ({ imageSource, arrayOfText }: TechnologyAndImageProps) => {
+  return (
+    <div className="flex flex-col gap-10">
+      <div className="flex justify-center items-center h-36 border-2">
+        <img src={imageSource} width={'200px'} />
+      </div>
+      <div className="flex flex-col gap-4">
+        {arrayOfText.map((item, idx) => {
+          return (
+            <p className="text-2xl text-gray-600" key={idx}>
+              {item}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
 export default function Page() {
   return (
     <main className="flex flex-col items-center gap-10">
@@ -20,31 +44,14 @@ export default function Page() {
         <p className="text-primary-green font-bold text-5xl py-10">CORE TECHNOLOGIES</p>
 
         <div className="flex flex-row justify-evenly gap-16 px-36 w-full">
-          <div className="flex flex-col">
-            <div className="flex justify-center items-center h-36">
-              <img src="/azure.png" width={'200px'} />
-            </div>
-            {techArray0.map((item, idx) => {
-              return <p key={idx}>{item}</p>;
-            })}
-          </div>
-          <div className="flex flex-col">
-            <div className="flex justify-center items-center h-36">
-              <img src="/power_bi.png" width={'200px'} />
-            </div>
-            {techArray1.map((item, idx) => {
-              return <p key={idx}>{item}</p>;
-            })}
-          </div>
-          <div className="flex flex-col">
-            <div className="flex justify-center items-center h-36">
-              <img src="/microsoft_office.png" width={'200px'} />
-            </div>
-            {techArray2.map((item, idx) => {
-              return <p key={idx}>{item}</p>;
-            })}
-          </div>
+          <TechnologyAndImage arrayOfText={techArray0} imageSource="/azure.png" />
+          <TechnologyAndImage arrayOfText={techArray1} imageSource="/power_bi.png" />
+          <TechnologyAndImage arrayOfText={techArray2} imageSource="/microsoft_office.png" />
         </div>
+      </div>
+      <div className="border-t-[1px] border-gray-600 w-10/12" />
+      <div className="h-[432px]">
+        <SasImageAndText backgroundWhite={true} />
       </div>
     </main>
   );
