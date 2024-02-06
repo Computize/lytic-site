@@ -12,7 +12,7 @@ export default function Page() {
       </PageUpperImageContainer>
 
       <p className="text-gray-600 text-2xl h-auto py-12 w-full font-bold text-center">
-        å At whatever stage of migrating data to the cloud your organization finds itself.
+        At whatever stage of migrating data to the cloud your organization finds itself.
         <br />
         The Lytic Group offers several simple solutions to get you to the next step in your data analytics journey.
       </p>
