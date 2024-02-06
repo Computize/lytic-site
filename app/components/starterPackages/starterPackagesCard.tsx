@@ -7,10 +7,11 @@ interface StarterPackagesCardProps {
   subTitle: string;
   footerContent: string;
   imageSource: string;
+  packagePrice: string;
   children: React.ReactNode;
 }
 
-export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSource, children }: StarterPackagesCardProps) => {
+export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSource, packagePrice, children }: StarterPackagesCardProps) => {
   return (
     <Card className="w-9/12">
       <Accordion type="single" collapsible>
@@ -33,6 +34,10 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
           <CardContent>
             <AccordionContent>
               <div className="grid grid-cols-5">{children}</div>
+              <div className="flex flex-col">
+                <p className="font-bold text-2xl text-gray-600">${packagePrice}</p>
+                <p className="text-xs text-gray-600">Package Price</p>
+              </div>
             </AccordionContent>
           </CardContent>
           <CardFooter className="rounded-b-md bg-background-green pt-6">

@@ -12,10 +12,14 @@ export const AccordionList = ({ listItems, title }: AccordionList) => {
         <CheckIcon size={15} strokeWidth={5} color="#9bbc5a" />
         <p className="text-gray-600 font-bold">{title}</p>
       </div>
-      <div className="pl-5">
+      <div className="pl-5 text-gray-600">
         <ul>
           {listItems.map((item, idx) => {
-            return <li key={idx}>{item}</li>;
+            return (
+              <li className="py-1" key={idx}>
+                {item}
+              </li>
+            );
           })}
         </ul>
       </div>
