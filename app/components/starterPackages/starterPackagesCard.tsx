@@ -33,8 +33,8 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
           </CardHeader>
           <CardContent>
             <AccordionContent>
-              <div className="grid grid-cols-5">{children}</div>
-              <div className="flex flex-col">
+              <div className="flex flex-row justify-evenly">{children}</div>
+              <div className="flex flex-col mt-4">
                 <p className="font-bold text-2xl text-gray-600">${packagePrice}</p>
                 <p className="text-xs text-gray-600">Package Price</p>
               </div>
