@@ -1,5 +1,6 @@
 import { CoreTechnologies } from '~/app/components/homePage/coreTechnologies';
 import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
+import { IndustriesSection } from '~/app/components/service/industriesSection';
 
 export default function Page() {
   return (
@@ -21,9 +22,10 @@ export default function Page() {
         <CoreTechnologies isOnHomePage={false} />
       </div>
       <div className="border-t-[1px] border-gray-600 w-10/12" />
-      <div className="h-[432px]">
+      <div className="h-auto">
         <SasImageAndText backgroundWhite={true} />
       </div>
+      <IndustriesSection />
     </main>
   );
 }
