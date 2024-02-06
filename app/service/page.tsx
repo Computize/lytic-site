@@ -1,5 +1,6 @@
 import { CoreTechnologies } from '~/app/components/homePage/coreTechnologies';
 import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
+import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
 import { IndustriesSection } from '~/app/components/service/industriesSection';
 import { LyticDifference } from '~/app/components/service/lyticDifference';
 
@@ -28,6 +29,7 @@ export default function Page() {
       </div>
       <IndustriesSection />
       <LyticDifference />
+      <LetsTalk />
     </main>
   );
 }
