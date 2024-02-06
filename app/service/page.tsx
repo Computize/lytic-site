@@ -1,6 +1,7 @@
 import { CoreTechnologies } from '~/app/components/homePage/coreTechnologies';
 import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
 import { IndustriesSection } from '~/app/components/service/industriesSection';
+import { LyticDifference } from '~/app/components/service/lyticDifference';
 
 export default function Page() {
   return (
@@ -26,6 +27,7 @@ export default function Page() {
         <SasImageAndText backgroundWhite={true} />
       </div>
       <IndustriesSection />
+      <LyticDifference />
     </main>
   );
 }

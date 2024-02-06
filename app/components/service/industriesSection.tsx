@@ -24,7 +24,7 @@ const industriesImagesAndTitles: Array<{ image: string; title: string }> = [
 
 export const IndustriesSection = () => {
   return (
-    <div className="text-white flex flex-col w-full h-auto py-12 bg-primary-green justify-center gap-8 items-center">
+    <div className="text-white flex flex-col w-full h-auto py-20 bg-primary-green justify-center gap-8 items-center">
       <p className="text-5xl font-bold">INDUSTRIES</p>
       <div className="grid grid-cols-5 w-full h-auto justify-center items-center">
         {industriesImagesAndTitles.map(({ image, title }, idx) => {
