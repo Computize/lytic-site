@@ -7,16 +7,9 @@ import { PageUpperImageContainer } from '~/app/components/pageUpperImageContaine
 export default async function Page() {
   return (
     <main className="flex flex-col w-full">
-      <PageUpperImageContainer>
-        <div
-          className="w-full h-full flex items-center justify-center"
-          style={{
-            backgroundImage: "url('/blog-page-banner.png')",
-          }}
-        >
-          <div className="flex items-center text-center">
-            <p className="text-white text-5xl font-bold">PRESIDENT&apos;S BLOG</p>
-          </div>
+      <PageUpperImageContainer imageSource="/blog-page-banner.png">
+        <div className="flex items-center text-center">
+          <p className="text-white text-5xl font-bold">PRESIDENT&apos;S BLOG</p>
         </div>
       </PageUpperImageContainer>
       <div></div>
