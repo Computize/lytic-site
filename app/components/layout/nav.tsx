@@ -51,7 +51,6 @@ export function Nav() {
                   height="auto"
                   width="400px"
                 />
-                {/* <Image src="/main-logo.png" width={180} height={180} quality={100} alt="Lytic Group Logo" /> */}
               </Link>
             </div>
             <div className="flex justify-around w-full">
