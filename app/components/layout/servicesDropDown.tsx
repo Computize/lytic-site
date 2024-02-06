@@ -14,17 +14,26 @@ export const ServicesDropDown = () => {
 
       <DropdownMenuContent>
         <DropdownMenuItem>
-          <Link className="" href="/our_approach">
+          <Link
+            className=""
+            href="/our_approach"
+          >
             OUR APPROACH
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link className="" href="/service">
+          <Link
+            className=""
+            href="/service"
+          >
             CORE TECHNOLOGIES
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <Link className="" href="/starter_packages">
+          <Link
+            className=""
+            href="/starter_packages"
+          >
             STARTER PACKAGES
           </Link>
         </DropdownMenuItem>
