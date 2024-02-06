@@ -6,12 +6,13 @@ import { ServicesDropDown } from '~/app/components/layout/servicesDropDown';
 export function Nav() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   React.useEffect(() => {
-    const scrollYPosition = window.scrollY;
+    if (window.scrollY > 70) {
+      setIsScrolled(true);
+    }
     const handleScroll = () => {
+      const scrollYPosition = window.scrollY;
       setIsScrolled(scrollYPosition > 70);
     };
-    setIsScrolled(scrollYPosition > 70);
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

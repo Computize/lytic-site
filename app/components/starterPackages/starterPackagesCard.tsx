@@ -1,3 +1,4 @@
+import React from 'react';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '~/components/ui/accordion';
 import { Button } from '~/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '~/components/ui/card';
@@ -7,9 +8,10 @@ interface StarterPackagesCardProps {
   subTitle: string;
   footerContent: string;
   imageSource: string;
+  children: React.ReactNode;
 }
 
-export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSource }: StarterPackagesCardProps) => {
+export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSource, children }: StarterPackagesCardProps) => {
   return (
     <Card className="w-9/12">
       <Accordion type="single" collapsible>
@@ -26,13 +28,11 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
                   </div>
                 </div>
               </div>
-              <AccordionTrigger>
-                <Button className="rounded-none bg-secondary-green font-bold">SEE DETAILS</Button>
-              </AccordionTrigger>
+              <AccordionTrigger className="bg-primary-green hover:bg-secondary-green hover:no w-auto px-4 h-12 font-bold text-white">SEE DETAILS</AccordionTrigger>
             </div>
           </CardHeader>
           <CardContent>
-            <AccordionContent>Yes. It adheres to the WAI-ARIA design pattern.</AccordionContent>
+            <AccordionContent>{children}</AccordionContent>
           </CardContent>
           <CardFooter className="rounded-b-md bg-background-green pt-6">
             <p className="text-gray-600 text-lg">{footerContent}</p>

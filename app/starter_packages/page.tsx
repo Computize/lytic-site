@@ -18,7 +18,9 @@ export default function Page() {
 
       {/* CARDS */}
       <div className="w-full h-auto flex flex-col justify-center items-center mb-10">
-        <StarterPackagesCard footerContent="We'll show you what Synapse is capable of, by doing an end-to-end build of a BI solution with your own data, including" subTitle=" Easing your way into your first cloud data warehouse in Azure." title="Data Warehouse Proof of Concept" imageSource="/Shape1.png" />
+        <StarterPackagesCard footerContent="We'll show you what Synapse is capable of, by doing an end-to-end build of a BI solution with your own data, including" subTitle=" Easing your way into your first cloud data warehouse in Azure." title="Data Warehouse Proof of Concept" imageSource="/Shape1.png">
+          <p>thinonasdokasndokn</p>
+        </StarterPackagesCard>
       </div>
     </main>
   );
