@@ -8,8 +8,18 @@ export default async function Page() {
   return (
     <main className="flex flex-col w-full">
       <PageUpperImageContainer>
-        <Banner />
+        <div
+          className="w-full h-full flex items-center justify-center"
+          style={{
+            backgroundImage: "url('/blog-page-banner.png')",
+          }}
+        >
+          <div className="flex items-center text-center">
+            <p className="text-white text-5xl font-bold">PRESIDENT&apos;S BLOG</p>
+          </div>
+        </div>
       </PageUpperImageContainer>
+      <div></div>
       <div className="p-10 flex flex-row justify-center gap-5">
         <div className="grid grid-cols-2 gap-4">
           <BlogPreviewCard />
