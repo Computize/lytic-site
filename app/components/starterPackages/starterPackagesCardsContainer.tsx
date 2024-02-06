@@ -82,6 +82,7 @@ export const StarterPackagesCardsContainer = () => {
       {arrayOfPackages.map(({ detailsList, footerContent, imageSource, packagePrice, subTitle, title }, idx) => {
         return (
           <StarterPackagesCard
+            key={idx}
             title={title}
             subTitle={subTitle}
             footerContent={footerContent}

@@ -1,3 +1,4 @@
+import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { StarterPackagesCardsContainer } from '~/app/components/starterPackages/starterPackagesCardsContainer';
@@ -6,7 +7,7 @@ const accordionList3 = ['Data ingest', 'ETL/ELT', 'Analytics layer', 'Query opti
 
 export default function Page() {
   return (
-    <main className="flex flex-col w-full">
+    <main className="flex flex-col w-full justify-center items-center">
       <PageUpperImageContainer imageSource="/star_packeges-banner.png">
         <PageTitle title="STARTER PACKAGES" />
       </PageUpperImageContainer>
@@ -17,6 +18,14 @@ export default function Page() {
         The Lytic Group offers several simple solutions to get you to the next step in your data analytics journey.
       </p>
       <StarterPackagesCardsContainer />
+      <div className="flex flex-col w-full gap-10 justify-center items-center pb-40">
+        <div className="border-t-[1px]  border-gray-400 w-10/12" />
+        <p className="text-gray-500 text-xl">pricing is per Synapse Workspace or data warehouse</p>
+      </div>
+      <LetsTalk
+        heading="LET'S TALK"
+        bgColor="bg-background-green"
+      />
     </main>
   );
 }
