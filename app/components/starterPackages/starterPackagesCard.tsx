@@ -31,7 +31,9 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
             </div>
           </CardHeader>
           <CardContent>
-            <AccordionContent>{children}</AccordionContent>
+            <AccordionContent>
+              <div className="grid grid-cols-5">{children}</div>
+            </AccordionContent>
           </CardContent>
           <CardFooter className="rounded-b-md bg-background-green pt-6">
             <p className="text-gray-600 text-lg">{footerContent}</p>
