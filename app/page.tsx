@@ -13,6 +13,9 @@ export default function Home() {
       <HomePageCarousel />
       <WhatWeDo />
       <Technologies />
+      <div className="bg-background-green w-full h-[5px] flex items-center justify-center">
+        <div className="border-t-[1px] border-gray-500 w-11/12" />
+      </div>
       <SasImageAndText />
       <ApproachPeopleBlogContainer />
       <ScriptLibrary />
