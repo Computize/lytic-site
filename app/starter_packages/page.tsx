@@ -1,7 +1,6 @@
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { StarterPackagesCard } from '~/app/components/starterPackages/starterPackagesCard';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '~/components/ui/card';
 
 export default function Page() {
   return (
