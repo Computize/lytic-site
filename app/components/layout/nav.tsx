@@ -16,9 +16,9 @@ export function Nav() {
     };
   }, []);
   return (
-    <header className={isScrolled ? 'bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl' : 'w-10/12 top-0 z-50 fixed'}>
-      <nav>
-        <div className="text-xs font-bold flex justify-evenly items-center  w-full py-4">
+    <header className={`${isScrolled ? 'bg-white fixed shadow-black shadow-2xl' : ''} w-full top-0 z-50 fixed justify-center`}>
+      <nav className="flex justify-center">
+        <div className="w-10/12 text-xs font-bold flex justify-evenly items-center py-4">
           <div className="flex flex-row justify-around w-full">
             <Link className="" href="/blog">
               BLOG
