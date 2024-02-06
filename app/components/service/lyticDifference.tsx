@@ -1,3 +1,5 @@
+import { LyticDifferenceThreeColumnGrid } from '~/app/components/service/lyticDifferenceThreeColumnGrid';
+
 const titleAndText: Array<{ title: string; text: string }> = [
   {
     title: 'TRANSPARENCY',
@@ -29,27 +31,9 @@ export const LyticDifference = () => {
   return (
     <div className="flex flex-col justify-center items-center py-12">
       <p className="text-primary-green text-5xl font-bold">THE LYTIC DIFFERENCE</p>
-      <div className="w-full grid grid-cols-3 gap-12 py-14 px-28">
-        {titleAndText.slice(0, 3).map(({ text, title }, idx) => {
-          return (
-            <div className="flex flex-col gap-4 text-gray-600" key={idx}>
-              <p className="text-lg">{title}</p>
-              <p>{text}</p>
-            </div>
-          );
-        })}
-      </div>
+      <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(0, 3)} />
       <div className="border-t-[1px] w-10/12" />
-      <div className="w-full grid grid-cols-3 gap-12 py-14 px-28">
-        {titleAndText.slice(3, 6).map(({ text, title }, idx) => {
-          return (
-            <div className="flex flex-col gap-4 text-gray-600" key={idx}>
-              <p className="text-lg ">{title}</p>
-              <p>{text}</p>
-            </div>
-          );
-        })}
-      </div>
+      <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(3, 6)} />
       <div className="border-t-[1px] w-10/12" />
     </div>
   );
