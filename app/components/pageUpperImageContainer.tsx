@@ -20,14 +20,7 @@ export const PageUpperImageContainer = ({ children, imageSource, backgroundColor
           {children}
         </div>
       ) : (
-        <div
-          className={`w-full h-full flex items-center justify-center ${backgroundColor ?? 'bg-primary-green'}`}
-          style={{
-            backgroundImage: `url('${imageSource}')`,
-          }}
-        >
-          {children}
-        </div>
+        <div className={`w-full h-full flex items-center justify-center ${backgroundColor ?? 'bg-primary-green'}`}>{children}</div>
       )}
     </div>
   );
