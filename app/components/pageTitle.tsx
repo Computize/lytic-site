@@ -2,7 +2,8 @@
 
 interface PageTitleProps {
   title: string;
+  blurb?: boolean;
 }
-export const PageTitle = ({ title }: PageTitleProps) => {
-  return <p className="text-white text-5xl font-bold animate-slideInFromBottom">{title.toUpperCase()}</p>;
+export const PageTitle = ({ title, blurb }: PageTitleProps) => {
+  return <p className={`text-white font-bold animate-slideInFromBottom ${blurb ? 'text-3xl' : 'text-5xl'}`}>{title.toUpperCase()}</p>;
 };

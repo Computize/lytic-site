@@ -1,4 +1,7 @@
 import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
+import { PageBlurb } from '~/app/components/pageBlurb';
+import { PageTitle } from '~/app/components/pageTitle';
+import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 
 const approachImageAndText = [
   {
@@ -45,17 +48,13 @@ const approachImageAndText = [
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center gap-10">
-      <div
-        className="min-w-full h-[462px]"
-        style={{
-          backgroundImage: "url('/our-approach-banner.png')",
-        }}
-      >
-        <div className="w-full h-full flex justify-center items-center p-24">
-          <p className="text-white text-3xl font-bold text-center item">The Lytic Group is a team of consultants intent on thrilling its customers with unusual transparency and a comfortable, easy experience.</p>
-        </div>
-      </div>
+    <main className="flex flex-col">
+      <PageUpperImageContainer imageSource="/our-approach-banner.png">
+        <PageBlurb
+          className="px-14 text-center"
+          blurb="The Lytic Group is a team of consultants intent on thrilling its customers with unusual transparency and a comfortable, easy experience."
+        />
+      </PageUpperImageContainer>
       <div className="flex flex-col justify-center items-center gap-10 px-20">
         <p className="text-primary-green text-5xl font-bold">OUR APPROACH</p>
         <p className="text-center text-gray-600 text-2xl font-bold">The anchor of our proven, unique approach to IT services is open, honest communication between a project's stakeholders our staff crafting a solution for them.</p>
@@ -66,7 +65,10 @@ export default function Page() {
         <div className="grid grid-cols-2 gap-16">
           {approachImageAndText.map(({ image, text }, idx) => {
             return (
-              <div key={idx} className="flex flex-row gap-4 items-center">
+              <div
+                key={idx}
+                className="flex flex-row gap-4 items-center"
+              >
                 <img src={image} />
                 <p className="text-gray-600 text-md font-bold">{text}</p>
               </div>

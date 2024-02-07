@@ -1,4 +1,3 @@
-import { Banner } from '~/app/components/blogPage/banner';
 import { BlogCategories } from '~/app/components/blogPage/blogCategories';
 import { BlogPreviewCard } from '~/app/components/blogPage/blogPreviewCard';
 import { GetOurNewsletter } from '~/app/components/blogPage/getOurNewsletter';
