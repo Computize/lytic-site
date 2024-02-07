@@ -79,8 +79,28 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        slideInFromRight: {
+          "0%": { opacity: '0', transform: "translateX(100%)" },
+          "100%": { opacity: '1', transform: "translateX(0)" }
+        },
+        slideInFromLeft: {
+          "0%": { opacity: '0', transform: "translateX(-100%)" },
+          "100%": { opacity: '1', transform: "translateX(0)" }
+        },
+        slideInFromTop: {
+          "0%": { opacity: '0', transform: "translateY(-100%)" },
+          "100%": { opacity: '1', transform: "translateY(0)" }
+        },
+        slideInFromBottom: {
+          "0%": { opacity: '0', transform: "translateY(100%)" },
+          "100%": { opacity: '1', transform: "translateY(0)" }
+        }
       },
       animation: {
+        slideInFromRight: "slideInFromRight 1s ease-in-out forwards",
+        slideInFromLeft: "slideInFromLeft 1s ease-in-out forwards",
+        slideInFromTop: "slideInFromTop 1s ease-in-out forwards",
+        slideInFromBottom: "slideInFromBottom 1s ease-in-out forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         'slide-right': 'slide-right 1s forwards'
