@@ -1,3 +1,6 @@
+'use client';
+import { motion } from 'framer-motion';
+import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { TechnologyAndImage } from '~/app/components/service/technologyAndImage';
 
 const techArray0: Array<string> = ['Data Warehouse & Data Lake', 'ETL & ELT', 'Azure Analysis Services', 'Azure DataFactory & DataBricks', 'Assessments, Monitoring'];
@@ -11,9 +14,24 @@ interface CoreTechnologiesProps {
 export const CoreTechnologies = ({ isOnHomePage }: CoreTechnologiesProps) => {
   return (
     <div className="flex flex-row justify-evenly gap-16 px-36 w-full">
-      <TechnologyAndImage arrayOfText={techArray0} imageSource="/azure.png" />
-      <TechnologyAndImage arrayOfText={techArray1} imageSource={isOnHomePage ? '/power_bi.png' : 'power_bi1_white.png'} />
-      <TechnologyAndImage arrayOfText={techArray2} imageSource="/microsoft_office.png" />
+      <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
+        <TechnologyAndImage
+          arrayOfText={techArray0}
+          imageSource="/azure.png"
+        />
+      </AnimateDiv>
+      <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+        <TechnologyAndImage
+          arrayOfText={techArray1}
+          imageSource={isOnHomePage ? '/power_bi.png' : 'power_bi1_white.png'}
+        />
+      </AnimateDiv>
+      <AnimateDiv initialProps={{ opacity: 0, translateX: 50 }}>
+        <TechnologyAndImage
+          arrayOfText={techArray2}
+          imageSource="/microsoft_office.png"
+        />
+      </AnimateDiv>
     </div>
   );
 };
