@@ -1,3 +1,4 @@
+import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { LyticDifferenceThreeColumnGrid } from '~/app/components/service/lyticDifferenceThreeColumnGrid';
 
 const titleAndText: Array<{ title: string; text: string }> = [
@@ -30,11 +31,17 @@ const titleAndText: Array<{ title: string; text: string }> = [
 export const LyticDifference = () => {
   return (
     <div className="flex flex-col justify-center items-center py-12">
-      <p className="text-primary-green text-5xl font-bold">THE LYTIC DIFFERENCE</p>
-      <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(0, 3)} />
-      <div className="border-t-[1px] w-10/12" />
-      <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(3, 6)} />
-      <div className="border-t-[1px] w-10/12" />
+      <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+        <p className="text-primary-green text-5xl font-bold">THE LYTIC DIFFERENCE</p>
+      </AnimateDiv>
+      <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+        <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(0, 3)} />
+        <div className="border-t-[1px] w-10/12" />
+      </AnimateDiv>
+      <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+        <LyticDifferenceThreeColumnGrid arrayOfItems={titleAndText.slice(3, 6)} />
+        <div className="border-t-[1px] w-10/12" />
+      </AnimateDiv>
     </div>
   );
 };

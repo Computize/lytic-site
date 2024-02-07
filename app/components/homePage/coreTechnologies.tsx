@@ -1,5 +1,4 @@
 'use client';
-import { motion } from 'framer-motion';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { TechnologyAndImage } from '~/app/components/service/technologyAndImage';
 
