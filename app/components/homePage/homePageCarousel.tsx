@@ -25,6 +25,9 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
   },
 ];
 
+<button className="bg-primary-green hover:bg-green-400 w-auto border-b-4 border-green-100 text-white font-bold py-2 px-4 rounded-full">
+  <p className="text-black">READ MORE</p>
+</button>;
 export const HomePageCarousel = () => {
   return (
     <div className="">
@@ -65,7 +68,9 @@ export const HomePageCarousel = () => {
                       initialProps={{ opacity: '0', translateY: 50 }}
                       delay={0.75}
                     >
-                      <Button>READ MORE</Button>
+                      <button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 text-white py-2 px-4 rounded-full">
+                        <p className="text-black">READ MORE</p>
+                      </button>
                     </AnimateDiv>
                   </div>
                   <div className="h-full w-2/12" />
