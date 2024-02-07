@@ -1,22 +1,20 @@
 import { CoreTechnologies } from '~/app/components/homePage/coreTechnologies';
 import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
 import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
+import { PageBlurb } from '~/app/components/pageBlurb';
+import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { IndustriesSection } from '~/app/components/service/industriesSection';
 import { LyticDifference } from '~/app/components/service/lyticDifference';
 
 export default function Page() {
   return (
     <main className="flex flex-col items-center gap-10">
-      <div
-        className="h-[532px] w-full object-cover"
-        style={{
-          backgroundImage: "url('/service-page-banner.png')",
-        }}
-      >
-        <div className="w-full h-full flex justify-center items-center p-44">
-          <p className="text-white text-3xl font-bold drop-shadow-md">Specializing in Microsoft's business intelligence platform, and in the high performance of the databases behind it. All to deliver a customized architecture that puts actionable data in your hands.</p>
-        </div>
-      </div>
+      <PageUpperImageContainer imageSource="/service-page-banner.png">
+        <PageBlurb
+          className="px-72 text-4xl drop-shadow-lg"
+          blurb="Specializing in Microsoft's business intelligence platform, and in the high performance of the databases behind it. All to deliver a customized architecture that puts actionable data in your hands."
+        />
+      </PageUpperImageContainer>
 
       <div className="flex flex-col items-center w-full">
         <p className="text-primary-green font-bold text-5xl py-10">CORE TECHNOLOGIES</p>
