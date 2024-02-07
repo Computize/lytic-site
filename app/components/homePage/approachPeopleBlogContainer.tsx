@@ -1,6 +1,6 @@
 import { OurApproach } from '~/app/components/homePage/ourApproach';
 import { OurPeople } from '~/app/components/homePage/ourPeople';
-import { PresidentsBlog } from '~/app/components/homePage/presidentsBlog';
+import { PresidentsBlogSection } from '~/app/components/homePage/presidentsBlog';
 
 export const ApproachPeopleBlogContainer = () => {
   return (
@@ -10,7 +10,7 @@ export const ApproachPeopleBlogContainer = () => {
       </div>
       <div className="flex flex-col items-center relative bottom-12">
         <OurPeople />
-        <PresidentsBlog />
+        <PresidentsBlogSection />
       </div>
     </div>
   );

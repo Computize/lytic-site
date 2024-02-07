@@ -1,11 +1,14 @@
 import Link from 'next/link';
 
-export const PresidentsBlog = () => {
+export const PresidentsBlogSection = () => {
   return (
     <div className="flex justify-center items-center h-[400px] w-full">
       <div className="flex flex-row gap-10 ">
         <div className="w-[200px]">
-          <img src="/presidents-blog-animated.gif" style={{ width: 'full', height: 'full' }} />
+          <img
+            src="/presidents-blog-animated.gif"
+            style={{ width: 'full', height: 'full' }}
+          />
         </div>
         <div className="flex flex-col gap-12 w-7/12">
           <p className="text-primary-green text-4xl font-bold">PRESIDENT&apos;S BLOG</p>
