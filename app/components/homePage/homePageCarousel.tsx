@@ -25,9 +25,6 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
   },
 ];
 
-<button className="bg-primary-green hover:bg-green-400 w-auto border-b-4 border-green-100 text-white font-bold py-2 px-4 rounded-full">
-  <p className="text-black">READ MORE</p>
-</button>;
 export const HomePageCarousel = () => {
   return (
     <div className="">

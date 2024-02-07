@@ -15,7 +15,7 @@ export const PresidentsBlogSection = () => {
           <p className="text-xl w-auto">Thoughts on how to be a great consultant and an indispensable asset to a customer.</p>
           <div>
             <Link href={'/blog'}>
-              <button className="bg-primary-green hover:bg-green-400 w-auto border-b-4 border-green-100 text-white font-bold py-2 px-4 rounded-full">
+              <button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 font-bold text-white py-2 px-4 rounded-full">
                 <p className="text-black">READ THE BLOG</p>
               </button>
             </Link>
