@@ -48,31 +48,6 @@ const testimonialsArray: Array<Testimonial> = [
     testimonial: '"I’m going to highly recommend you – your work is very good, your turnaround time is excellent, and your billing is honest. Thanks for that."',
   },
 ];
-
-const renderTestimonials = testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }) => {
-  return (
-    <CarouselItem>
-      <div className="flex flex-row gap-6">
-        <div>
-          <QuoteIcon
-            size={50}
-            color="#91caee"
-            className="transform scale-x-[-1]"
-          />
-        </div>
-        <div className="flex flex-col max-w-md gap-6">
-          <p>"Our database holds over 140 years of our organization’s history, so it was crucial to us that we find the right consultants for our redesign – and the team at Lytic Group did a wonderful job. They are incredibly easy to work with, down-to-earth, and their collaborative approach helped us find solutions that have made our database more effective and easy to use."</p>
-          <div className="flex flex-col max-w-md">
-            <p className="font-bold">Chris Bynum,</p>
-            <p>Director of Operations, 92nd Street Y </p>
-            <p>Client since </p>
-          </div>
-        </div>
-      </div>
-    </CarouselItem>
-  );
-});
-
 export const Testimonials = () => {
   return (
     <div
@@ -87,34 +62,35 @@ export const Testimonials = () => {
           opts={{
             loop: true,
           }}
+          className="w-full max-w-lg"
         >
           <CarouselContent>
-            {/* NOTE: Not mapping due to unknown shadcn formatting issue */}
-            <CarouselItem>
-              <div className="flex flex-row gap-6">
-                <div>
-                  <QuoteIcon
-                    size={50}
-                    color="#91caee"
-                    className="transform scale-x-[-1]"
-                  />
-                </div>
-                <div className="flex flex-col max-w-md gap-6">
-                  <p>{testimonialsArray[0].testimonial}</p>
-                  <div className="flex flex-col max-w-md">
-                    <p className="font-bold">{testimonialsArray[0].name}</p>
-                    <p>{testimonialsArray[0].title}</p>
-                    <p>{testimonialsArray[0].extraDetail}</p>
-                    <p>Client since {testimonialsArray[0].clientSince}</p>
+            {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
+              <CarouselItem key={idx}>
+                <div className="flex flex-row gap-6">
+                  <div>
+                    <QuoteIcon
+                      size={50}
+                      color="#91caee"
+                      className="transform scale-x-[-1]"
+                    />
+                  </div>
+                  <div className="flex flex-col max-w-md gap-6">
+                    <p>{testimonial}</p>
+                    <div className="flex flex-col max-w-md">
+                      <p className="font-bold">{name}</p>
+                      <p>{title}</p>
+                      <p>{extraDetail}</p>
+                      <p>{clientSince}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </CarouselItem>
+              </CarouselItem>
+            ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="bg-primary-blue" />
+          <CarouselNext className="bg-primary-blue" />
         </Carousel>
-        {/* <p className="text-xl w-6/12">{'{TESTIMONIALS CAROUSEL WILL GO HERE'}</p> */}
       </div>
     </div>
   );
