@@ -1,6 +1,5 @@
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
-import { Button } from '~/components/ui/button';
-import { Carousel, CarouselContent, CarouselItem } from '~/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
 
 const arrayOfSlides: Array<{ title: string; description: string; colorBlend: string }> = [
   {
@@ -32,6 +31,7 @@ export const HomePageCarousel = () => {
         opts={{
           loop: true,
         }}
+        className="w-full"
       >
         <CarouselContent className="">
           {arrayOfSlides.map(({ description, title, colorBlend }, index) => {
@@ -76,6 +76,8 @@ export const HomePageCarousel = () => {
             );
           })}
         </CarouselContent>
+        <CarouselPrevious className="left-5" />
+        <CarouselNext className="right-5" />
       </Carousel>
     </div>
   );
