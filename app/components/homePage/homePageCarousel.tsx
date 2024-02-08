@@ -31,6 +31,7 @@ export const HomePageCarousel = () => {
         opts={{
           loop: true,
         }}
+        autoPlay={true}
         className="w-full"
       >
         <CarouselContent className="">

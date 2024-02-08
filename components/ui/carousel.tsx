@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel, { type UseEmblaCarouselType } from 'embla-carousel-react';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
@@ -13,6 +14,7 @@ type CarouselOptions = UseCarouselParameters[0];
 type CarouselPlugin = UseCarouselParameters[1];
 
 type CarouselProps = {
+  autoPlay: boolean;
   opts?: CarouselOptions;
   plugins?: CarouselPlugin;
   orientation?: 'horizontal' | 'vertical';
@@ -40,13 +42,14 @@ function useCarousel() {
   return context;
 }
 
-const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & CarouselProps>(({ orientation = 'horizontal', opts, setApi, plugins, className, children, ...props }, ref) => {
+const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & CarouselProps>(({ orientation = 'horizontal', autoPlay, opts, setApi, plugins, className, children, ...props }, ref) => {
+  const useAutoPlay = autoPlay === true ? [Autoplay()] : plugins;
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
       axis: orientation === 'horizontal' ? 'x' : 'y',
     },
-    plugins
+    useAutoPlay
   );
   const [canScrollPrev, setCanScrollPrev] = React.useState(false);
   const [canScrollNext, setCanScrollNext] = React.useState(false);
@@ -106,6 +109,7 @@ const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivEl
   return (
     <CarouselContext.Provider
       value={{
+        autoPlay,
         carouselRef,
         api: api,
         opts,

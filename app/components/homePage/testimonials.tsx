@@ -59,6 +59,7 @@ export const Testimonials = () => {
       <div className="flex flex-col items-center justify-center gap-6">
         <p className="text-primary-blue text-5xl font-bold">TESTIMONIALS</p>
         <Carousel
+          autoPlay={false}
           opts={{
             loop: true,
           }}
