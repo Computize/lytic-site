@@ -1,11 +1,13 @@
 import { HomePageCarousel } from '~/app/components/homePage/homePageCarousel';
 import { Technologies } from '~/app/components/homePage/technologies';
 import { WhatWeDo } from '~/app/components/homePage/whatWeDo';
-import { ApproachPeopleBlogContainer } from '~/app/components/homePage/approachPeopleBlogContainer';
+
 import { ScriptLibrary } from '~/app/components/homePage/scriptLibrary';
 import { Testimonials } from '~/app/components/homePage/testimonials';
 import { Headquarters } from '~/app/components/homePage/headquarters';
 import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
+import { OurPeoplePresidentsBlog } from '~/app/components/homePage/ourPeoplePresidentsBlog';
+import { OurApproach } from '~/app/components/homePage/ourApproach';
 
 export default function Home() {
   return (
@@ -17,7 +19,10 @@ export default function Home() {
         <div className="border-t-[1px] border-gray-500 w-11/12" />
       </div>
       <SasImageAndText />
-      <ApproachPeopleBlogContainer />
+      <OurApproach />
+      <div className="flex flex-col justify-center items-center w-9/12 gap-8">
+        <OurPeoplePresidentsBlog />
+      </div>
       <ScriptLibrary />
       <Testimonials />
       <Headquarters />

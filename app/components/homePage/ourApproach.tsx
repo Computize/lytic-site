@@ -8,7 +8,7 @@ export const OurApproach = () => {
         backgroundImage: "url('/our-approach-bg.png')",
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        height: '1000px',
+        height: '600px',
         width: 'full',
       }}
     >
