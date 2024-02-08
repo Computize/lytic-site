@@ -26,21 +26,22 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
 
 export const HomePageCarousel = () => {
   return (
-    <div className="">
+    <div className="w-full">
       <Carousel
         opts={{
           loop: true,
         }}
         autoPlay={true}
-        className="w-full"
+        className="lg:w-full"
       >
         <CarouselContent className="">
           {arrayOfSlides.map(({ description, title, colorBlend }, index) => {
             return (
               <CarouselItem
-                className={`min-w-full h-[562px] bg-blend-screen ${colorBlend}`}
+                className={`h-[562px] bg-blend-screen ${colorBlend}`}
                 key={index}
                 style={{
+                  objectFit: 'contain',
                   backgroundImage: "url('/home-page-banner.png')",
                 }}
               >
