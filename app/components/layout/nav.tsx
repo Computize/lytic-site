@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link';
 import { ServicesDropDown } from '~/app/components/layout/servicesDropDown';
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from '~/components/ui/dropdown-menu';
+import { MenuSquare } from 'lucide-react';
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -18,10 +20,11 @@ export function Nav() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   return (
     <div className={`bg-gradient-to-b from-white from-20% w-full top-0 z-51 h-40 flex justify-center absolute`}>
-      <header className={isScrolled ? 'bg-white w-10/12 top-0 z-50 fixed shadow-black shadow-2xl' : 'w-10/12 top-0 z-50 fixed '}>
-        <nav>
+      <header className={`${isScrolled ? 'bg-white top-0 z-50 fixed shadow-black shadow-2xl' : 'top-0 z-50 fixed '} w-full`}>
+        <nav className="hidden md:hidden lg:block">
           <div className="text-xs font-bold flex justify-evenly items-center  w-full py-4">
             <div className="flex flex-row justify-around w-full">
               <Link
@@ -68,6 +71,91 @@ export function Nav() {
                 CONTACT
               </Link>
             </div>
+          </div>
+        </nav>
+
+        {/* MOBILE NAV */}
+        <nav className="block lg:hidden px-10">
+          <div className="text-xs font-bold flex justify-between w-full py-4">
+            <div className="">
+              <Link href="/">
+                <img
+                  src="/main-logo.png"
+                  alt="Lytic Group Logo"
+                  height="auto"
+                  width="150px"
+                />
+              </Link>
+            </div>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <MenuSquare
+                  color="#9bbc5a"
+                  className="hover:cursor-pointer hover:bg-gray-200 rounded-md"
+                  size={35}
+                />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-56 bg-white">
+                <DropdownMenuItem>
+                  <Link href="/blog">Blog</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/script">Script Library</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/video_library"
+                  >
+                    Video Library
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+
+                <DropdownMenuLabel>Services</DropdownMenuLabel>
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/our_approach"
+                  >
+                    Our Approach
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/service"
+                  >
+                    Core Technologies
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/starter_packages"
+                  >
+                    Starter Packages
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/contact"
+                  >
+                    About
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link
+                    className=""
+                    href="/contact"
+                  >
+                    Contact
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </nav>
       </header>
