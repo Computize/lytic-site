@@ -12,7 +12,7 @@ interface CoreTechnologiesProps {
 
 export const CoreTechnologies = ({ isOnHomePage }: CoreTechnologiesProps) => {
   return (
-    <div className="flex flex-row justify-evenly gap-16 px-36 w-full">
+    <div className="flex flex-col md:flex-row justify-evenly gap-16 px-36 py-12 w-full bg-background-green">
       <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
         <TechnologyAndImage
           arrayOfText={techArray0}
