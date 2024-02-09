@@ -24,7 +24,7 @@ export const OurPeoplePresidentsBlog = () => {
         </AnimateDiv>
       </div>
       <div className="min-h-[300px] flex flex-col gap-4 sm:gap-0 sm:flex-row justify-center sm:justify-start sm:items-center">
-        <div>
+        <div className="flex justify-center">
           <img
             src="/presidents-blog-animated.gif"
             className="w-[175px]"
