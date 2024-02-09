@@ -5,7 +5,7 @@ import React from 'react';
 
 export async function Footer() {
   return (
-    <footer className="h-[355px] py-[60px] flex flex-col gap-4 items-center  bg-background-dark-gray">
+    <footer className="h-auto py-10 flex flex-col gap-4 items-center  bg-background-dark-gray">
       <Link href="/">
         <Image
           src="/main-logo.png"

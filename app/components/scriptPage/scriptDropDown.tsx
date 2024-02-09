@@ -4,7 +4,7 @@ export const ScriptDropDown = () => {
   return (
     <div>
       <Select>
-        <SelectTrigger className="w-[700px] h-[50px] bg-primary-green rounded-none">
+        <SelectTrigger className="w-full h-[50px] bg-primary-green rounded-none">
           <SelectValue
             className="placeholder:text-white"
             placeholder="Select a script"
