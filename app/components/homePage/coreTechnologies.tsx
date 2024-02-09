@@ -12,25 +12,27 @@ interface CoreTechnologiesProps {
 
 export const CoreTechnologies = ({ isOnHomePage }: CoreTechnologiesProps) => {
   return (
-    <div className="flex flex-col md:flex-row justify-evenly gap-16 px-4 md:px-36 py-12 w-full bg-background-green">
-      <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
-        <TechnologyAndImage
-          arrayOfText={techArray0}
-          imageSource="/azure.png"
-        />
-      </AnimateDiv>
-      <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
-        <TechnologyAndImage
-          arrayOfText={techArray1}
-          imageSource={isOnHomePage ? '/power_bi.png' : 'power_bi1_white.png'}
-        />
-      </AnimateDiv>
-      <AnimateDiv initialProps={{ opacity: 0, translateX: 50 }}>
-        <TechnologyAndImage
-          arrayOfText={techArray2}
-          imageSource="/microsoft_office.png"
-        />
-      </AnimateDiv>
+    <div className="flex flex-col w-full">
+      <div className="flex flex-col md:flex-row justify-evenly gap-16 px-4 md:px-36 pt-12 w-full bg-background-green">
+        <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
+          <TechnologyAndImage
+            arrayOfText={techArray0}
+            imageSource="/azure.png"
+          />
+        </AnimateDiv>
+        <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+          <TechnologyAndImage
+            arrayOfText={techArray1}
+            imageSource={isOnHomePage ? '/power_bi.png' : 'power_bi1_white.png'}
+          />
+        </AnimateDiv>
+        <AnimateDiv initialProps={{ opacity: 0, translateX: 50 }}>
+          <TechnologyAndImage
+            arrayOfText={techArray2}
+            imageSource="/microsoft_office.png"
+          />
+        </AnimateDiv>
+      </div>
     </div>
   );
 };
