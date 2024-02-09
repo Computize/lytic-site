@@ -1,7 +1,7 @@
 import { Map } from '~/app/components/homePage/map';
 export const Headquarters = () => {
   return (
-    <div className="w-full h-[532px] flex flex-row justify-center gap-10">
+    <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center py-8 gap-10">
       <div className="flex flex-col gap-12">
         <div>
           <p className="text-primary-green text-3xl">Headquarters</p>
@@ -15,7 +15,9 @@ export const Headquarters = () => {
           <p>http://www.lyticgroup.com</p>
         </div>
       </div>
-      <Map />
+      <div className="w-full flex justify-center items-center">
+        <Map />
+      </div>
     </div>
   );
 };
