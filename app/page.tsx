@@ -17,7 +17,7 @@ export default function Home() {
 
       <SasImageAndText />
       <OurApproach />
-      <div className="flex flex-col justify-center items-center w-9/12 gap-8">
+      <div className="flex flex-col justify-center items-center w-full md:w-9/12 gap-8">
         <OurPeoplePresidentsBlog />
       </div>
       <ScriptLibrary />
