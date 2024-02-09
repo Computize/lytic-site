@@ -13,7 +13,7 @@ export const PageUpperImageContainer = ({ children, imageSource, backgroundColor
   if (imageSource) {
     return (
       <div
-        className={cn(`w-full h-[300px] md:h-[462px] bg-cover bg-center bg-no-repeat flex items-center justify-center`, className)}
+        className={cn(`w-full h-[250px] md:h-[462px] bg-cover bg-center bg-no-repeat flex items-center justify-center`, className)}
         style={{
           backgroundImage: `url('${imageSource}')`,
           backgroundSize: 'cover',
