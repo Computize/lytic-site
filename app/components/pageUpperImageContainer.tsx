@@ -1,27 +1,28 @@
 'use server';
 
 import React from 'react';
+import { cn } from '~/lib/utils';
 
 interface PageUpperImageContainerProps {
   children: React.ReactNode;
   imageSource?: string;
   backgroundColor?: string;
+  className?: string;
 }
-export const PageUpperImageContainer = ({ children, imageSource, backgroundColor }: PageUpperImageContainerProps) => {
-  return (
-    <div className="min-w-full h-[462px]">
-      {imageSource ? (
-        <div
-          className="w-full h-full flex items-center justify-center"
-          style={{
-            backgroundImage: `url('${imageSource}')`,
-          }}
-        >
-          {children}
-        </div>
-      ) : (
-        <div className={`w-full h-full flex items-center justify-center ${backgroundColor ?? 'bg-primary-green'}`}>{children}</div>
-      )}
-    </div>
-  );
+export const PageUpperImageContainer = ({ children, imageSource, backgroundColor, className }: PageUpperImageContainerProps) => {
+  if (imageSource) {
+    return (
+      <div
+        className={cn(`w-full h-[300px] md:h-[462px] bg-cover bg-center bg-no-repeat flex items-center justify-center`, className)}
+        style={{
+          backgroundImage: `url('${imageSource}')`,
+          backgroundSize: 'cover',
+        }}
+      >
+        {children}
+      </div>
+    );
+  } else {
+    return <div className={`w-full h-[362px] flex items-center justify-center ${backgroundColor ?? 'bg-primary-green'}`}>{children}</div>;
+  }
 };
