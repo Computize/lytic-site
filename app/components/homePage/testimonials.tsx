@@ -51,25 +51,25 @@ const testimonialsArray: Array<Testimonial> = [
 export const Testimonials = () => {
   return (
     <div
-      className="flex flex-col justify-center w-full h-[932px] bg-no-repeat bg-contain"
+      className="flex flex-col justify-center items-center w-full h-[932px] bg-no-repeat bg-contain"
       style={{
         objectFit: 'fill',
         backgroundImage: "url('/testimonial-bg.jpg')",
       }}
     >
-      <div className="flex flex-col items-center justify-center gap-6">
+      <div className="w-full">
         <p className="text-primary-blue text-5xl font-bold">TESTIMONIALS</p>
         <Carousel
           autoPlay={false}
           opts={{
             loop: true,
           }}
-          className="w-full max-w-lg"
+          className="w-72 lg:w-full"
         >
           <CarouselContent>
             {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
               <CarouselItem key={idx}>
-                <div className="flex flex-row gap-6">
+                <div className="flex flex-row">
                   <div>
                     <QuoteIcon
                       size={50}
@@ -77,9 +77,9 @@ export const Testimonials = () => {
                       className="transform scale-x-[-1]"
                     />
                   </div>
-                  <div className="flex flex-col max-w-md gap-6">
+                  <div className="flex flex-col w-full gap-6">
                     <p>{testimonial}</p>
-                    <div className="flex flex-col max-w-md">
+                    <div className="flex flex-col w-full">
                       <p className="font-bold">{name}</p>
                       <p>{title}</p>
                       <p>{extraDetail}</p>
@@ -90,8 +90,8 @@ export const Testimonials = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-primary-blue" />
-          <CarouselNext className="bg-primary-blue" />
+          <CarouselPrevious className="bg-primary-blue -bottom-20" />
+          <CarouselNext className="bg-primary-blue -bottom-20" />
         </Carousel>
       </div>
     </div>
