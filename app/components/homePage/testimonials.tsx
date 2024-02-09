@@ -51,8 +51,9 @@ const testimonialsArray: Array<Testimonial> = [
 export const Testimonials = () => {
   return (
     <div
-      className="flex flex-col justify-center w-full h-[932px] bg-no-repeat bg-contain max-w-[500ppx]"
+      className="flex flex-col justify-center w-full h-[932px] bg-no-repeat bg-contain"
       style={{
+        objectFit: 'fill',
         backgroundImage: "url('/testimonial-bg.jpg')",
       }}
     >
