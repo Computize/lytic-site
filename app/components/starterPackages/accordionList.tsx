@@ -7,9 +7,9 @@ interface AccordionList {
 
 export const AccordionList = ({ listItems, title }: AccordionList) => {
   return (
-    <div className="flex flex-col w- max-w-[200px]">
+    <div className="flex flex-col max-w-[200px]">
       {title.length > 0 && (
-        <div className="flex flex-row items-center gap-1">
+        <div className="flex flex-row gap-1">
           <CheckIcon
             size={15}
             strokeWidth={5}

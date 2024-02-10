@@ -14,21 +14,32 @@ interface StarterPackagesCardProps {
 export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSource, packagePrice, children }: StarterPackagesCardProps) => {
   return (
     <Card className="w-9/12">
-      <Accordion type="single" collapsible>
+      <Accordion
+        type="single"
+        collapsible
+      >
         <AccordionItem value="item-1">
           <CardHeader>
-            <div className="flex flex-row items-center justify-between">
-              <div className="flex flex-row items-center gap-6">
-                <img className="" src={`/starterPackages${imageSource}`} alt="image" width="auto" height="100px" />
-                <div className="flex flex-col">
-                  <CardTitle className="text-gray-600 text-3xl">{title}</CardTitle>
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-4 justify-between">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <img
+                  className=""
+                  src={`/starterPackages${imageSource}`}
+                  alt="image"
+                  width="auto"
+                  height="100px"
+                />
+                <div className="flex flex-col gap-4">
+                  <CardTitle className="text-gray-600 text-xl md:text-3xl">{title}</CardTitle>
                   <div className="text-gray-600 flex flex-row gap-2">
                     <p className="font-bold">FOR:</p>
                     <p>{subTitle}</p>
                   </div>
                 </div>
               </div>
-              <AccordionTrigger className="bg-primary-green hover:bg-secondary-green hover:no w-auto px-4 h-12 font-bold text-white">SEE DETAILS</AccordionTrigger>
+              <AccordionTrigger className="bg-primary-green hover:bg-secondary-green hover:no w-36 flex justify-center items-center px-2 h-12 font-bold text-white">
+                <p>SEE DETAILS</p>
+              </AccordionTrigger>
             </div>
           </CardHeader>
           <CardContent>

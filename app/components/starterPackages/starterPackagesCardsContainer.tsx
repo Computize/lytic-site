@@ -89,15 +89,17 @@ export const StarterPackagesCardsContainer = () => {
             imageSource={imageSource}
             packagePrice={packagePrice}
           >
-            {detailsList.map(({ listItems, title }, idx) => {
-              return (
-                <AccordionList
-                  key={idx}
-                  listItems={listItems}
-                  title={title}
-                />
-              );
-            })}
+            <div className="flex flex-wrap gap-6 justify-between">
+              {detailsList.map(({ listItems, title }, idx) => {
+                return (
+                  <AccordionList
+                    key={idx}
+                    listItems={listItems}
+                    title={title}
+                  />
+                );
+              })}
+            </div>
           </StarterPackagesCard>
         );
       })}
