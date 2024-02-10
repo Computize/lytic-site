@@ -12,19 +12,21 @@ export const metadata = generateMetadata('Service');
 export default function Page() {
   return (
     <main className="flex flex-col items-center gap-10">
-      <PageUpperImageContainer imageSource="/service-page-banner.png">
+      <PageUpperImageContainer
+        imageSource="/service-page-banner.png"
+        className="h-[362px]"
+      >
         <PageBlurb
-          className="px-72 text-4xl drop-shadow-lg"
+          className="drop-shadow-2xl px-2 max-w-5xl text-xl sm:text-3xl"
           blurb="Specializing in Microsoft's business intelligence platform, and in the high performance of the databases behind it. All to deliver a customized architecture that puts actionable data in your hands."
         />
       </PageUpperImageContainer>
 
       <div className="flex flex-col items-center w-full">
         <p className="text-primary-green font-bold text-5xl py-10">CORE TECHNOLOGIES</p>
-
         <CoreTechnologies isOnHomePage={false} />
       </div>
-      <div className="border-t-[1px] border-gray-600 w-10/12" />
+      <div className="opacity-0 md:opacity-100 sm:block border-t-[1px] border-gray-600 w-10/12" />
       <div className="h-auto">
         <SasImageAndText backgroundWhite={true} />
       </div>

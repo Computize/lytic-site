@@ -1,6 +1,7 @@
 'use client';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { TechnologyAndImage } from '~/app/components/service/technologyAndImage';
+import { cn } from '~/lib/utils';
 
 const techArray0: Array<string> = ['Data Warehouse & Data Lake', 'ETL & ELT', 'Azure Analysis Services', 'Azure DataFactory & DataBricks', 'Assessments, Monitoring'];
 const techArray1: Array<string> = ['Dashboard Development', 'Cloud & On-Prem Integration', 'Data Strategy', 'Training'];
@@ -8,12 +9,14 @@ const techArray2: Array<string> = ['Migrations – Cloud & On-Prem', 'Governance
 
 interface CoreTechnologiesProps {
   isOnHomePage: boolean;
+  className?: string;
 }
 
-export const CoreTechnologies = ({ isOnHomePage }: CoreTechnologiesProps) => {
+export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesProps) => {
+  console.log(isOnHomePage);
   return (
     <div className="flex flex-col w-full">
-      <div className="flex flex-col md:flex-row justify-evenly gap-16 px-4 md:px-36 pt-12 w-full bg-background-green">
+      <div className={cn(`flex flex-col md:flex-row justify-evenly gap-16 px-4 md:px-36 pt-12 w-full ${isOnHomePage ? 'bg-background-green' : 'bg-white'}`, className)}>
         <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
           <TechnologyAndImage
             arrayOfText={techArray0}
@@ -23,7 +26,7 @@ export const CoreTechnologies = ({ isOnHomePage }: CoreTechnologiesProps) => {
         <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
           <TechnologyAndImage
             arrayOfText={techArray1}
-            imageSource={isOnHomePage ? '/power_bi.png' : 'power_bi1_white.png'}
+            imageSource={isOnHomePage ? 'power_bi1_white.png' : '/power_bi.png'}
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateX: 50 }}>
