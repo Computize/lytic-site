@@ -1,7 +1,7 @@
 import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
 import { PageBlurb } from '~/app/components/pageBlurb';
-import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
+import { generateMetadata } from '~/app/constants/pageHeading';
 
 const approachImageAndText = [
   {
@@ -45,6 +45,8 @@ const approachImageAndText = [
     text: 'Technical Documentation',
   },
 ];
+
+export const metadata = generateMetadata('Our Approach');
 
 export default function Page() {
   return (

@@ -1,3 +1,7 @@
+import { generateMetadata } from '~/app/constants/pageHeading';
+
+export const metadata = generateMetadata('Contact');
+
 export default async function Page() {
   return (
     <main>

@@ -1,11 +1,13 @@
-'use server';
 import { OurMission } from '~/app/components/about/ourMission';
 import { OurStory } from '~/app/components/about/ourStory';
 import { SomeOfOurClients } from '~/app/components/about/someOfOurClients';
 import { PageBlurb } from '~/app/components/pageBlurb';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
+import { generateMetadata } from '~/app/constants/pageHeading';
 
-export default async function Page() {
+export const metadata = generateMetadata('About');
+
+export default function Page() {
   const blurbString = 'The Lytic Group are architects of data \n and business intelligence solutions. \n Planning, surfacing, optimizing, & monitoring \n your most valuable data.';
   return (
     <main className="mb-14">

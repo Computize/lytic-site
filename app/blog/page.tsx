@@ -3,6 +3,9 @@ import { BlogPreviewCard } from '~/app/components/blogPage/blogPreviewCard';
 import { GetOurNewsletter } from '~/app/components/blogPage/getOurNewsletter';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
+import { generateMetadata } from '~/app/constants/pageHeading';
+
+export const metadata = generateMetadata('Blog');
 
 export default async function Page() {
   return (

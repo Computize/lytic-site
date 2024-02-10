@@ -2,7 +2,9 @@ import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
 import { ScriptDescriptionAndDropDownContainer } from '~/app/components/scriptPage/scriptDescriptionAndDropDownContainer';
-import { cn } from '~/lib/utils';
+import { generateMetadata } from '~/app/constants/pageHeading';
+
+export const metadata = generateMetadata('Script Library');
 
 export default async function Page() {
   return (

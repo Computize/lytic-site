@@ -2,8 +2,9 @@ import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { StarterPackagesCardsContainer } from '~/app/components/starterPackages/starterPackagesCardsContainer';
+import { generateMetadata } from '~/app/constants/pageHeading';
 
-const accordionList3 = ['Data ingest', 'ETL/ELT', 'Analytics layer', 'Query optimization', 'Dashboard', 'User/group-level security', 'Concurrency testing'];
+export const metadata = generateMetadata('Starter Packages');
 
 export default function Page() {
   return (
