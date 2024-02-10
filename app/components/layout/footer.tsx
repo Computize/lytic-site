@@ -7,15 +7,12 @@ export async function Footer() {
   return (
     <footer className="h-auto py-10 flex flex-col gap-4 items-center  bg-background-dark-gray">
       <Link href="/">
-        <Image
+        <img
           src="/main-logo.png"
-          width={280}
-          height={180}
-          quality={100}
           alt="Lytic Group Logo"
+          className="h-16"
         />
       </Link>
-
       <div className="flex flex-col sm:flex-row text-primary-gray gap-6 items-center justify-evenly">
         <Link
           className="text-sm"
