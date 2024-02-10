@@ -11,9 +11,12 @@ export default function Page() {
   const blurbString = 'The Lytic Group are architects of data \n and business intelligence solutions. \n Planning, surfacing, optimizing, & monitoring \n your most valuable data.';
   return (
     <main className="mb-14">
-      <PageUpperImageContainer imageSource="/aboutus-page-banner.png">
+      <PageUpperImageContainer
+        imageSource="/aboutus-page-banner.png"
+        className="h-[262px]"
+      >
         <PageBlurb
-          className="drop-shadow-lg text-4xl text-left max-w-3xl"
+          className="drop-shadow-lg text-lg px-10 md:px-0 md:text-4xl text-left max-w-3xl"
           blurb={blurbString}
         />
       </PageUpperImageContainer>

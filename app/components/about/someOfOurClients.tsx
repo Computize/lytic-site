@@ -32,7 +32,7 @@ const arrayOfImageSources = [
 
 export const SomeOfOurClients = () => {
   return (
-    <div className="flex flex-col gap-6 justify-center items-center h-auto py-10 px-9">
+    <div className="flex flex-col gap-2 md:gap-6 justify-center items-center h-auto py-10 px-9">
       <p className="text-4xl text-center text-primary-green font-bold">SOME OF OUR CLIENTS</p>
       <div className="hidden md:grid grid-cols-6 ">
         {arrayOfImageSources.map(({ alt, src }, idx) => {
