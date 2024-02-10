@@ -141,7 +141,7 @@ export function Nav() {
                 <DropdownMenuItem>
                   <Link
                     className=""
-                    href="/contact"
+                    href="/about"
                   >
                     About
                   </Link>

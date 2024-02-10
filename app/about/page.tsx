@@ -21,7 +21,7 @@ export default function Page() {
         <OurStory />
       </div>
       <div className="flex justify-center mb-20">
-        <p className="text-xl font-bold">“We lead with transparency, expertise, and clear communication”</p>
+        <p className="text-xl text-center font-bold">“We lead with transparency, expertise, and clear communication”</p>
       </div>
       <OurMission />
       <SomeOfOurClients />
