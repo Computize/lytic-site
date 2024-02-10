@@ -9,11 +9,17 @@ export const metadata = generateMetadata('Starter Packages');
 export default function Page() {
   return (
     <main className="flex flex-col w-full justify-center items-center">
-      <PageUpperImageContainer imageSource="/star_packeges-banner.png">
-        <PageTitle title="STARTER PACKAGES" />
+      <PageUpperImageContainer
+        imageSource="/star_packeges-banner.png"
+        className="h-[362px]"
+      >
+        <PageTitle
+          title="STARTER PACKAGES"
+          className="text-center"
+        />
       </PageUpperImageContainer>
 
-      <p className="text-gray-600 text-2xl h-auto py-12 w-full font-bold text-center">
+      <p className="text-gray-600 text-2xl h-auto py-12 w-10/12 md:w-full font-bold text-center">
         At whatever stage of migrating data to the cloud your organization finds itself.
         <br />
         The Lytic Group offers several simple solutions to get you to the next step in your data analytics journey.
