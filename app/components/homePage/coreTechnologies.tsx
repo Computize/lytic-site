@@ -13,7 +13,6 @@ interface CoreTechnologiesProps {
 }
 
 export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesProps) => {
-  console.log(isOnHomePage);
   return (
     <div className="flex flex-col w-full">
       <div className={cn(`flex flex-col md:flex-row justify-evenly gap-16 px-4 md:px-36 pt-12 w-full ${isOnHomePage ? 'bg-background-green' : 'bg-white'}`, className)}>
