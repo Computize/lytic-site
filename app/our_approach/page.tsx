@@ -58,10 +58,12 @@ export default function Page() {
           blurb="The Lytic Group is a team of consultants intent on thrilling its customers with unusual transparency and a comfortable, easy experience."
         />
       </PageUpperImageContainer>
-      <div className="flex flex-col justify-center items-center gap-10 px-20">
-        <p className="text-primary-green text-5xl font-bold">OUR APPROACH</p>
-        <p className="text-center text-gray-600 text-2xl font-bold">The anchor of our proven, unique approach to IT services is open, honest communication between a project's stakeholders our staff crafting a solution for them.</p>
-        <p className="text-center text-gray-500 text-lg">We accomplish this by strictly hiring the warmest and most articulate technical experts in their field, and providing always-available transparency into all aspects of our projects. The result is a family of loyal, long-term customers. The team focuses on Microsoft backend architecture, business intelligence, and database administration and optimization, offering decades of combined experience in each. Using AGILE methodologies in our projects, our work insures flexibility as customer business needs and requirements change, and allows us to respond quickly to feedback.</p>
+      <div className="flex flex-col justify-center items-center gap-10 p-10">
+        <p className="text-primary-green text-5xl font-bold text-center">OUR APPROACH</p>
+        <div className="flex flex-col gap-6 w-full sm:w-10/12 md:w-10/12">
+          <p className="text-center text-gray-600 text-2xl font-bold">The anchor of our proven, unique approach to IT services is open, honest communication between a project's stakeholders our staff crafting a solution for them.</p>
+          <p className="text-center text-gray-500 text-lg">We accomplish this by strictly hiring the warmest and most articulate technical experts in their field, and providing always-available transparency into all aspects of our projects. The result is a family of loyal, long-term customers. The team focuses on Microsoft backend architecture, business intelligence, and database administration and optimization, offering decades of combined experience in each. Using AGILE methodologies in our projects, our work insures flexibility as customer business needs and requirements change, and allows us to respond quickly to feedback.</p>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-10 py-10 px-52">
         <p className="text-primary-green text-5xl font-bold">OUR EXPERTISE</p>
