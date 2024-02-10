@@ -49,9 +49,12 @@ const approachImageAndText = [
 export default function Page() {
   return (
     <main className="flex flex-col">
-      <PageUpperImageContainer imageSource="/our-approach-banner.png">
+      <PageUpperImageContainer
+        imageSource="/our-approach-banner.png"
+        className="h-[462px]"
+      >
         <PageBlurb
-          className="px-14 text-center"
+          className="px-14 text-center max-w-5xl text-2xl sm:text-3xl"
           blurb="The Lytic Group is a team of consultants intent on thrilling its customers with unusual transparency and a comfortable, easy experience."
         />
       </PageUpperImageContainer>
