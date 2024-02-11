@@ -139,7 +139,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Textarea
-                  className="rounded-none h-52 w-[300px] md:w-[600px] placeholder:italic placeholder:italic"
+                  className="rounded-none h-52 w-[300px] md:w-[600px] placeholder:italic"
                   placeholder="How can we help?"
                   {...field}
                 />
