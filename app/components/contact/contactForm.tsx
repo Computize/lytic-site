@@ -62,99 +62,101 @@ export const ContactForm = () => {
   });
 
   return (
-    <FormWrapper
-      form={form}
-      onSubmit={onSubmit}
-    >
-      <FormField
-        control={form.control}
-        name="fullName"
-        render={({ field }) => (
-          <FormItem>
-            <FormControl>
-              <Input
-                className="rounded-none"
-                autoComplete=""
-                placeholder="Full Name"
-                {...field}
-              />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-      <FormField
-        control={form.control}
-        name="emailAddress"
-        render={({ field }) => (
-          <FormItem>
-            <FormControl>
-              <Input
-                className="rounded-none"
-                placeholder="Email Address"
-                {...field}
-              />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-      <FormField
-        control={form.control}
-        name="phoneNumber"
-        render={({ field }) => (
-          <FormItem>
-            <FormControl>
-              <Input
-                className="rounded-none"
-                placeholder="Phone Number"
-                {...field}
-              />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-      <FormField
-        control={form.control}
-        name="state"
-        render={({ field }) => (
-          <FormItem>
-            <FormControl>
-              <Input
-                className="rounded-none"
-                placeholder="State"
-                {...field}
-              />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-      <FormField
-        control={form.control}
-        name="howCanWeHelp"
-        render={({ field }) => (
-          <FormItem>
-            <FormControl>
-              <Textarea
-                className="rounded-none h-52"
-                placeholder="How can we help?"
-                {...field}
-              />
-            </FormControl>
-            <FormMessage />
-          </FormItem>
-        )}
-      />
-      <div className="flex flex-col justify-center items-center">
-        <Button
-          type="submit"
-          className="rounded-none w-32 bg-secondary-green font-bold"
-        >
-          SEND
-        </Button>
-      </div>
-    </FormWrapper>
+    <div className="flex flex-col justify-center gap-6 items-center">
+      <FormWrapper
+        form={form}
+        onSubmit={onSubmit}
+      >
+        <FormField
+          control={form.control}
+          name="fullName"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  className="rounded-none w-[300px] md:w-[600px]"
+                  autoComplete=""
+                  placeholder="Full Name"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="emailAddress"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  className="rounded-none w-[300px] md:w-[600px]"
+                  placeholder="Email Address"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phoneNumber"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  className="rounded-none w-[300px] md:w-[600px]"
+                  placeholder="Phone Number"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="state"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  className="rounded-none w-[300px] md:w-[600px]"
+                  placeholder="State"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="howCanWeHelp"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Textarea
+                  className="rounded-none h-52 w-[300px] md:w-[600px]"
+                  placeholder="How can we help?"
+                  {...field}
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <div className="flex flex-col justify-center items-center">
+          <Button
+            type="submit"
+            className="rounded-none w-32 bg-secondary-green font-bold"
+          >
+            SEND
+          </Button>
+        </div>
+      </FormWrapper>
+    </div>
   );
 };
