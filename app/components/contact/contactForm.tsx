@@ -74,7 +74,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="rounded-none w-[300px] md:w-[600px]"
+                  className="rounded-none w-[300px] md:w-[600px] placeholder:italic"
                   autoComplete=""
                   placeholder="Full Name"
                   {...field}
@@ -91,7 +91,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="rounded-none w-[300px] md:w-[600px]"
+                  className="rounded-none w-[300px] md:w-[600px] placeholder:italic"
                   placeholder="Email Address"
                   {...field}
                 />
@@ -107,7 +107,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="rounded-none w-[300px] md:w-[600px]"
+                  className="rounded-none w-[300px] md:w-[600px] placeholder:italic"
                   placeholder="Phone Number"
                   {...field}
                 />
@@ -123,7 +123,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Input
-                  className="rounded-none w-[300px] md:w-[600px]"
+                  className="rounded-none w-[300px] md:w-[600px] placeholder:italic"
                   placeholder="State"
                   {...field}
                 />
@@ -139,7 +139,7 @@ export const ContactForm = () => {
             <FormItem>
               <FormControl>
                 <Textarea
-                  className="rounded-none h-52 w-[300px] md:w-[600px]"
+                  className="rounded-none h-52 w-[300px] md:w-[600px] placeholder:italic placeholder:italic"
                   placeholder="How can we help?"
                   {...field}
                 />
