@@ -1,0 +1,9 @@
+[
+  { "name": "Store Activity Monitor Data", "fileName": "uspStoreActivityMonitorData.sql.zip" },
+  { "name": "Update Statistics By Age", "fileName": "UpdateOldStatistics.zip" },
+  { "name": "Auto Rebuild Indexes", "fileName": "uspReIndexTables.zip" },
+  { "name": "Job Summary", "fileName": "uspJobSummary.zip" },
+  { "name": "DDL Log", "fileName": "tr_LogDDLEvents.zip" },
+  { "name": "All Object Permissions", "fileName": "AllObjectPermissions.zip" },
+  { "name": "DB Size History", "fileName": "DBSizeHistory.zip" }
+]

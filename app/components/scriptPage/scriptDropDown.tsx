@@ -1,8 +1,10 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem } from '~/components/ui/select';
+import scripts from './scripts.json';
 
-export const arrayOfScripts = [{ name: 'Store Activity Monitor Data' }, { name: 'Update Statistics By Age' }, { name: 'Auto Rebuild Indexes' }, { name: 'Job Summary' }, { name: 'DDL Log' }, { name: 'All Object Permissions' }, { name: 'DB Size History' }];
+// Will error if JSON file is modified incorrectly
+export const IMPORTED_SCRIPTS: Array<{ name: string; fileName: string }> = scripts;
 
 export const ScriptDropDown = () => {
   const router = useRouter();
@@ -10,7 +12,8 @@ export const ScriptDropDown = () => {
     <div>
       <Select
         onValueChange={(value) => {
-          router.push(`/script/${value}`);
+          const slugName = value.replace(/ /g, '_');
+          router.push(`/script/${slugName.toLowerCase()}`);
         }}
       >
         <SelectTrigger className="w-[350px] md:w-[500px] lg:w-[700px] h-[50px] bg-primary-green rounded-none text-white italic text-lg">
@@ -18,11 +21,11 @@ export const ScriptDropDown = () => {
         </SelectTrigger>
         <SelectContent className="">
           <SelectGroup>
-            {arrayOfScripts.map(({ name }, idx) => {
+            {IMPORTED_SCRIPTS.map(({ name }, idx) => {
               return (
                 <SelectItem
                   key={idx}
-                  value={idx.toString()}
+                  value={name}
                 >
                   {name}
                 </SelectItem>
