@@ -1,5 +1,5 @@
 'use client';
-import { redirect, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem } from '~/components/ui/select';
 
 export const arrayOfScripts = [{ name: 'Store Activity Monitor Data' }, { name: 'Update Statistics By Age' }, { name: 'Auto Rebuild Indexes' }, { name: 'Job Summary' }, { name: 'DDL Log' }, { name: 'All Object Permissions' }, { name: 'DB Size History' }];
