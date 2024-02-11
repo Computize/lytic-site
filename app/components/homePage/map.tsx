@@ -1,3 +1,3 @@
 export const Map = () => {
-  return <div className="h-[400px] w-full border-2 border-red-500">MAP PLACEHOLDER</div>;
+  return <div className="aspect-square w-[350px] md:w-[400px] border-2 border-red-500">MAP PLACEHOLDER</div>;
 };
