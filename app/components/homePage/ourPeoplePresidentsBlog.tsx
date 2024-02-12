@@ -7,6 +7,7 @@ export const OurPeoplePresidentsBlog = () => {
         <div className="flex justify-center">
           <img
             src="/our-people-animated.gif"
+            alt="animated gif of person with glasses"
             className="w-[150px]"
           />
         </div>
@@ -27,6 +28,7 @@ export const OurPeoplePresidentsBlog = () => {
         <div className="flex justify-center">
           <img
             src="/presidents-blog-animated.gif"
+            alt="animated gif of typewriter"
             className="w-[175px]"
           />
         </div>

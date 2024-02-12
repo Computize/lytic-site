@@ -35,6 +35,7 @@ export const IndustriesSection = () => {
             >
               <img
                 src={`${subFolder}${image}`}
+                alt="Industry Logo"
                 style={{
                   width: 'auto',
                   height: '100px',

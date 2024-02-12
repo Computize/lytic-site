@@ -76,7 +76,10 @@ export default function Page() {
                 key={idx}
                 className="flex flex-row gap-4 items-center"
               >
-                <img src={image} />
+                <img
+                  alt="Stock Logo"
+                  src={image}
+                />
                 <p className="text-gray-600 text-md font-bold">{text}</p>
               </div>
             );

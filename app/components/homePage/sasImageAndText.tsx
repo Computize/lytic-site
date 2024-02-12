@@ -7,7 +7,7 @@ export function SasImageAndText({ backgroundWhite }: SasImageAndTextProps) {
       <div className="flex flex-col items-center justify-center md:flex-row gap-6 w-9/12">
         <img
           src="/sas.png"
-          alt="image"
+          alt="SAS logo"
           width="120px"
           height="auto"
         />

@@ -23,9 +23,8 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
             <div className="flex flex-col md:flex-row items-center gap-6 md:gap-4 justify-between">
               <div className="flex flex-col md:flex-row items-center gap-6">
                 <img
-                  className=""
                   src={`/starterPackages${imageSource}`}
-                  alt="image"
+                  alt="Stock Logo"
                   width="auto"
                   height="100px"
                 />

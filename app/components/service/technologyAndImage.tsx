@@ -8,6 +8,7 @@ export const TechnologyAndImage = ({ imageSource, arrayOfText }: TechnologyAndIm
     <div className="flex flex-col gap-10">
       <div className="flex justify-center items-center h-36">
         <img
+          alt="Tech Logo"
           src={imageSource}
           width={'200px'}
         />
