@@ -23,7 +23,7 @@ export function Nav() {
 
   return (
     <div className={`bg-gradient-to-b from-white from-20% w-full top-0 z-51 h-40 flex justify-center absolute`}>
-      <header className={`${isScrolled ? 'bg-white top-0 z-50 fixed shadow-black shadow-2xl' : 'top-0 z-50 fixed '} w-full md:w-10/12`}>
+      <header className={`${isScrolled ? 'bg-white top-0 z-50 fixed shadow-black shadow-2xl' : 'top-0 z-50 fixed '} w-full lg:w-10/12`}>
         <nav className="hidden md:hidden lg:block">
           <div className="text-xs font-bold flex justify-evenly items-center  w-full py-4">
             <div className="flex flex-row justify-around w-full">
