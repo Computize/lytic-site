@@ -13,10 +13,11 @@ export const ScriptSelections = ({ scriptValue }: { scriptValue: string }) => {
         <CardTitle className="font-bold">SELECT A SCRIPT</CardTitle>
       </CardHeader>
       <CardContent className="grid gap-4 rounded-none">
-        {IMPORTED_SCRIPTS.map(({ name }) => {
+        {IMPORTED_SCRIPTS.map(({ name }, idx) => {
           const slugFriendlyName = name.replace(/ /g, '_').toLowerCase();
           return (
             <Button
+              key={idx}
               variant={'ghost'}
               className={`hover:font-bold hover:bg-background-green text-left rounded-none ${scriptValue === slugFriendlyName ? 'font-bold bg-background-green' : ''}`}
             >

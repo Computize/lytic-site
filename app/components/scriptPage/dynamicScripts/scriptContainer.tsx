@@ -1,9 +1,9 @@
 'use client';
 
-import { AlertCircle, DownloadIcon } from 'lucide-react';
-import Link from 'next/link';
+import { AlertCircle, DownloadIcon, MessageSquareMore } from 'lucide-react';
 import { IMPORTED_SCRIPTS } from '~/app/components/scriptPage/scriptDropDown';
 import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
+import { ScrollArea } from '~/components/ui/scroll-area';
 
 export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
   const selectedScript = IMPORTED_SCRIPTS.find((script) => script.name.replace(/ /g, '_').toLowerCase() === scriptValue);
@@ -22,18 +22,26 @@ export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
     );
   } else {
     return (
-      <div className="w-11/12 border-2">
+      <div className="w-11/12 flex flex-col gap-4">
         <p className="font-bold text-2xl">{selectedScript.name}</p>
-        <div className="flex flex-row gap-2 text-gray-600">
-          <DownloadIcon />
-          <a
-            download
-            href={selectedScript.fileName}
-          >
-            Download Script
-          </a>
+        <div className="flex flex-wrap gap-2 text-gray-600">
+          <div className="flex flex-row gap-2 text-gray-600">
+            <DownloadIcon />
+            <a
+              download
+              href={selectedScript.fileName}
+            >
+              Download Script
+            </a>
+          </div>
+          <div className="flex flex-row gap-2 text-gray-600">
+            <MessageSquareMore />
+            <a href="mailto:lyticgroup@gmail.com">Leave Feedback</a>
+          </div>
         </div>
         <p>{selectedScript.description}</p>
+
+        <ScrollArea className="h-[200px] w-[350px] rounded-md border p-4">examlbe</ScrollArea>
       </div>
     );
   }

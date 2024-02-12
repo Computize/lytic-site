@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectItem } from '~/components/ui/select';
-import scripts from './scripts.json';
+import scripts from '../../../public/scripts/scripts.json';
 
 // Will error if JSON file is modified incorrectly
 export const IMPORTED_SCRIPTS: Array<{ name: string; fileName: string; description: string }> = scripts;

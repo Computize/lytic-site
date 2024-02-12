@@ -15,9 +15,11 @@ export default async function Page({ params }: { params: { scriptValue: string }
         <PageTitle title="SCRIPT LIBRARY" />
       </PageUpperImageContainer>
       <Separator />
-      <ScriptSelections scriptValue={scriptValue} />
-      <div className="py-12 flex justify-center">
-        <ScriptContainer scriptValue={scriptValue} />
+      <div className="w-full flex flex-col md:flex-row">
+        <ScriptSelections scriptValue={scriptValue} />
+        <div className="py-12 flex justify-center">
+          <ScriptContainer scriptValue={scriptValue} />
+        </div>
       </div>
     </main>
   );
