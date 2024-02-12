@@ -4,7 +4,7 @@ import { Button } from '~/components/ui/button';
 export const ScriptLibrary = () => {
   return (
     <div
-      className="flex flex-col gap-10 h-[700px] lg:h-[1200px] w-full px-6 md:px-60 bg-home-page-script-sec bg-cover bg-center justify-center bg-no-repeat"
+      className="flex flex-col gap-10 h-[700px] lg:h-[1200px] w-full px-6 md:px-60 bg-cover bg-center justify-center bg-no-repeat"
       style={{
         objectFit: 'fill',
         width: 'auto',

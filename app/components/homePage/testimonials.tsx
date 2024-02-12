@@ -51,47 +51,49 @@ const testimonialsArray: Array<Testimonial> = [
 export const Testimonials = () => {
   return (
     <div
-      className="flex flex-col justify-center items-center w-full h-[932px] bg-no-repeat bg-contain"
+      className="flex flex-col justify-center items-center w-full h-[1032px] bg-cover bg-center bg-no-repeat"
       style={{
         objectFit: 'fill',
         backgroundImage: "url('/testimonial-bg.jpg')",
       }}
     >
-      <div className="w-full">
+      <div className="w-11/12 md:w-8/12 flex flex-col justify-center items-center gap-10">
         <p className="text-primary-blue text-5xl font-bold">TESTIMONIALS</p>
         <Carousel
           autoPlay={false}
           opts={{
             loop: true,
           }}
-          className="w-72 lg:w-full"
+          className="w-full"
         >
-          <CarouselContent>
-            {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
-              <CarouselItem key={idx}>
-                <div className="flex flex-row">
-                  <div>
-                    <QuoteIcon
-                      size={50}
-                      color="#91caee"
-                      className="transform scale-x-[-1]"
-                    />
-                  </div>
-                  <div className="flex flex-col w-full gap-6">
-                    <p>{testimonial}</p>
-                    <div className="flex flex-col w-full">
-                      <p className="font-bold">{name}</p>
-                      <p>{title}</p>
-                      <p>{extraDetail}</p>
-                      <p>{clientSince}</p>
+          <div className="flex flex-row p-2 md:p-10">
+            <CarouselContent>
+              {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
+                <CarouselItem key={idx}>
+                  <div className="flex flex-row">
+                    <div>
+                      <QuoteIcon
+                        size={50}
+                        color="#91caee"
+                        className="transform scale-x-[-1]"
+                      />
+                    </div>
+                    <div className="flex flex-col w-full gap-6">
+                      <p>{testimonial}</p>
+                      <div className="flex flex-col w-full">
+                        <p className="font-bold">{name}</p>
+                        <p>{title}</p>
+                        <p>{extraDetail}</p>
+                        <p>{clientSince}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="bg-primary-blue -bottom-20" />
-          <CarouselNext className="bg-primary-blue -bottom-20" />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="bg-primary-blue left-20 sm:left-20 -bottom-14 md:-bottom-10" />
+            <CarouselNext className="bg-primary-blue right-20 sm:right-20 -bottom-14 md:-bottom-10" />
+          </div>
         </Carousel>
       </div>
     </div>
