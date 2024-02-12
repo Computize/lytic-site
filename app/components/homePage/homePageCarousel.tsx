@@ -40,10 +40,9 @@ export const HomePageCarousel = () => {
           {arrayOfSlides.map(({ description, title, colorBlend }, index) => {
             return (
               <CarouselItem
-                className={`h-[562px] bg-blend-screen ${colorBlend}`}
+                className={`h-[562px] bg-blend-screen ${colorBlend} bg-cover bg-bottom md:bg-top justify-center bg-no-repeat`}
                 key={index}
                 style={{
-                  objectFit: 'contain',
                   backgroundImage: "url('/home-page-banner.png')",
                 }}
               >
