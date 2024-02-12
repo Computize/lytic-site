@@ -5,7 +5,6 @@ import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 
 export const WhatWeDo = () => {
   const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-between h-auto gap-7 py-20">
@@ -21,7 +20,7 @@ export const WhatWeDo = () => {
         />
         <AnimateDiv
           className="absolute"
-          initialProps={{ translateX: 500 }}
+          initialProps={{ translateX: 300, opacity: 0 }}
         >
           <div>
             <img
