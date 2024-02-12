@@ -1,10 +1,12 @@
-'use server';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { ScriptContainer } from '~/app/components/scriptPage/dynamicScripts/scriptContainer';
 import { ScriptSelections } from '~/app/components/scriptPage/dynamicScripts/scriptSelections';
 import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
+import { generateMetadata } from '~/app/constants/pageHeading';
 import { Separator } from '~/components/ui/separator';
+
+export const metadata = generateMetadata('Script');
 
 export default async function Page({ params }: { params: { scriptValue: string } }) {
   const { scriptValue } = params;
