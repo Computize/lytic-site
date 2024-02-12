@@ -7,7 +7,7 @@ interface BlogPreviewCardContainerProps {
 
 export const BlogPreviewCardContainer = ({ blogItems }: BlogPreviewCardContainerProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
       {blogItems.map((blogItem, idx) => {
         return (
           <BlogPreviewCard

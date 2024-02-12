@@ -2,8 +2,8 @@ import { Button } from '~/components/ui/button';
 
 export const GetOurNewsletter = () => {
   return (
-    <div className="py-5">
-      <div className="py-11 flex flex-col gap-5 items-center bg-background-light-gray">
+    <div className="py-5 w-full">
+      <div className="w-full py-11 flex flex-col gap-5 items-center bg-background-light-gray">
         <p className="text-5xl font-bold text-center text-primary-green">GET OUR NEWSLETTER</p>
         <div className="flex flex-col justify-center md:flex-row gap-4">
           <input

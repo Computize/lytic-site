@@ -68,8 +68,7 @@ export default async function Page() {
           className="text-center"
         />
       </PageUpperImageContainer>
-      <div></div>
-      <div className="p-10 flex flex-col md:flex-row justify-center gap-5">
+      <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10">
         <BlogPreviewCardContainer blogItems={mockBlogData} />
         <BlogCategories />
       </div>
