@@ -4,9 +4,9 @@ import { Button } from '~/components/ui/button';
 export const ScriptLibrary = () => {
   return (
     <div
-      className="flex flex-col gap-10 h-[850px] w-full p-4 md:px-36 bg-home-page-script-sec justify-center bg-cover bg-no-repeat"
+      className="flex flex-col gap-10 h-[700px] lg:h-[1200px] w-full px-6 md:px-60 bg-home-page-script-sec bg-cover bg-center justify-center bg-no-repeat"
       style={{
-        objectFit: 'contain',
+        objectFit: 'fill',
         width: 'auto',
         backgroundImage: "url('/home-page-script-sec.png')",
       }}
