@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
+import { Button } from '~/components/ui/button';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
 
 const arrayOfSlides: Array<{ title: string; description: string; colorBlend: string }> = [
@@ -67,9 +69,14 @@ export const HomePageCarousel = () => {
                       initialProps={{ opacity: '0', translateY: 50 }}
                       delay={0.75}
                     >
-                      <button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 text-white py-2 px-4 rounded-full">
-                        <p className="text-black">READ MORE</p>
-                      </button>
+                      <Button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 text-white py-2 px-4 rounded-full">
+                        <Link
+                          href="#what-we-do"
+                          scroll={true}
+                        >
+                          <p className="text-black">READ MORE</p>
+                        </Link>
+                      </Button>
                     </AnimateDiv>
                   </div>
                   <div className="h-full w-2/12" />

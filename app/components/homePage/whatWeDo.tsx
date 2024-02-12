@@ -1,4 +1,3 @@
-import Image from 'next/image';
 export const WhatWeDo = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-between h-auto gap-7 py-20">

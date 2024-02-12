@@ -15,7 +15,9 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center">
       <HomePageCarousel />
-      <WhatWeDo />
+      <section id="what-we-do">
+        <WhatWeDo />
+      </section>
       <CoreTechnologies isOnHomePage={true} />
 
       <SasImageAndText />
