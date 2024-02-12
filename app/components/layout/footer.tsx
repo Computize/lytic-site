@@ -33,9 +33,9 @@ export async function Footer() {
         </Link>
         <Link
           className="text-sm"
-          href="/services"
+          href="/service"
         >
-          SERVICES (NOT WORKING)
+          SERVICES
         </Link>
         <Link
           className="text-sm"
