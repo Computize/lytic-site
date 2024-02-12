@@ -6,7 +6,7 @@ export function SasImageAndText({ backgroundWhite }: SasImageAndTextProps) {
     <div className={`${backgroundWhite ? 'bg-white' : 'bg-background-green'} w-full flex justify-center items-center h-auto py-10`}>
       <div className="flex flex-col items-center justify-center md:flex-row gap-6 w-9/12">
         <img
-          src="/sas.png"
+          src="/Sas.png"
           alt="SAS logo"
           width="120px"
           height="auto"
