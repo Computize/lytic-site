@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
+import { Button } from '~/components/ui/button';
 
 export const OurPeoplePresidentsBlog = () => {
   return (
@@ -17,9 +19,9 @@ export const OurPeoplePresidentsBlog = () => {
             <p className="text-primary-blue text-5xl font-bold">OUR PEOPLE</p>
             <p className="text-2xl w-auto">Our people and their people skills are the key to our success. Find out what it takes be on the Lytic Group team, and make our customers happy.</p>
             <div className="flex">
-              <button className="bg-primary-blue hover:bg-blue-400 w-auto border-b-4 border-blue-100 text-white font-bold py-2 px-4 rounded-full">
-                <p className="text-black">MEET OUR TEAM</p>
-              </button>
+              <Button className="bg-primary-blue hover:bg-blue-400 w-auto border-b-4 border-blue-100 text-white font-bold py-2 px-4 rounded-full">
+                <Link href="/about">MEET OUR TEAM</Link>
+              </Button>
             </div>
           </div>
         </AnimateDiv>
@@ -38,9 +40,9 @@ export const OurPeoplePresidentsBlog = () => {
             <p className="text-primary-green text-5xl font-bold">PRESIDENT&apos;S BLOG</p>
             <p className="text-2xl w-auto">Thoughts on how to be a great consultant and an indispensable asset to a customer.</p>
             <div className="flex">
-              <button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 font-bold text-white py-2 px-4 rounded-full">
-                <p className="text-black">READ THE BLOG</p>
-              </button>
+              <Button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 font-bold text-white py-2 px-4 rounded-full">
+                <Link href="/blog">READ THE BLOG</Link>
+              </Button>
             </div>
           </div>
         </AnimateDiv>
