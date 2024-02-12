@@ -1,7 +1,7 @@
 import { LetsTalk } from '~/app/components/ourApproachPage/letsTalk';
 import { PageBlurb } from '~/app/components/pageBlurb';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 const approachImageAndText = [
   {

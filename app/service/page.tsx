@@ -5,7 +5,7 @@ import { PageBlurb } from '~/app/components/pageBlurb';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { IndustriesSection } from '~/app/components/service/industriesSection';
 import { LyticDifference } from '~/app/components/service/lyticDifference';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Service');
 

@@ -2,7 +2,7 @@ import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
 import { ScriptDescriptionAndDropDownContainer } from '~/app/components/scriptPage/scriptDescriptionAndDropDownContainer';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Script Library');
 

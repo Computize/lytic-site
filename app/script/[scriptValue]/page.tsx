@@ -3,7 +3,7 @@ import { PageUpperImageContainer } from '~/app/components/pageUpperImageContaine
 import { ScriptContainer } from '~/app/components/scriptPage/dynamicScripts/scriptContainer';
 import { ScriptSelections } from '~/app/components/scriptPage/dynamicScripts/scriptSelections';
 import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 import { Separator } from '~/components/ui/separator';
 
 export const metadata = generateMetadata('Script');

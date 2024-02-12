@@ -7,7 +7,7 @@ import { SasImageAndText } from '~/app/components/homePage/sasImageAndText';
 import { OurPeoplePresidentsBlog } from '~/app/components/homePage/ourPeoplePresidentsBlog';
 import { OurApproach } from '~/app/components/homePage/ourApproach';
 import { CoreTechnologies } from '~/app/components/homePage/coreTechnologies';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Home');
 

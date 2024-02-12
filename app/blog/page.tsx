@@ -4,7 +4,7 @@ import { BlogPreviewCardContainer } from '~/app/components/blogPage/blogPreviewC
 import { GetOurNewsletter } from '~/app/components/blogPage/getOurNewsletter';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Blog');
 

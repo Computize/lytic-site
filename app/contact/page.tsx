@@ -2,7 +2,7 @@ import { ContactForm } from '~/app/components/contact/contactForm';
 import { Headquarters } from '~/app/components/homePage/headquarters';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
-import { generateMetadata } from '~/app/constants/pageHeading';
+import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Contact');
 
