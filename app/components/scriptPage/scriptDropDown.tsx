@@ -4,7 +4,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectGroup, SelectI
 import scripts from './scripts.json';
 
 // Will error if JSON file is modified incorrectly
-export const IMPORTED_SCRIPTS: Array<{ name: string; fileName: string }> = scripts;
+export const IMPORTED_SCRIPTS: Array<{ name: string; fileName: string; description: string }> = scripts;
 
 export const ScriptDropDown = () => {
   const router = useRouter();

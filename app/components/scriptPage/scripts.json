@@ -1,9 +1,9 @@
 [
-  { "name": "Store Activity Monitor Data", "fileName": "uspStoreActivityMonitorData.sql.zip" },
-  { "name": "Update Statistics By Age", "fileName": "UpdateOldStatistics.zip" },
-  { "name": "Auto Rebuild Indexes", "fileName": "uspReIndexTables.zip" },
-  { "name": "Job Summary", "fileName": "uspJobSummary.zip" },
-  { "name": "DDL Log", "fileName": "tr_LogDDLEvents.zip" },
-  { "name": "All Object Permissions", "fileName": "AllObjectPermissions.zip" },
-  { "name": "DB Size History", "fileName": "DBSizeHistory.zip" }
+  { "name": "Store Activity Monitor Data", "fileName": "uspStoreActivityMonitorData.sql.zip", "description": "This test will capture a snapshot of all the connections to your SQL Server at the time that it runs. Execute this as a job when an alert fires, and you'll have the user connection context for when something went wrong on your server. (Suggested job and alert creation are included in the script.) Two versions provided- one that includes the last command each connection ran, and one that doesn't." },
+  { "name": "Update Statistics By Age", "fileName": "UpdateOldStatistics.zip", "description": "Rather than update statistics on a table manually, which you'll usually do when its performance has already been lagging, run this stored procedure on a schedule to update the statistics that have not been updated in a number of days. Optionally, you may pass the name of a specific table." },
+  { "name": "Auto Rebuild Indexes", "fileName": "uspReIndexTables.zip", "description": "This pair of stored procs together will allow you to defrag/reindex all the tables in a database that you deem necessary, based on a fragmentation percentage you pass in as a parameter. It also keeps a \"Before\" and \"After\" history of your tables' fragmentation with every run, enabling easy reporting on this regular maintenance. Run this as a scheduled job to automate a good portion of your job of keeping your tables streamlined and healthy." },
+  { "name": "Job Summary", "fileName": "uspJobSummary.zip", "description": "Download the .zip file that includes scripts and an SSRS report displaying a history of jobs within date parameters and all their most important execution details." },
+  { "name": "DDL Log", "fileName": "tr_LogDDLEvents.zip", "description": "This script creates DDL triggers to build a history of the creation, altering, or deletion of any of the objects on your database. You'll be able to query and report against that history table." },
+  { "name": "All Object Permissions", "fileName": "AllObjectPermissions.zip", "description": "This script will create a stored procedure that displays all tables, views, functions, and stored procedure (i.e. all securable user objects) alongside which users and roles have explicit permissions on those objects, plus what those permissions are." },
+  { "name": "DB Size History", "fileName": "DBSizeHistory.zip", "description": "Schedule this to run weekly or monthly, and give yourself quick access to patterns in your databases' growth. This stored procedure stores snapshots of database size information at the time you run it, either for all your databases or just the one from which you execute it." }
 ]
