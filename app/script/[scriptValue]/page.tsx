@@ -3,7 +3,7 @@ import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { ScriptContainer } from '~/app/components/scriptPage/dynamicScripts/scriptContainer';
 import { ScriptSelections } from '~/app/components/scriptPage/dynamicScripts/scriptSelections';
-import { IMPORTED_SCRIPTS } from '~/app/components/scriptPage/scriptDropDown';
+import { NeedMoreHelpContainer } from '~/app/components/scriptPage/needMoreHelpContainer';
 import { Separator } from '~/components/ui/separator';
 
 export default async function Page({ params }: { params: { scriptValue: string } }) {
@@ -21,6 +21,7 @@ export default async function Page({ params }: { params: { scriptValue: string }
           <ScriptContainer scriptValue={scriptValue} />
         </div>
       </div>
+      <NeedMoreHelpContainer />
     </main>
   );
 }
