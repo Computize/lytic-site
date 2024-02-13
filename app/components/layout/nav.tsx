@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ServicesDropDown } from '~/app/components/layout/servicesDropDown';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from '~/components/ui/dropdown-menu';
 import { MenuSquare } from 'lucide-react';
+import { Button } from '~/components/ui/button';
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -96,64 +97,53 @@ export function Nav() {
                 />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-white">
-                <DropdownMenuItem className="h-16">
-                  <Link href="/blog">Blog</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="h-16">
-                  <Link href="/script">Script Library</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/video_library"
-                  >
-                    Video Library
-                  </Link>
-                </DropdownMenuItem>
+                <Link href="/blog">
+                  <DropdownMenuItem> Blog</DropdownMenuItem>
+                </Link>
+                <Link href="/script">
+                  <DropdownMenuItem>Script Library</DropdownMenuItem>
+                </Link>
+                <Link
+                  className="block w-full justify-cente
+                    "
+                  href="/video_library"
+                >
+                  <DropdownMenuItem>Video Library</DropdownMenuItem>
+                </Link>
                 <DropdownMenuSeparator />
 
                 <DropdownMenuLabel>Services</DropdownMenuLabel>
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/our_approach"
-                  >
-                    Our Approach
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/service"
-                  >
-                    Core Technologies
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/starter_packages"
-                  >
-                    Starter Packages
-                  </Link>
-                </DropdownMenuItem>
+                <Link
+                  className=""
+                  href="/our_approach"
+                >
+                  <DropdownMenuItem>Our Approach</DropdownMenuItem>
+                </Link>
+                <Link
+                  className=""
+                  href="/service"
+                >
+                  <DropdownMenuItem>Core Technologies</DropdownMenuItem>
+                </Link>
+                <Link
+                  className=""
+                  href="/starter_packages"
+                >
+                  <DropdownMenuItem>Starter Packages</DropdownMenuItem>
+                </Link>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/about"
-                  >
-                    About
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem className="h-16">
-                  <Link
-                    className=""
-                    href="/contact"
-                  >
-                    Contact
-                  </Link>
-                </DropdownMenuItem>
+                <Link
+                  className=""
+                  href="/about"
+                >
+                  <DropdownMenuItem>About</DropdownMenuItem>
+                </Link>
+                <Link
+                  className=""
+                  href="/contact"
+                >
+                  <DropdownMenuItem>Contact</DropdownMenuItem>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
