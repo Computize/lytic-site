@@ -13,11 +13,11 @@ export const WhatWeDo = () => {
     };
 
     controls.start({
-      x: +scrollPosition * 30, // Adjust the scroll speed as needed
+      x: +scrollPosition, // Adjust the scroll speed as needed
     });
 
     const maxMoveLimit = 500; // Adjust the maximum allowed movement
-    const limitedX = Math.max(-scrollPosition * 30, -maxMoveLimit);
+    const limitedX = Math.max(-scrollPosition, -maxMoveLimit);
 
     controls.start({
       x: limitedX,
