@@ -1,6 +1,6 @@
 'use client';
 
-import { useScroll } from 'framer-motion';
+import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 
 export const WhatWeDo = () => {
   return (
@@ -15,10 +15,6 @@ export const WhatWeDo = () => {
           alt="Stock Image Data"
           className=" w-[300px] md:w-[2000px]"
         />
-        {/* <AnimateDiv
-          className="absolute"
-          initialProps={{ translateX: 300, opacity: 0 }}
-        > */}
         <div className="absolute">
           <img
             src="/what-we-do-lineart-img.png"
@@ -31,7 +27,6 @@ export const WhatWeDo = () => {
             className="z-0 w-[300px] md:w-[2000px]"
           />
         </div>
-        {/* </AnimateDiv> */}
       </div>
     </div>
   );

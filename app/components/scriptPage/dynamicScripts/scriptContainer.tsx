@@ -1,6 +1,7 @@
 'use client';
 
 import { AlertCircle, DownloadIcon, MessageSquareMore } from 'lucide-react';
+import { RenderSql } from '~/app/components/scriptPage/dynamicScripts/renderSql';
 import { IMPORTED_SCRIPTS } from '~/app/components/scriptPage/scriptDropDown';
 import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
 import { ScrollArea } from '~/components/ui/scroll-area';
@@ -40,11 +41,12 @@ export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
           </div>
         </div>
         <p>{selectedScript.description}</p>
-
-        <ScrollArea className="h-[200px] w-full rounded-md border p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis eu non diam. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae congue. Diam sollicitudin tempor id eu nisl nunc mi. Odio ut sem nulla pharetra diam sit amet nisl. Pretium quam vulputate dignissim suspendisse. Venenatis urna cursus eget nunc scelerisque viverra mauris. Massa tincidunt dui ut ornare lectus sit amet. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Consequat ac felis donec et. Dignissim suspendisse in est ante in nibh mauris cursus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Suspendisse potenti nullam ac tortor. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Egestas sed tempus urna et pharetra pharetra massa. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae.
-          Risus nullam eget felis eget nunc lobortis mattis aliquam. Purus semper eget duis at tellus at urna. Metus dictum at tempor commodo ullamcorper a. Purus gravida quis blandit turpis. Vitae turpis massa sed elementum tempus egestas. Non arcu risus quis varius quam. Vitae purus faucibus ornare suspendisse sed nisi. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Pellentesque id nibh tortor id aliquet lectus proin. Morbi non arcu risus quis. Velit laoreet id donec ultrices. Aenean sed adipiscing diam donec adipiscing tristique. Fusce ut placerat orci nulla pellentesque dignissim enim sit. Eu non diam phasellus vestibulum lorem. Nulla pharetra diam sit amet nisl suscipit adipiscing. Consectetur a erat nam at. Est velit egestas dui id ornare arcu odio ut. Pellentesque nec nam aliquam sem et tortor. Eget lorem dolor sed viverra. Leo duis ut diam quam nulla. Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Pellentesque elit eget gravida cum.
-          Urna condimentum mattis pellentesque id nibh tortor. Quisque egestas diam in arcu. Urna condimentum mattis pellentesque id nibh tortor id. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus a.
+        <ScrollArea className="h-[200px] w-full flex justify-center items-center border rounded-md p-4">
+          <pre>
+            <code className="text-[9px] w-full overflow-x-scroll">
+              <RenderSql fileName={selectedScript.fileName} />
+            </code>
+          </pre>
         </ScrollArea>
       </div>
     );
