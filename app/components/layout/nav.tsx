@@ -96,13 +96,13 @@ export function Nav() {
                 />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 bg-white">
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link href="/blog">Blog</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link href="/script">Script Library</Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/video_library"
@@ -113,7 +113,7 @@ export function Nav() {
                 <DropdownMenuSeparator />
 
                 <DropdownMenuLabel>Services</DropdownMenuLabel>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/our_approach"
@@ -121,7 +121,7 @@ export function Nav() {
                     Our Approach
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/service"
@@ -129,7 +129,7 @@ export function Nav() {
                     Core Technologies
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/starter_packages"
@@ -138,7 +138,7 @@ export function Nav() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/about"
@@ -146,7 +146,7 @@ export function Nav() {
                     About
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="h-16">
                   <Link
                     className=""
                     href="/contact"

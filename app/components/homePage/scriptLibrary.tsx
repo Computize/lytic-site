@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { Button } from '~/components/ui/button';
 
@@ -26,7 +27,9 @@ export const ScriptLibrary = () => {
       </AnimateDiv>
       <AnimateDiv initialProps={{ opacity: 0, translateX: 75 }}>
         <div className="text-right">
-          <Button className="bg-primary-blue hover:bg-blue-400 h-14 w-auto border-b-4 border-blue-100 text-black font-bold py-4 px-4 rounded-full">SEE ALL SCRIPTS</Button>
+          <Link href="/script">
+            <Button className="bg-primary-blue hover:bg-blue-400 h-14 w-auto border-b-4 border-blue-100 text-black font-bold py-4 px-4 rounded-full">SEE ALL SCRIPTS</Button>
+          </Link>
         </div>
       </AnimateDiv>
     </div>
