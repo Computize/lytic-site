@@ -1,4 +1,3 @@
-import { ScrollArea } from '@radix-ui/react-scroll-area';
 import { SQL_TEMPLATE_STRINGS } from '~/app/components/scriptPage/dynamicScripts/sqlMarkDown';
 
 interface RenderSqlProps {
