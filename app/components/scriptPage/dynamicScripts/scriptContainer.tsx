@@ -1,6 +1,7 @@
 'use client';
 
 import { AlertCircle, DownloadIcon, MessageSquareMore } from 'lucide-react';
+import { RenderSql } from '~/app/components/scriptPage/dynamicScripts/renderSql';
 import { IMPORTED_SCRIPTS } from '~/app/components/scriptPage/scriptDropDown';
 import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
 
@@ -39,13 +40,7 @@ export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
           </div>
         </div>
         <p>{selectedScript.description}</p>
-        {/* <ScrollArea className="h-[200px] w-full flex justify-center items-center border rounded-md p-4">
-          <pre>
-            <code className="text-[9px] w-full overflow-x-scroll">
-              <RenderSql fileName={selectedScript.fileName} />
-            </code>
-          </pre>
-        </ScrollArea> */}
+        <RenderSql fileName={selectedScript.fileName} />
       </div>
     );
   }
