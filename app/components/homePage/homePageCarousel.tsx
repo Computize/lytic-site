@@ -51,6 +51,7 @@ export const HomePageCarousel = () => {
                   <div className="text-white flex flex-col justify-evenly">
                     <div className="h-9" />
                     <AnimateDiv
+                      viewPortOnce={false}
                       initialProps={{ opacity: '0', translateY: -50 }}
                       delay={0.75}
                     >
@@ -58,13 +59,15 @@ export const HomePageCarousel = () => {
                     </AnimateDiv>
                     <div className="h-9" />
                     <AnimateDiv
-                      initialProps={{ opacity: '0', translateX: -100 }}
+                      viewPortOnce={false}
+                      initialProps={{ opacity: '0', translateX: -10 }}
                       delay={0.75}
                     >
                       <p className="text-white text-2xl">{description}</p>
                     </AnimateDiv>
                     <div className="h-9" />
                     <AnimateDiv
+                      viewPortOnce={false}
                       initialProps={{ opacity: '0', translateY: 50 }}
                       delay={0.75}
                     >
