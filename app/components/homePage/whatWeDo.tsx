@@ -1,11 +1,8 @@
 'use client';
 
 import { useScroll } from 'framer-motion';
-import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 
 export const WhatWeDo = () => {
-  const { scrollYProgress } = useScroll();
-
   return (
     <div className="flex flex-col md:flex-row items-center justify-between h-auto gap-7 py-20">
       <div className="flex flex-col gap-3 md:gap-10 px-6 md:ml-40">
@@ -18,23 +15,23 @@ export const WhatWeDo = () => {
           alt="Stock Image Data"
           className=" w-[300px] md:w-[2000px]"
         />
-        <AnimateDiv
+        {/* <AnimateDiv
           className="absolute"
           initialProps={{ translateX: 300, opacity: 0 }}
-        >
-          <div>
-            <img
-              src="/what-we-do-lineart-img.png"
-              alt="Stock Image Data"
-              className="absolute z-10 w-[300px] md:w-[2000px]"
-            />
-            <img
-              src="/what-we-do-main-img.png"
-              alt="Stock Image Data"
-              className="z-0 w-[300px] md:w-[2000px]"
-            />
-          </div>
-        </AnimateDiv>
+        > */}
+        <div className="absolute">
+          <img
+            src="/what-we-do-lineart-img.png"
+            alt="Stock Image Data"
+            className="absolute z-10 w-[300px] md:w-[2000px]"
+          />
+          <img
+            src="/what-we-do-main-img.png"
+            alt="Stock Image Data"
+            className="z-0 w-[300px] md:w-[2000px]"
+          />
+        </div>
+        {/* </AnimateDiv> */}
       </div>
     </div>
   );
