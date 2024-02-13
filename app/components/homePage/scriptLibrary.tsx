@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
+import { PageTitle } from '~/app/components/pageTitle';
 import { Button } from '~/components/ui/button';
 
 export const ScriptLibrary = () => {
@@ -13,7 +14,7 @@ export const ScriptLibrary = () => {
       }}
     >
       <AnimateDiv initialProps={{ opacity: 0, translateX: 75 }}>
-        <p className="text-white text-3xl md:text-6xl font-bold text-right">SCRIPT LIBRARY</p>
+        <PageTitle title="SCRIPT LIBRARY" />
       </AnimateDiv>
 
       <AnimateDiv initialProps={{ opacity: 0, translateX: -75 }}>
