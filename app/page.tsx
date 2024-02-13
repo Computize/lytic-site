@@ -13,7 +13,7 @@ export const metadata = generateMetadata('Home');
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full items-center">
+    <main className="flex flex-col w-full items-center overflow-x-hidden">
       <HomePageCarousel />
       <section id="what-we-do">
         <WhatWeDo />

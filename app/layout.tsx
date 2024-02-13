@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Nav />
         </div>
         {/* // NOTE: possibly remove min-h-screen */}
-        <div className="min-h-screen">{children}</div>
+        <div className="min-h-screen overflow-x-hidden">{children}</div>
         <Footer />
       </body>
     </html>

@@ -28,7 +28,7 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
 
 export const HomePageCarousel = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <Carousel
         opts={{
           loop: true,
