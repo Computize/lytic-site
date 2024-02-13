@@ -8,7 +8,7 @@ import { cn } from '~/lib/utils';
 
 export const ScriptSelections = ({ scriptValue }: { scriptValue: string }) => {
   return (
-    <Card className={cn('w-full md:w-6/12 rounded-none border-0')}>
+    <Card className={cn('w-full md:w-[300px] rounded-none border-0')}>
       <CardHeader className="bg-primary-green text-white">
         <CardTitle className="font-bold">SELECT A SCRIPT</CardTitle>
       </CardHeader>

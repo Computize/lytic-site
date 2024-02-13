@@ -6,7 +6,6 @@ interface RenderSqlProps {
 }
 
 export const RenderSql = ({ fileName }: RenderSqlProps) => {
-  console.log(fileName);
   const { allObjectPermissions, autoRebuildIndexes, dbSizeHistory, ddlLog, jobSummary, storeActivityMonitorData, uploadStatisticsByAge } = SQL_TEMPLATE_STRINGS;
   let codeBlock = ``;
   switch (fileName) {
@@ -33,7 +32,7 @@ export const RenderSql = ({ fileName }: RenderSqlProps) => {
       break;
   }
   return (
-    <div className="border-2 rounded p-4 h-[400px] overflow-y-scroll overflow-x-scroll">
+    <div className="border-2 rounded p-4 text-[9px] h-[400px] w-full overflow-y-scroll overflow-x-scroll">
       {
         <pre>
           <code>{codeBlock}</code>
