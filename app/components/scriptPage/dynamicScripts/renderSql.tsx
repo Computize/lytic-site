@@ -1,5 +1,4 @@
 import { ScrollArea } from '@radix-ui/react-scroll-area';
-import Markdown from 'markdown-to-jsx';
 
 interface RenderSqlProps {
   fileName: string;
