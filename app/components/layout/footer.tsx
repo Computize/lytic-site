@@ -56,14 +56,18 @@ export async function Footer() {
       <div className="border-t-2 w-11/12 border-primary-gray" />
       <div className="flex w-9/12 flex-row gap-4 justify-center md:justify-between items-center text-primary-gray text-xs">
         <div className="flex flex-row items-center gap-1">
-          <FaLinkedin
-            size={35}
-            color="#9bbc5a"
-          />
-          <FaFacebookSquare
-            size={35}
-            color="#9bbc5a"
-          />
+          <Link href="https://www.linkedin.com/in/edward-heraux-pmp-mcse-7308261/">
+            <FaLinkedin
+              size={35}
+              color="#9bbc5a"
+            />
+          </Link>
+          <Link href="https://www.facebook.com/">
+            <FaFacebookSquare
+              size={35}
+              color="#9bbc5a"
+            />
+          </Link>
         </div>
         <div className="flex items-center justify-center">
           <p className="text-center">© 2020 The Lytic Group. All Rights Reserved</p>
