@@ -9,12 +9,12 @@ const arrayOfImageSources = [
     alt: 'Rabobank Logo',
   },
   {
-    src: '/ny-courts-logo.png',
-    alt: 'NY Courts Logo',
-  },
-  {
     src: '/fordham-law-school-logo.png',
     alt: 'Fordham Law School logo',
+  },
+  {
+    src: '/ny-courts-logo.png',
+    alt: 'NY Courts Logo',
   },
   {
     src: '/caremount-medical-logo.png',
@@ -28,18 +28,25 @@ const arrayOfImageSources = [
     src: '/sba-logo.png',
     alt: 'SBA Logo',
   },
+  {
+    src: '/nypd-logo.png',
+    alt: 'NYPD Logo',
+  },
+  {
+    src: '/shake-shack-logo.png',
+    alt: 'Shake Shack Logo',
+  },
 ];
 
 export const SomeOfOurClients = () => {
   return (
     <div className="flex flex-col gap-2 md:gap-6 justify-center items-center h-auto py-10 px-9">
       <p className="text-4xl text-center text-primary-green font-bold">SOME OF OUR CLIENTS</p>
-      <div className="hidden md:grid grid-cols-6 ">
+      <div className="hidden md:flex flex-row overflow-x-scroll gap-5">
         {arrayOfImageSources.map(({ alt, src }, idx) => {
           return (
-            <Image
-              height={300}
-              width={300}
+            <img
+              className="h-[275px]"
               src={src}
               alt={alt}
               key={idx}
