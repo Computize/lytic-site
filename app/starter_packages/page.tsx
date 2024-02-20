@@ -27,7 +27,7 @@ export default function Page() {
       <StarterPackagesCardsContainer />
       <div className="flex flex-col w-full gap-10 justify-center items-center mb-16">
         <div className="border-t-[1px] border-gray-400 w-10/12" />
-        <p className="text-gray-500 text-xl text-center">pricing is per Synapse Workspace or data warehouse</p>
+        <p className="text-gray-500 text-xl text-center">*pricing is per Synapse Workspace or data warehouse</p>
       </div>
       <LetsTalk
         heading="LET'S TALK"

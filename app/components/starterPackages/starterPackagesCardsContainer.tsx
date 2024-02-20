@@ -47,7 +47,7 @@ const packageAndDetails00: PackageAndDetails = {
   subTitle: ' Easing your way into your first cloud data warehouse in Azure.',
   footerContent: "We'll show you what Synapse is capable of, by doing an end-to-end build of a BI solution with your own data, including",
   imageSource: '/Shape1.png',
-  packagePrice: '14,999',
+  packagePrice: '14,999*',
   detailsList: listItems00,
 };
 const packageAndDetails01: PackageAndDetails = {
@@ -71,7 +71,7 @@ const packageAndDetails03: PackageAndDetails = {
   subTitle: 'New Azure data warehouse customers concerned with durability and costs.',
   footerContent: 'Once your data warehouse is in place on the Azure platform, a Lytic Group specialist can be assigned to monitor and help ensure its continued success.',
   imageSource: '/Shape4.png',
-  packagePrice: '999 monthly',
+  packagePrice: '999 monthly*',
   detailsList: listItems03,
 };
 const arrayOfPackages: Array<PackageAndDetails> = [packageAndDetails00, packageAndDetails01, packageAndDetails02, packageAndDetails03];
