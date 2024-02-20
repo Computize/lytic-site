@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { ServicesDropDown } from '~/app/components/layout/servicesDropDown';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from '~/components/ui/dropdown-menu';
 import { MenuSquare } from 'lucide-react';
-import { Button } from '~/components/ui/button';
 
 export function Nav() {
   const [isScrolled, setIsScrolled] = React.useState(false);
