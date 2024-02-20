@@ -1,7 +1,9 @@
+'use client';
 import Link from 'next/link';
+import React from 'react';
 import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { Button } from '~/components/ui/button';
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '~/components/ui/carousel';
 
 const arrayOfSlides: Array<{ title: string; description: string; colorBlend: string }> = [
   {
@@ -27,9 +29,27 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
 ];
 
 export const HomePageCarousel = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+  const [count, setCount] = React.useState(4);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on('select', () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden relative">
       <Carousel
+        setApi={setApi}
         opts={{
           loop: true,
         }}
@@ -87,8 +107,20 @@ export const HomePageCarousel = () => {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="left-5" />
-        <CarouselNext className="right-5" />
+        {/* <CarouselPrevious className="left-5" /> */}
+        {/* <CarouselNext className="right-5" /> */}
+
+        <div className="absolute inset-x-0 bottom-5 w-4 h-4 mx-auto my-auto flex justify-center gap-4">
+          <div className="flex flex-row gap-4">
+            {Array.from(Array(count).keys()).map((i) => (
+              <button
+                key={i}
+                className={`h-4 w-4 rounded-full ${current === i ? 'bg-primary-green' : 'bg-orange-300'} hover:bg-primary-green`}
+                onClick={() => api?.scrollTo(i)}
+              />
+            ))}
+          </div>
+        </div>
       </Carousel>
     </div>
   );
