@@ -13,7 +13,7 @@ export const ServicesDropDown = () => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent>
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link
             className=""
             href="/our_approach"
@@ -21,7 +21,7 @@ export const ServicesDropDown = () => {
             OUR APPROACH
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link
             className=""
             href="/service"
@@ -29,7 +29,7 @@ export const ServicesDropDown = () => {
             CORE TECHNOLOGIES
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem>
+        <DropdownMenuItem asChild>
           <Link
             className=""
             href="/starter_packages"
