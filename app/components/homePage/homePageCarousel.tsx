@@ -55,7 +55,7 @@ export const HomePageCarousel = () => {
                       initialProps={{ opacity: '0', translateY: -50 }}
                       delay={0.75}
                     >
-                      <p className="text-4xl font-bold">{title}</p>
+                      <p className="text-4xl md:text-5xl font-bold">{title}</p>
                     </AnimateDiv>
                     <div className="h-9" />
                     <AnimateDiv
