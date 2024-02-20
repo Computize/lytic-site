@@ -1,9 +1,17 @@
 'use server';
 import Image from 'next/image';
-import { Card, CardContent } from '~/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '~/components/ui/carousel';
 
 const arrayOfImageSources = [
+  // TODO: scale down shake shack
+  {
+    src: '/shake-shack-logo.png',
+    alt: 'Shake Shack Logo',
+  },
+  {
+    src: '/nypd-logo.png',
+    alt: 'NYPD Logo',
+  },
   {
     src: '/rabobank-logo.png',
     alt: 'Rabobank Logo',
@@ -11,6 +19,10 @@ const arrayOfImageSources = [
   {
     src: '/fordham-law-school-logo.png',
     alt: 'Fordham Law School logo',
+  },
+  {
+    src: '/92-y-logo.png',
+    alt: '92 Y Logo',
   },
   {
     src: '/ny-courts-logo.png',
@@ -21,20 +33,8 @@ const arrayOfImageSources = [
     alt: 'Caremoung Medical Logo',
   },
   {
-    src: '/92-y-logo.png',
-    alt: '92 Y Logo',
-  },
-  {
     src: '/sba-logo.png',
     alt: 'SBA Logo',
-  },
-  {
-    src: '/nypd-logo.png',
-    alt: 'NYPD Logo',
-  },
-  {
-    src: '/shake-shack-logo.png',
-    alt: 'Shake Shack Logo',
   },
 ];
 

@@ -1,7 +1,5 @@
 'use server';
 import Link from 'next/link';
-import { FaLinkedin } from 'react-icons/fa';
-import { FaFacebookSquare } from 'react-icons/fa';
 
 import React from 'react';
 
@@ -55,31 +53,8 @@ export async function Footer() {
       </div>
       <div className="border-t-2 w-11/12 border-primary-gray" />
       <div className="flex w-9/12 flex-row gap-4 justify-center md:justify-between items-center text-primary-gray text-xs">
-        <div className="flex flex-row items-center gap-1 text-primary-green">
-          <Link href="https://www.linkedin.com/in/edward-heraux-pmp-mcse-7308261/">
-            <FaLinkedin
-              size={35}
-              className="hover:text-blue-500"
-            />
-          </Link>
-          <Link href="https://www.facebook.com/">
-            <FaFacebookSquare
-              size={35}
-              className="hover:text-blue-500"
-            />
-          </Link>
-        </div>
-        <div className="flex items-center justify-center">
-          <p className="text-center">© 2020 The Lytic Group. All Rights Reserved</p>
-        </div>
-        <div className="flex flex-row items-center gap-1">
-          <p>Design by</p>
-          <Link href="http://www.wearelion.nyc/">
-            <img
-              src="/btm-lion-logo.png"
-              className="w-[100px] sm:w-auto"
-            />
-          </Link>
+        <div className="w-full flex items-center justify-center">
+          <p className="text-center">© 2020 The Lytic Group. All Rights w-full Reserved</p>
         </div>
       </div>
     </footer>
