@@ -1,5 +1,8 @@
 'use server';
 import Link from 'next/link';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaFacebookSquare } from 'react-icons/fa';
+
 import React from 'react';
 
 export async function Footer() {
@@ -50,9 +53,30 @@ export async function Footer() {
           CONTACT
         </Link>
       </div>
-      <div className="border-t-2 w-6/12 border-primary-gray"></div>
-      <div>
-        <p className="text-primary-gray text-xs pt-4">© 2020 The Lytic Group. All Rights Reserved</p>
+      <div className="border-t-2 w-11/12 border-primary-gray" />
+      <div className="flex w-9/12 flex-row gap-4 justify-center md:justify-between items-center text-primary-gray text-xs">
+        <div className="flex flex-row items-center gap-1">
+          <FaLinkedin
+            size={35}
+            color="#9bbc5a"
+          />
+          <FaFacebookSquare
+            size={35}
+            color="#9bbc5a"
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <p className="text-center">© 2020 The Lytic Group. All Rights Reserved</p>
+        </div>
+        <div className="flex flex-row items-center gap-1">
+          <p>Design by</p>
+          <Link href="http://www.wearelion.nyc/">
+            <img
+              src="/btm-lion-logo.png"
+              className="w-[100px] sm:w-auto"
+            />
+          </Link>
+        </div>
       </div>
     </footer>
   );
