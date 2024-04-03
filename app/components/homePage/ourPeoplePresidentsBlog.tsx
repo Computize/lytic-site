@@ -19,7 +19,7 @@ export const OurPeoplePresidentsBlog = () => {
             <p className="text-primary-blue text-5xl font-bold">OUR PEOPLE</p>
             <p className="text-2xl w-auto">Our people and their people skills are the key to our success. Find out what it takes be on the Lytic Group team, and make our customers happy.</p>
             <div className="flex">
-              <Button className="bg-primary-blue hover:bg-blue-400 w-auto border-b-4 border-blue-100 text-white font-bold py-2 px-4 rounded-full">
+              <Button className="bg-primary-blue text-lg hover:bg-blue-400 w-auto border-b-4 border-blue-100 text-white font-bold py-7 px-8 rounded-full">
                 <Link href="/about">MEET OUR TEAM</Link>
               </Button>
             </div>
@@ -40,7 +40,7 @@ export const OurPeoplePresidentsBlog = () => {
             <p className="text-primary-green text-5xl font-bold">PRESIDENT&apos;S BLOG</p>
             <p className="text-2xl w-auto">Thoughts on how to be a great consultant and an indispensable asset to a customer.</p>
             <div className="flex">
-              <Button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 font-bold text-white py-2 px-4 rounded-full">
+              <Button className="text-lg bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 font-bold text-white py-7 px-8 rounded-full">
                 <Link href="/blog">READ THE BLOG</Link>
               </Button>
             </div>
