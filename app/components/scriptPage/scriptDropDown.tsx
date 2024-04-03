@@ -19,7 +19,7 @@ export const ScriptDropDown = () => {
         <SelectTrigger className="w-[350px] md:w-[500px] lg:w-[700px] h-[50px] bg-primary-green rounded-none text-white italic text-lg">
           <SelectValue placeholder="SELECT A SCRIPT"></SelectValue>
         </SelectTrigger>
-        <SelectContent className="">
+        <SelectContent>
           <SelectGroup>
             {IMPORTED_SCRIPTS.map(({ name }, idx) => {
               return (

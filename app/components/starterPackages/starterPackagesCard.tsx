@@ -29,7 +29,7 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
                   height="100px"
                 />
                 <div className="flex flex-col gap-4">
-                  <CardTitle className="text-gray-600 text-xl md:text-3xl">{title}</CardTitle>
+                  <CardTitle className="text-gray-600 text-xl md:text-2xl">{title}</CardTitle>
                   <div className="text-gray-600 flex flex-row gap-2">
                     <p className="font-bold">FOR:</p>
                     <p>{subTitle}</p>
@@ -51,7 +51,7 @@ export const StarterPackagesCard = ({ footerContent, subTitle, title, imageSourc
               </div>
             </AccordionContent>
           </CardContent>
-          <CardFooter className="rounded-b-md bg-background-green pt-6">
+          <CardFooter className="rounded-b-md bg-[#eef5dd] pt-6">
             <p className="text-gray-600 text-lg">{footerContent}</p>
           </CardFooter>
         </AccordionItem>

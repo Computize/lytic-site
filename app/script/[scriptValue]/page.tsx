@@ -23,7 +23,10 @@ export default async function Page({ params }: { params: { scriptValue: string }
           <ScriptContainer scriptValue={scriptValue} />
         </div>
       </div>
-      <NeedMoreHelpContainer />
+      <NeedMoreHelpContainer
+        bannerTitle="WANT MORE?"
+        buttonCallToAction="CONTACT US"
+      />
     </main>
   );
 }

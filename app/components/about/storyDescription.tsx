@@ -1,6 +1,6 @@
 export const StoryDescription = () => {
   return (
-    <div className="text-gray-600 text-sm flex flex-col md:flex-row justify-center gap-4">
+    <div className="text-gray-600 text-lg flex flex-col md:flex-row justify-center gap-4">
       <div className="w-10/2 md:w-5/12">
         <p>Founder Edward Heraux started out as a technical trainer, but moved into consulting very early in his career. After about 15 years as an independent contractor in data architecture, ETL, and reporting, he saw an opportunity after realizing that every new customer had tales of nightmare experiences with consultants. Abandoned projects, over-billing with no progress to show for it, lies about deliverables and their capabilities, and more stories of how they could never reconcile what was promised with what was being delivered.</p>
         <p>It was clear at that point that transparency, honesty, and clarity were rare in the business whereas they should be standard.</p>

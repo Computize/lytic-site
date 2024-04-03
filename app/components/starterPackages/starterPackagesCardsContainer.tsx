@@ -30,8 +30,8 @@ const listItems01: Array<TitleAndListItems> = [
 const listItems02: Array<TitleAndListItems> = [
   { title: 'Data Warehouse architecture', listItems: ['Configuring Azure data storage', 'Configuring Compute'] },
   { title: 'Azure commitment & licensing', listItems: ['ELT', 'Azure Data Factory', 'Data Bricks'] },
-  { title: 'Querying Data', listItems: ['EQuerying & Scripting in Synapse', 'EAnalytic cubes with Azure Analysis Services', 'EAScheduling refreshes'] },
-  { title: 'Reporting', listItems: ['EConnecting reporting tools to your DW', 'E(Power BI, Tableau, etc)'] },
+  { title: 'Querying Data', listItems: ['Querying & Scripting in Synapse', 'Analytic cubes with Azure Analysis Services', 'Scheduling refreshes'] },
+  { title: 'Reporting', listItems: ['Connecting reporting tools to your DW', '(Power BI, Tableau, etc)'] },
   { title: '', listItems: ['Follow-on mentoring and project supervision is also available.'] },
 ];
 const listItems03: Array<TitleAndListItems> = [
@@ -45,13 +45,13 @@ const listItems03: Array<TitleAndListItems> = [
 const packageAndDetails00: PackageAndDetails = {
   title: 'Data Warehouse Proof of Concept',
   subTitle: ' Easing your way into your first cloud data warehouse in Azure.',
-  footerContent: "We'll show you what Synapse is capable of, by doing an end-to-end build of a BI solution with your own data, including",
+  footerContent: "We'll show you what Microsoft Synapse and Microsoft Fabric are capable of, by building an end-to-end analytics solution using your own data.",
   imageSource: '/Shape1.png',
   packagePrice: '14,999*',
   detailsList: listItems00,
 };
 const packageAndDetails01: PackageAndDetails = {
-  title: 'Data Warehousing/Lake Readiness Assessment',
+  title: 'Data Warehouse/Data Lake Readiness Assessment',
   subTitle: 'Help convincing top management to sponsor data lake/data warehouse project.',
   footerContent: "Let us work with your data stewards to document the path from your current silo'ed data sources to a BI- and analytics-ready data warehouse or data lake.",
   imageSource: '/Shape2.png',

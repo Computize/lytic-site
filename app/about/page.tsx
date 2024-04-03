@@ -16,7 +16,7 @@ export default function Page() {
         className="h-[262px]"
       >
         <PageBlurb
-          className="drop-shadow-lg text-lg px-10 md:px-0 md:text-4xl text-left max-w-3xl"
+          className="drop-shadow-lg text-lg px-10 md:px-0 md:text-4xl text-left max-w-3xl mr-10 lg:mr-64"
           blurb={blurbString}
         />
       </PageUpperImageContainer>

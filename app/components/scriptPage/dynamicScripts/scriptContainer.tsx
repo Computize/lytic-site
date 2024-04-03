@@ -23,7 +23,7 @@ export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
   } else {
     return (
       <div className="w-11/12 flex flex-col gap-4">
-        <p className="font-bold text-2xl">{selectedScript.name}</p>
+        <p className="font-bold text-2xl ml-4">{selectedScript.name}</p>
         <div className="flex flex-wrap gap-2 text-gray-600">
           <div className="flex flex-row gap-2 text-gray-600">
             <DownloadIcon />

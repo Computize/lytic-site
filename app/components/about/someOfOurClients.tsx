@@ -2,11 +2,16 @@
 import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '~/components/ui/carousel';
 
-const arrayOfImageSources = [
+const arrayOfImageSources: {
+  src: string;
+  alt: string;
+  width?: number;
+}[] = [
   // TODO: scale down shake shack
   {
     src: '/shake-shack-logo.png',
     alt: 'Shake Shack Logo',
+    width: 200,
   },
   {
     src: '/nypd-logo.png',
@@ -43,10 +48,15 @@ export const SomeOfOurClients = () => {
     <div className="flex flex-col gap-2 md:gap-6 justify-center items-center h-auto py-10 px-9">
       <p className="text-4xl text-center text-primary-green font-bold">SOME OF OUR CLIENTS</p>
       <div className="hidden md:flex flex-row overflow-x-scroll gap-5">
-        {arrayOfImageSources.map(({ alt, src }, idx) => {
+        {arrayOfImageSources.map(({ alt, src, width }, idx) => {
           return (
             <img
               className="h-[275px]"
+              style={{
+                objectFit: 'contain',
+                width: '200px',
+                height: 'auto',
+              }}
               src={src}
               alt={alt}
               key={idx}
@@ -64,13 +74,16 @@ export const SomeOfOurClients = () => {
         }}
       >
         <CarouselContent>
-          {arrayOfImageSources.map(({ alt, src }, idx) => {
+          {arrayOfImageSources.map(({ alt, src, width }, idx) => {
             return (
               <CarouselItem key={idx}>
-                <div className="flex justify-center">
-                  <Image
-                    height={300}
-                    width={300}
+                <div className="flex items-center">
+                  <img
+                    style={{
+                      objectFit: 'contain',
+                      width: '200px',
+                      height: 'auto',
+                    }}
                     src={src}
                     alt={alt}
                     key={idx}

@@ -72,7 +72,6 @@ export default async function Page() {
         <BlogPreviewCardContainer blogItems={mockBlogData} />
         <BlogCategories />
       </div>
-      <GetOurNewsletter />
     </main>
   );
 }

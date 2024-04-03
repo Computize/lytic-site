@@ -1,5 +1,4 @@
 'use client';
-import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { IMPORTED_SCRIPTS } from '~/app/components/scriptPage/scriptDropDown';
 import { Button } from '~/components/ui/button';
@@ -28,7 +27,6 @@ export const ScriptSelections = ({ scriptValue }: { scriptValue: string }) => {
                   className="w-full flex flex-row items-center justify-between"
                 >
                   <p>{name.toUpperCase()}</p>
-                  <ChevronRight />
                 </Link>
               </div>
             </Button>
