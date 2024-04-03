@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 
 export const WhatWeDo = () => {
   const controls = useAnimation();
-  const [scrollPosition, setScrollPosition] = useState(0);
+  //TODO:  start position is still bugging out
+  const [scrollPosition, setScrollPosition] = useState(-200);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,7 +14,7 @@ export const WhatWeDo = () => {
     };
 
     controls.start({
-      x: +scrollPosition, // Adjust the scroll speed as needed
+      x: +scrollPosition * 0.5, // Adjust the scroll speed as needed
     });
 
     const maxMoveLimit = 500; // Adjust the maximum allowed movement
