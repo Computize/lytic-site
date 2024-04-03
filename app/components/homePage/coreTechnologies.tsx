@@ -23,6 +23,7 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+          {/* TODO: UPDATE. POWER BI logo  without text, add the Fabric logo. Logos in a row with  */}
           <TechnologyAndImage
             arrayOfText={techArray1}
             imageSource={isOnHomePage ? 'power_bi1_white.png' : '/power_bi.png'}
