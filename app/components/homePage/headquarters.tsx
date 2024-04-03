@@ -11,9 +11,9 @@ export const Headquarters = () => {
           <p>155 Water St. Brooklyn, NY 11201</p>
         </div>
         <div>
-          <p>Tel: (917) 804-0330</p>
           <p>Email: info@lyticgroup.com</p>
           <p>http://www.lyticgroup.com</p>
+          <p>Tel: (917) 804-0330</p>
         </div>
       </div>
       <div className="flex justify-center items-center">

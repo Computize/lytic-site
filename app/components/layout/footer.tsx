@@ -54,7 +54,7 @@ export async function Footer() {
       <div className="border-t-2 w-11/12 border-primary-gray" />
       <div className="flex w-9/12 flex-row gap-4 justify-center md:justify-between items-center text-primary-gray text-xs">
         <div className="w-full flex items-center justify-center">
-          <p className="text-center">© 2020 The Lytic Group. All Rights w-full Reserved</p>
+          <p className="text-center">© {new Date().getFullYear()} The Lytic Group. All Rights w-full Reserved</p>
         </div>
       </div>
     </footer>

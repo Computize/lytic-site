@@ -13,9 +13,10 @@ export const TechnologyAndImage = ({ imageSources, arrayOfText }: TechnologyAndI
   return (
     <div className="flex flex-col gap-10">
       <div className="flex justify-center items-center h-36">
-        {imageSources.map(({ height, src, width }) => {
+        {imageSources.map(({ height, src, width }, idx) => {
           return (
             <img
+              key={idx}
               alt="Tech Logo"
               src={src}
               width={width ?? '200px'}
