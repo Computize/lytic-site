@@ -8,6 +8,8 @@ import { Button } from '~/components/ui/button';
 import { FormField, FormItem, FormControl, FormMessage } from '~/components/ui/form';
 import { Input } from '~/components/ui/input';
 import { Textarea } from '~/components/ui/textarea';
+import { ToastAction } from '~/components/ui/toast';
+import { useToast } from '~/components/ui/use-toast';
 
 const contactSchema = z.object({
   fullName: z
@@ -45,11 +47,9 @@ const contactSchema = z.object({
 });
 type ContactSchema = z.infer<typeof contactSchema>;
 
-async function onSubmit(values: ContactSchema) {
-  console.log(values);
-}
-
 export const ContactForm = () => {
+  const { toast } = useToast();
+
   const form = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -65,7 +65,26 @@ export const ContactForm = () => {
     <div className="flex flex-col justify-center gap-6 items-center">
       <FormWrapper
         form={form}
-        onSubmit={onSubmit}
+        onSubmit={async (values: ContactSchema) => {
+          const response = await fetch('/api/contact', {
+            method: 'post',
+            body: JSON.stringify(values),
+          });
+          if (!response.ok) {
+            toast({
+              variant: 'destructive',
+              title: 'Uh oh! Something went wrong.',
+              description: 'There was an issue sending the request',
+            });
+          } else {
+            toast({
+              className: 'bg-primary-green',
+              variant: 'default',
+              title: 'Success!',
+              description: 'Your contact request has been sent.',
+            });
+          }
+        }}
       >
         <FormField
           control={form.control}

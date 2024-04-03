@@ -3,6 +3,7 @@ import { Open_Sans } from 'next/font/google';
 import './globals.css';
 import { Nav } from '~/app/components/layout/nav';
 import { Footer } from '~/app/components/layout/footer';
+import { Toaster } from '~/components/ui/toaster';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         {/* // NOTE: possibly remove min-h-screen */}
         <div className="min-h-screen overflow-x-hidden">{children}</div>
+        <Toaster />
         <Footer />
       </body>
     </html>
