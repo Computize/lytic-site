@@ -4,7 +4,7 @@ import { TechnologyAndImage } from '~/app/components/service/technologyAndImage'
 import { cn } from '~/lib/utils';
 
 const techArray0: Array<string> = ['Data Warehouse & Data Lake', 'ETL & ELT', 'Azure Analysis Services', 'Azure DataFactory & DataBricks', 'Assessments, Monitoring'];
-const techArray1: Array<string> = ['Dashboard Development', 'Cloud & On-Prem Integration', 'Data Strategy', 'Training'];
+const techArray1: Array<string> = ['Dashboard Development', 'Data Modeling', 'Cloud & On-Prem Integration', 'Data Strategy', 'Training'];
 const techArray2: Array<string> = ['Migrations – Cloud & On-Prem', 'Governance & Compliance', 'Development & Automation Solutions', 'Sharepoint Site Planning & Architecture', 'Training'];
 
 interface CoreTechnologiesProps {

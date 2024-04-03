@@ -50,14 +50,8 @@ const testimonialsArray: Array<Testimonial> = [
 ];
 export const Testimonials = () => {
   return (
-    <div
-      className="flex flex-col justify-center items-center w-full h-[1032px] bg-cover bg-center bg-no-repeat"
-      style={{
-        objectFit: 'fill',
-        backgroundImage: "url('/testimonial-bg.jpg')",
-      }}
-    >
-      <div className="w-11/12 md:w-8/12 flex flex-col justify-center items-center gap-10">
+    <div className="flex flex-col justify-center items-center w-full h-[600px] bg-[url('/testimonial-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="w-11/12 md:w-8/12 flex flex-col justify-center items-center mr-0 lg:mr-64 gap-10">
         <p className="text-primary-blue text-5xl font-bold">TESTIMONIALS</p>
         <Carousel
           autoPlay={false}

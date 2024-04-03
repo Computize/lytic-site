@@ -6,15 +6,14 @@ import { Button } from '~/components/ui/button';
 export const ScriptLibrary = () => {
   return (
     <div
-      className="flex flex-col gap-10 h-[700px] lg:h-[1200px] w-full px-6 md:px-60 bg-cover bg-center justify-center bg-no-repeat"
-      style={{
-        objectFit: 'fill',
-        width: 'auto',
-        backgroundImage: "url('/home-page-script-sec.png')",
-      }}
+      // TODO: fix tailwind issue
+      className="flex flex-col gap-10 bg-[url('/home-page-script-sec.png')] w-full px-6  h-[700px] md:px-60 bg-cover bg-center justify-center bg-no-repeat"
     >
       <AnimateDiv initialProps={{ opacity: 0, translateX: 75 }}>
-        <PageTitle title="SCRIPT LIBRARY" />
+        <PageTitle
+          title="SCRIPT LIBRARY"
+          className="text-right"
+        />
       </AnimateDiv>
 
       <AnimateDiv initialProps={{ opacity: 0, translateX: -75 }}>
