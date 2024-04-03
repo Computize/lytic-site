@@ -1,17 +1,28 @@
+interface ImageSourceAndDimensions {
+  src: string;
+  width?: string;
+  height?: string;
+}
+
 interface TechnologyAndImageProps {
-  imageSource: string;
+  imageSources: Array<ImageSourceAndDimensions>;
   arrayOfText: Array<string>;
 }
 
-export const TechnologyAndImage = ({ imageSource, arrayOfText }: TechnologyAndImageProps) => {
+export const TechnologyAndImage = ({ imageSources, arrayOfText }: TechnologyAndImageProps) => {
   return (
     <div className="flex flex-col gap-10">
       <div className="flex justify-center items-center h-36">
-        <img
-          alt="Tech Logo"
-          src={imageSource}
-          width={'200px'}
-        />
+        {imageSources.map(({ height, src, width }) => {
+          return (
+            <img
+              alt="Tech Logo"
+              src={src}
+              width={width ?? '200px'}
+              height={height ?? '150px'}
+            />
+          );
+        })}
       </div>
       <div className="flex flex-col gap-4">
         {arrayOfText.map((item, idx) => {

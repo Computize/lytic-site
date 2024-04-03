@@ -19,20 +19,28 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
         <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
           <TechnologyAndImage
             arrayOfText={techArray0}
-            imageSource="/azure.png"
+            imageSources={[{ src: '/azure.png' }]}
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
           {/* TODO: UPDATE. POWER BI logo  without text, add the Fabric logo. Logos in a row with  */}
           <TechnologyAndImage
             arrayOfText={techArray1}
-            imageSource={isOnHomePage ? 'power_bi1_white.png' : '/power_bi.png'}
+            // NOTE: temp redundant ternary while
+            imageSources={
+              isOnHomePage
+                ? [
+                    { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '150' },
+                    { src: '/Fabric_final_x256.png', width: '150' },
+                  ]
+                : [{ src: '/Microsoft-Power-BI-Logo_PNG4.png' }]
+            }
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateX: 50 }}>
           <TechnologyAndImage
             arrayOfText={techArray2}
-            imageSource="/microsoft_office.png"
+            imageSources={[{ src: '/microsoft365.png', height: '200', width: '300' }]}
           />
         </AnimateDiv>
       </div>
