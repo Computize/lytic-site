@@ -23,7 +23,6 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
-          {/* TODO: UPDATE. POWER BI logo  without text, add the Fabric logo. Logos in a row with  */}
           <TechnologyAndImage
             arrayOfText={techArray1}
             // NOTE: temp redundant ternary while
@@ -33,7 +32,10 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
                     { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '150' },
                     { src: '/Fabric_final_x256.png', width: '150' },
                   ]
-                : [{ src: '/Microsoft-Power-BI-Logo_PNG4.png' }]
+                : [
+                    { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '150' },
+                    { src: '/Fabric_final_x256.png', width: '150' },
+                  ]
             }
           />
         </AnimateDiv>
