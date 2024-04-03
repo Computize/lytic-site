@@ -67,7 +67,7 @@ export const HomePageCarousel = () => {
                 }}
               >
                 <div className="h-full w-full flex justify-between items-center">
-                  <div className="h-full w-2/12" />
+                  <div className="h-full w-4/12" />
                   <div className="text-white flex flex-col justify-evenly">
                     <div className="h-9" />
                     <AnimateDiv
@@ -91,24 +91,22 @@ export const HomePageCarousel = () => {
                       initialProps={{ opacity: '0', translateY: 50 }}
                       delay={0.75}
                     >
-                      <Button className="bg-primary-green hover:bg-secondary-green w-auto border-b-4 border-green-100 text-white py-2 px-4 rounded-full">
+                      <Button className="bg-primary-green hover:bg-secondary-green w-auto h-auto border-b-4 border-green-100 text-white py-3 px-8 rounded-full">
                         <Link
                           href="#what-we-do"
                           scroll={true}
                         >
-                          <p className="text-black">READ MORE</p>
+                          <p className="text-black text-lg">READ MORE</p>
                         </Link>
                       </Button>
                     </AnimateDiv>
                   </div>
-                  <div className="h-full w-2/12" />
+                  <div className="h-full w-4/12" />
                 </div>
               </CarouselItem>
             );
           })}
         </CarouselContent>
-        {/* <CarouselPrevious className="left-5" /> */}
-        {/* <CarouselNext className="right-5" /> */}
 
         <div className="absolute inset-x-0 bottom-5 w-4 h-4 mx-auto my-auto flex justify-center gap-4">
           <div className="flex flex-row gap-4">

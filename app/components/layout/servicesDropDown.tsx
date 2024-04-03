@@ -1,14 +1,14 @@
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuItem } from '~/components/ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from '~/components/ui/dropdown-menu';
 
 export const ServicesDropDown = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center justify-center">
           SERVICES
-          <ChevronDown size={20} />
+          <ChevronDown size={15} />
         </div>
       </DropdownMenuTrigger>
 

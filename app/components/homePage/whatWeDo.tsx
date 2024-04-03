@@ -37,7 +37,7 @@ export const WhatWeDo = () => {
         content="width=device-width, initial-scale=1"
       />
       <div className="flex flex-col gap-3 md:gap-10 px-6 md:ml-40">
-        <p className="text-primary-green text-4xl md:text-6xl font-bold">WHAT WE DO</p>
+        <p className="text-primary-green text-4xl md:text-5xl font-bold">WHAT WE DO</p>
         <p className="text-l md:text-xl w-10/12">Specializing in Microsoft&apos;s analytics and data storage platform, high performance data warehouses and data lakes, and Microsoft&apos;s user-friendly ecosystem to surface it. We deliver on customized architecture that puts actionable data in your hands.</p>
       </div>
       <div className="w-full z-2 flex relative justify-end">
