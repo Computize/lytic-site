@@ -31,20 +31,19 @@ export async function POST(request: Request) {
       state,
       howCanWeHelp
     } = body;
-    const mail = await transporter.sendMail({
-      from: username,
-      to: username,
-      replyTo: emailAddress,
-      subject: `Contact from ${fullName}`,
-      html: `
-      <p>Name: ${fullName} </p>
-      <p>Phone: ${phoneNumber} </p>
-      <p>State: ${state} </p>
-      <p>Message: ${howCanWeHelp} </p>
-      `,
-    });
+    // const mail = await transporter.sendMail({
+    //   from: username,
+    //   to: username,
+    //   replyTo: emailAddress,
+    //   subject: `Contact from ${fullName}`,
+    //   html: `
+    //   <p>Name: ${fullName} </p>
+    //   <p>Phone: ${phoneNumber} </p>
+    //   <p>State: ${state} </p>
+    //   <p>Message: ${howCanWeHelp} </p>
+    //   `,
+    // });
 
-    console.log(mail);
     console.log(body);
     return NextResponse.json({ message: "Success: email was sent" }, { status: 200 });
   } catch (error) {

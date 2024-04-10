@@ -11,6 +11,7 @@ export const BlogPreviewCard = ({ blogItem }: BlogPreviewCardProps) => {
   return (
     <Card className="w-[350px]">
       <CardHeader>
+        {/* TODO: reduce font weight for all blog titles */}
         <CardTitle className="text-primary-green">{title}</CardTitle>
         <CardDescription>{author ?? 'Edward Heraux'}</CardDescription>
         <CardDescription>{date}</CardDescription>

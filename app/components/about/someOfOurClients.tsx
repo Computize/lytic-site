@@ -1,21 +1,20 @@
 'use server';
-import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from '~/components/ui/carousel';
 
 const arrayOfImageSources: {
   src: string;
   alt: string;
-  width?: number;
+  width?: string;
 }[] = [
-  // TODO: scale down shake shack
+  // TODO: Shrink NYPD to match fordham size as height limit
   {
     src: '/shake-shack-logo.png',
     alt: 'Shake Shack Logo',
-    width: 200,
   },
   {
     src: '/nypd-logo.png',
     alt: 'NYPD Logo',
+    width: '120px',
   },
   {
     src: '/rabobank-logo.png',
@@ -54,7 +53,7 @@ export const SomeOfOurClients = () => {
               className="h-[275px]"
               style={{
                 objectFit: 'contain',
-                width: '200px',
+                width: width ?? '200px',
                 height: 'auto',
               }}
               src={src}
@@ -77,11 +76,11 @@ export const SomeOfOurClients = () => {
           {arrayOfImageSources.map(({ alt, src, width }, idx) => {
             return (
               <CarouselItem key={idx}>
-                <div className="flex items-center">
+                <div className="flex items-center h-full justify-center">
                   <img
                     style={{
                       objectFit: 'contain',
-                      width: '200px',
+                      width: width ?? '200px',
                       height: 'auto',
                     }}
                     src={src}

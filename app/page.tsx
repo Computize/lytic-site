@@ -22,6 +22,7 @@ export default function Home() {
 
       <SasImageAndText />
       <OurApproach />
+      {/* TODO: contain width of divs to the navbar or less */}
       <div className="flex flex-col justify-center items-center w-full md:w-9/12 gap-8">
         <OurPeoplePresidentsBlog />
       </div>

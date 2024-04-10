@@ -59,6 +59,7 @@ const mockBlogData: Array<BlogItem> = [
   },
 ];
 
+// TODO: comb through server for existing blog, then figure out how to handle new blog posts
 export default async function Page() {
   return (
     <main className="flex flex-col justify-center items-center w-full">

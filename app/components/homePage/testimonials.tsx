@@ -51,8 +51,8 @@ const testimonialsArray: Array<Testimonial> = [
 export const Testimonials = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[600px] bg-[url('/testimonial-bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="w-11/12 md:w-8/12 flex flex-col justify-center items-center mr-0 lg:mr-64 gap-10">
-        <p className="text-primary-blue text-5xl font-bold">TESTIMONIALS</p>
+      <div className="w-11/12 md:w-8/12 flex flex-col items-center mr-0 lg:mr-64 gap-2">
+        <p className="text-primary-blue text-4xl md:text-5xl w-full px-1 md:px-10 font-bold">TESTIMONIALS</p>
         <Carousel
           autoPlay={false}
           opts={{
@@ -60,7 +60,10 @@ export const Testimonials = () => {
           }}
           className="w-full"
         >
-          <div className="flex flex-row p-2 md:p-10">
+          <div className="flex flex-row px-1 md:px-10">
+            {/* TODO: blocked text a bit better 
+              // TODO: testimonials and quote lined up on y axis
+            */}
             <CarouselContent>
               {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
                 <CarouselItem key={idx}>

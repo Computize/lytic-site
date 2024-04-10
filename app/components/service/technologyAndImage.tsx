@@ -12,7 +12,7 @@ interface TechnologyAndImageProps {
 export const TechnologyAndImage = ({ imageSources, arrayOfText }: TechnologyAndImageProps) => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex justify-center items-center h-36">
+      <div className={`flex ${imageSources.length > 0 ? 'justify-evenly' : 'justify-center'}  items-center h-36`}>
         {imageSources.map(({ height, src, width }, idx) => {
           return (
             <img
