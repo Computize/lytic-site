@@ -71,7 +71,34 @@
     --ring: 24 5.7% 82.9%;
   }
 }
-
+.mdx p {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+ol {
+  list-style-type: decimal;
+  margin-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+ul {
+  color: black;
+  margin-left: 16px;
+  list-style-type: circle;
+}
+h3 {
+  font-weight: bold;
+  font-size: 19px;
+}
 @layer base {
   * {
     @apply border-border;

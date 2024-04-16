@@ -1,18 +1,18 @@
-import { BlogItem } from '~/app/blog/page';
+import { BlogPreview } from '~/app/blog/page';
 import { BlogPreviewCard } from '~/app/components/blogPage/blogPreviewCard';
 
 interface BlogPreviewCardContainerProps {
-  blogItems: Array<BlogItem>;
+  blogItems: Array<BlogPreview>;
 }
 
 export const BlogPreviewCardContainer = ({ blogItems }: BlogPreviewCardContainerProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+    <div className="flex flex-wrap gap-10 items-center place-content-center justify-center">
       {blogItems.map((blogItem, idx) => {
         return (
           <BlogPreviewCard
             key={idx}
-            blogItem={blogItem}
+            blogPreview={blogItem}
           />
         );
       })}
