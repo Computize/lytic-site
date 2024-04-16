@@ -1,6 +1,8 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Loader2 } from 'lucide-react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import { FormWrapper } from '~/app/components/formWrapper';
@@ -8,7 +10,6 @@ import { Button } from '~/components/ui/button';
 import { FormField, FormItem, FormControl, FormMessage } from '~/components/ui/form';
 import { Input } from '~/components/ui/input';
 import { Textarea } from '~/components/ui/textarea';
-import { ToastAction } from '~/components/ui/toast';
 import { useToast } from '~/components/ui/use-toast';
 
 const contactSchema = z.object({
@@ -49,7 +50,7 @@ type ContactSchema = z.infer<typeof contactSchema>;
 
 export const ContactForm = () => {
   const { toast } = useToast();
-
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const form = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
     defaultValues: {
@@ -66,6 +67,7 @@ export const ContactForm = () => {
       <FormWrapper
         form={form}
         onSubmit={async (values: ContactSchema) => {
+          setIsLoading(true);
           const response = await fetch('/api/contact', {
             method: 'post',
             body: JSON.stringify(values),
@@ -76,6 +78,7 @@ export const ContactForm = () => {
               title: 'Uh oh! Something went wrong.',
               description: 'There was an issue sending the request',
             });
+            setIsLoading(false);
           } else {
             toast({
               className: 'bg-primary-green',
@@ -83,10 +86,12 @@ export const ContactForm = () => {
               title: 'Success!',
               description: 'Your contact request has been sent.',
             });
+            setIsLoading(true);
           }
         }}
       >
         <FormField
+          disabled={isLoading}
           control={form.control}
           name="fullName"
           render={({ field }) => (
@@ -104,6 +109,7 @@ export const ContactForm = () => {
           )}
         />
         <FormField
+          disabled={isLoading}
           control={form.control}
           name="emailAddress"
           render={({ field }) => (
@@ -120,6 +126,7 @@ export const ContactForm = () => {
           )}
         />
         <FormField
+          disabled={isLoading}
           control={form.control}
           name="phoneNumber"
           render={({ field }) => (
@@ -136,6 +143,7 @@ export const ContactForm = () => {
           )}
         />
         <FormField
+          disabled={isLoading}
           control={form.control}
           name="state"
           render={({ field }) => (
@@ -152,6 +160,7 @@ export const ContactForm = () => {
           )}
         />
         <FormField
+          disabled={isLoading}
           control={form.control}
           name="howCanWeHelp"
           render={({ field }) => (
@@ -170,9 +179,10 @@ export const ContactForm = () => {
         <div className="flex flex-col justify-center items-center">
           <Button
             type="submit"
+            disabled={isLoading}
             className="rounded-none w-32 bg-secondary-green font-bold"
           >
-            SEND
+            {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : 'SEND'}
           </Button>
         </div>
       </FormWrapper>
