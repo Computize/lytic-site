@@ -7,7 +7,7 @@ import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('Blog');
 
-export type BlogPreview = Omit<Post, 'content'>;
+export type BlogPreview = Post;
 
 export default async function Page() {
   const posts = await getPosts();

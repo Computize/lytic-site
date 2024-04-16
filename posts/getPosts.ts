@@ -35,8 +35,8 @@ export async function getPosts(): Promise<Post[]> {
   // Retrieve metadata from MDX files
   const postsRead = await Promise.all(
     postFiles.map(async ({ name }) => {
-      console.log({ name });
-      const blogPost = await readFile(`${basePath}/${name}`, 'utf8');
+      const filePath = path.join(basePath, name);
+      const blogPost = await readFile(filePath, 'utf8');
       const { data, content } = matter(blogPost);
       return { ...data, content } as Post;
     })
