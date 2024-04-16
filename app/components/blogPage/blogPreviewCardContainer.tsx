@@ -7,7 +7,7 @@ interface BlogPreviewCardContainerProps {
 
 export const BlogPreviewCardContainer = ({ blogItems }: BlogPreviewCardContainerProps) => {
   return (
-    <div className="flex flex-wrap gap-10 items-center place-content-center justify-center">
+    <div className="flex flex-wrap gap-10 place-content- justify-center">
       {blogItems.map((blogItem, idx) => {
         return (
           <BlogPreviewCard

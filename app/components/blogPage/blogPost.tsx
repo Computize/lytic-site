@@ -38,10 +38,10 @@ export async function BlogPost({ postContent, publishDate, title }: BlogPostProp
           />
         </div>
       </div>
-      <div>
+      <div className="flex flex-col gap-4">
         {/* RECENT POST CONTAINER */}
+        <p className="font-semibold text-2xl text-left">RECENT POSTS:</p>
         <div className="gap-10 flex pb-10 flex-col justify-center items-center">
-          <p className="font-semibold text-2xl text-left">RECENT POSTS</p>
           <BlogPreviewCardContainer blogItems={twoLatestPosts} />
         </div>
       </div>

@@ -20,7 +20,7 @@ export default async function Page() {
           className="text-center"
         />
       </PageUpperImageContainer>
-      <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10">
+      <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10 w-full md:w-10/12">
         <BlogPreviewCardContainer blogItems={posts} />
         <BlogCategories />
       </div>
