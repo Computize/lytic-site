@@ -24,6 +24,7 @@ export interface Post {
 // export const postsPerPage = 3 as const;
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes
+  console.log(path.join(process.cwd(), 'posts'));
   const postFiles = (
     await readdir(path.join(process.cwd(), 'posts'), { withFileTypes: true })
   ).filter((dirent) => dirent.name.includes('.mdx'));
