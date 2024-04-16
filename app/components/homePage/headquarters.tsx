@@ -1,6 +1,5 @@
 import { Map } from '~/app/components/homePage/map';
 export const Headquarters = () => {
-  // TODO: Map unnecessary. Use brooklyn highlighted PNG
   return (
     <div className="w-full h-auto flex flex-col md:flex-row items-center justify-center py-8  gap-12">
       <div className="flex flex-col gap-12">

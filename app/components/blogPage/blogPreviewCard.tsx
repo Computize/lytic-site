@@ -14,7 +14,7 @@ export const BlogPreviewCard = ({ blogPreview }: BlogPreviewCardProps) => {
     <Card className="w-[350px]">
       <CardHeader>
         {/* TODO: reduce font weight for all blog titles */}
-        <CardTitle className="text-primary-green">{title}</CardTitle>
+        <CardTitle className="text-primary-green font-normal">{title}</CardTitle>
         <CardDescription>{'Edward Heraux'}</CardDescription>
         <CardDescription>{dayjs(publishDate).format('MMMM D, YYYY')}</CardDescription>
       </CardHeader>

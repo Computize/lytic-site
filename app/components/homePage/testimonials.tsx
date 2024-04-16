@@ -61,9 +61,6 @@ export const Testimonials = () => {
           className="w-full"
         >
           <div className="flex flex-row px-1 md:px-10">
-            {/* TODO: blocked text a bit better 
-              // TODO: testimonials and quote lined up on y axis
-            */}
             <CarouselContent>
               {testimonialsArray.map(({ clientSince, name, testimonial, title, extraDetail }, idx) => (
                 <CarouselItem key={idx}>

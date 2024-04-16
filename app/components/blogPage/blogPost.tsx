@@ -24,16 +24,6 @@ export async function BlogPost({ postContent, publishDate, title }: BlogPostProp
         <div className="mdx">
           <MDXRemote
             source={postContent}
-            options={{}}
-            //   mdxOptions: {
-            //     remarkPlugins: [
-            //       // Adds support for GitHub Flavored Markdown
-            //       remarkGfm,
-            //     ],
-            //     // These work together to add IDs and linkify headings
-            //     rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings],
-            //   },
-            // }}
             components={useMDXComponents}
           />
         </div>
@@ -42,7 +32,10 @@ export async function BlogPost({ postContent, publishDate, title }: BlogPostProp
         {/* RECENT POST CONTAINER */}
         <p className="font-semibold text-2xl text-left">RECENT POSTS:</p>
         <div className="gap-10 flex pb-10 flex-col justify-center items-center">
-          <BlogPreviewCardContainer blogItems={twoLatestPosts} />
+          <BlogPreviewCardContainer
+            blogItems={twoLatestPosts}
+            columnDisplay={true}
+          />
         </div>
       </div>
     </div>
