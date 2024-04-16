@@ -33,8 +33,9 @@ export async function getPosts(): Promise<Post[]> {
   // ).filter((dirent) => dirent.isDirectory());
 
   // Retrieve metadata from MDX files
-  const posts = await Promise.all(
+  const postsRead = await Promise.all(
     postFiles.map(async ({ name }) => {
+      console.log({ name });
       const blogPost = await readFile(`${basePath}/${name}`, 'utf8');
       const { data, content } = matter(blogPost);
       return { ...data, content } as Post;
@@ -42,8 +43,8 @@ export async function getPosts(): Promise<Post[]> {
   );
 
   // Sort posts from newest to oldest
-  posts.sort((a, b) => +new Date(b.publishDate) - +new Date(a.publishDate));
-  return posts;
+  postsRead.sort((a, b) => +new Date(b.publishDate) - +new Date(a.publishDate));
+  return postsRead;
 }
 
 export async function getPost(slug: string): Promise<Post | undefined> {

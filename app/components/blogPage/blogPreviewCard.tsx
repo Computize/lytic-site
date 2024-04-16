@@ -10,6 +10,7 @@ interface BlogPreviewCardProps {
 
 export const BlogPreviewCard = ({ blogPreview }: BlogPreviewCardProps) => {
   const { publishDate, title, previewText, slug } = blogPreview;
+
   return (
     <Card className="w-[350px]">
       <CardHeader>
