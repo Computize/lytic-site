@@ -1,4 +1,4 @@
-import { Post, getPosts } from '~/posts/getPosts';
+import { Post, getPosts } from '~/app/blog/posts/getPosts';
 import { BlogCategories } from '~/app/components/blogPage/blogCategories';
 import { BlogPreviewCardContainer } from '~/app/components/blogPage/blogPreviewCardContainer';
 import { PageTitle } from '~/app/components/pageTitle';
