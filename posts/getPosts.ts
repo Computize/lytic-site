@@ -1,4 +1,4 @@
-import { readdir, readFile } from "fs/promises";
+import { readdir, readFile, } from "fs/promises";
 import matter from 'gray-matter';
 import path from "path";
 
@@ -20,13 +20,12 @@ export interface Post {
   content: string;
 }
 // const basePath: string = './posts';
+
 // export const postsPerPage = 3 as const;
-const basePath = path.join(process.cwd(), 'posts');
-console.log(basePath);
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes
   const postFiles = (
-    await readdir(basePath, { withFileTypes: true })
+    await readdir(path.join(process.cwd(), 'posts'), { withFileTypes: true })
   ).filter((dirent) => dirent.name.includes('.mdx'));
   // const slugs = (
   //   await readdir(basePath, { withFileTypes: true })
@@ -35,7 +34,7 @@ export async function getPosts(): Promise<Post[]> {
   // Retrieve metadata from MDX files
   const postsRead = await Promise.all(
     postFiles.map(async ({ name }) => {
-      const filePath = path.join(basePath, name);
+      const filePath = path.join(path.join(process.cwd(), 'posts'), name);
       const blogPost = await readFile(filePath, 'utf8');
       const { data, content } = matter(blogPost);
       return { ...data, content } as Post;
