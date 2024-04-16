@@ -15,8 +15,8 @@ export async function BlogPost({ postContent, publishDate, title }: BlogPostProp
   const posts = await getPosts();
   const twoLatestPosts = posts.slice(0, 2);
   return (
-    <div className="flex flex-col md:flex-row gap-10">
-      <div>
+    <div className="flex flex-col md:flex-row gap-10 justify-center">
+      <div className="w-11/12 md:w-8/12 lg:w-6/12">
         <div>
           <p className="text-[16px] font-semibold">{title}</p>
           <p className="">{dayjs(publishDate).format('MMMM D, YYYY')}</p>

@@ -24,7 +24,7 @@ export default async function Page({
           className="text-center"
         />
       </PageUpperImageContainer>
-      <div className="px-28 pt-10">
+      <div className="p-10 md:px-16 lg:px-28 pt-10">
         <BlogPost
           postContent={content}
           title={title}
