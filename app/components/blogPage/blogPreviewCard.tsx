@@ -23,7 +23,7 @@ export const BlogPreviewCard = ({ blogPreview }: BlogPreviewCardProps) => {
       </CardContent>
       <CardFooter>
         <Link href={`/blog/${slug}`}>
-          <Button className="rounded-3xl bg-primary-green text-black">Read More</Button>
+          <Button className="rounded-3xl hover:bg-background-green bg-primary-green text-black">Read More</Button>
         </Link>
       </CardFooter>
     </Card>
