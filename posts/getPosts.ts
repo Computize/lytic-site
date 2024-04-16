@@ -18,7 +18,7 @@ export interface Post {
   categorie: BlogPostCategory[];
   content: string;
 }
-const basePath: string = './(posts)';
+const basePath: string = './posts';
 // export const postsPerPage = 3 as const;
 
 export async function getPosts(): Promise<Post[]> {

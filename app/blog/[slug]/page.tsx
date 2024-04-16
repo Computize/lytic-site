@@ -1,4 +1,4 @@
-import { getPost } from '~/(posts)/getPosts';
+import { getPost } from '~/posts/getPosts';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { BlogPost } from '~/app/components/blogPage/blogPost';
