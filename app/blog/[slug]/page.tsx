@@ -2,7 +2,7 @@ import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { BlogPost } from '~/app/components/blogPage/blogPost';
 import { generateMetadata } from '~/app/constants/pageMetadata';
-import { getPost } from '~/app/blog/posts/getPosts';
+import { getPosts } from '~/app/blog/posts/getPosts';
 
 export const metadata = generateMetadata('Blog');
 
@@ -14,7 +14,8 @@ export default async function Page({
   };
 }) {
   const { slug } = params;
-  const post = await getPost(slug);
+  const posts = await getPosts();
+  const post = posts.find((post) => post.slug === slug);
   const { content, title, publishDate } = post!;
   return (
     <main className="flex flex-col w-full items-center overflow-x-hidden">

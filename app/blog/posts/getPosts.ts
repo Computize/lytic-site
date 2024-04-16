@@ -22,7 +22,6 @@ export interface Post {
 // const basePath: string = './posts';
 // export const postsPerPage = 3 as const;
 const basePath = path.join(process.cwd(), '/app/blog/posts');
-console.log(basePath);
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes
   const postFiles = (
@@ -40,18 +39,8 @@ export async function getPosts(): Promise<Post[]> {
       return { ...data, content } as Post;
     })
   );
-  // const posts = await Promise.all(
-  //   slugs.map(async ({ name }) => {
-  //     const blogPost = await readFile(`${basePath}/${name}/page.mdx`, 'utf8');
-  //     const { data, content } = matter(blogPost);
-  //     return { ...data, content } as Post;
-  //   })
-  // );
-
-
   // Sort posts from newest to oldest
   posts.sort((a, b) => +new Date(b.publishDate) - +new Date(a.publishDate));
-
   return posts;
 }
 
