@@ -21,7 +21,7 @@ export interface Post {
 }
 // const basePath: string = './posts';
 // export const postsPerPage = 3 as const;
-const basePath = path.join(process.cwd(), '/posts');
+const basePath = path.join(process.cwd(), '/app/blog/posts');
 console.log(basePath);
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes

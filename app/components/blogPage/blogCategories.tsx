@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { BlogPostCategory } from '~/posts/getPosts';
+import { BlogPostCategory } from '~/app/blog/posts/getPosts';
 
 export function BlogCategories() {
   return (

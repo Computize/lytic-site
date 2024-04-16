@@ -1,8 +1,8 @@
-import { getPost } from '~/posts/getPosts';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { BlogPost } from '~/app/components/blogPage/blogPost';
 import { generateMetadata } from '~/app/constants/pageMetadata';
+import { getPost } from '~/app/blog/posts/getPosts';
 
 export const metadata = generateMetadata('Blog');
 
