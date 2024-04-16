@@ -39,6 +39,7 @@ export async function getPosts(): Promise<Post[]> {
       return { ...data, content } as Post;
     })
   );
+
   // Sort posts from newest to oldest
   posts.sort((a, b) => +new Date(b.publishDate) - +new Date(a.publishDate));
   return posts;

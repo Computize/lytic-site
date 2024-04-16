@@ -16,7 +16,7 @@ export const ScriptContainer = ({ scriptValue }: { scriptValue: string }) => {
           <AlertCircle />
 
           <AlertTitle>Error</AlertTitle>
-          <AlertDescription>Your session has expired. Please log in again.</AlertDescription>
+          <AlertDescription>Unable to find script.</AlertDescription>
         </Alert>
       </div>
     );
