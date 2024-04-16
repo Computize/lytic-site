@@ -1,5 +1,6 @@
 import { readdir, readFile } from "fs/promises";
 import matter from 'gray-matter';
+import path from "path";
 
 export enum BlogPostCategory {
   ALL = 'All',
@@ -18,9 +19,10 @@ export interface Post {
   categorie: BlogPostCategory[];
   content: string;
 }
-const basePath: string = './posts';
+// const basePath: string = './posts';
 // export const postsPerPage = 3 as const;
-
+const basePath = path.join(process.cwd(), '/posts');
+console.log(basePath);
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes
   const postFiles = (
