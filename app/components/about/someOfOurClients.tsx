@@ -6,7 +6,6 @@ const arrayOfImageSources: {
   alt: string;
   width?: string;
 }[] = [
-  // TODO: Shrink NYPD to match fordham size as height limit
   {
     src: '/shake-shack-logo.png',
     alt: 'Shake Shack Logo',

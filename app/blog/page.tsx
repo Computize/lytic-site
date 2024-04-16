@@ -9,7 +9,6 @@ export const metadata = generateMetadata('Blog');
 
 export type BlogPreview = Omit<Post, 'content'>;
 
-// TODO: comb through server for existing blog, then figure out how to handle new blog posts
 export default async function Page() {
   const posts = await getPosts();
   return (

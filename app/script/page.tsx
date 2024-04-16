@@ -12,7 +12,9 @@ export default async function Page() {
       <PageUpperImageContainer>
         <PageTitle title="SCRIPT LIBRARY" />
       </PageUpperImageContainer>
-      <ScriptDescriptionAndDropDownContainer />
+      <div className="mx-0 md:mx-28 lg:mx-32">
+        <ScriptDescriptionAndDropDownContainer />
+      </div>
       <NeedMoreHelpContainer />
     </main>
   );

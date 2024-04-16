@@ -21,14 +21,15 @@ export default function Page() {
           blurb="Specializing in Microsoft's business intelligence platform, and in the high performance of the databases behind it. All to deliver a customized architecture that puts actionable data in your hands."
         />
       </PageUpperImageContainer>
-
-      <div className="flex flex-col items-center w-full">
-        <p className="text-primary-green font-bold text-5xl py-10">CORE TECHNOLOGIES</p>
-        <CoreTechnologies isOnHomePage={false} />
-      </div>
-      <div className="opacity-0 md:opacity-100 sm:block border-t-[1px] border-gray-600 w-10/12" />
-      <div className="h-auto">
-        <SasImageAndText backgroundWhite={true} />
+      <div className="w-full flex flex-col items-center md:w-10/12 lg:w-11/12">
+        <div className="flex flex-col items-center w-full">
+          <p className="text-primary-green font-bold text-5xl py-10">CORE TECHNOLOGIES</p>
+          <CoreTechnologies isOnHomePage={false} />
+        </div>
+        <div className="opacity-0 md:opacity-100 sm:block border-t-[1px] border-gray-600 w-10/12" />
+        <div className="h-auto">
+          <SasImageAndText backgroundWhite={true} />
+        </div>
       </div>
       <IndustriesSection />
       <LyticDifference />
