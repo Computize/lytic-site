@@ -7,7 +7,15 @@ export const ScriptLibrary = () => {
   return (
     <div
       // TODO: fix tailwind issue
-      className="flex flex-col gap-10 bg-[url('/home-page-script-sec.png')] w-full px-6  h-[700px] md:px-60 bg-cover bg-center justify-center bg-no-repeat"
+      className="flex flex-col gap-10 bg-[url('/home-page-script-sec.png')] w-full h-[1000px] px-6 md:px-60  justify-center"
+      style={{
+        backgroundPositionX: '50%',
+        backgroundPositionY: '0%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'scroll',
+        backgroundClip: 'border-box',
+      }}
     >
       <AnimateDiv initialProps={{ opacity: 0, translateX: 75 }}>
         <PageTitle

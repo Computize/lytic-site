@@ -28,7 +28,9 @@ export default function Home() {
       <div className="w-full">
         <ScriptLibrary />
       </div>
-      <Testimonials />
+      <div>
+        <Testimonials />
+      </div>
       <Headquarters />
     </main>
   );
