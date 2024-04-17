@@ -2,7 +2,7 @@ import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { BlogPost } from '~/app/components/blogPage/blogPost';
 import { generateMetadata } from '~/app/constants/pageMetadata';
-import { getPosts } from '~/(posts)/getPosts';
+import { getPosts } from '~/lib/getPosts';
 import { AlertCircle } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
 

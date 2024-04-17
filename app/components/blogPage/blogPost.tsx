@@ -3,7 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { useMDXComponents } from '~/mdx-components';
 import dayjs from 'dayjs';
 import { BlogPreviewCardContainer } from '~/app/components/blogPage/blogPreviewCardContainer';
-import { getPosts } from '~/(posts)/getPosts';
+import { getPosts } from '~/lib/getPosts';
 
 interface BlogPostProps {
   postContent: string;
