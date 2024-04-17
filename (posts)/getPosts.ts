@@ -24,15 +24,15 @@ export interface Post {
 // export const postsPerPage = 3 as const;
 export async function getPosts(): Promise<Post[]> {
   // Retrieve slugs from post routes
-  console.log(path.join(process.cwd(), 'posts'));
+  console.log(path.join(process.cwd(), '(posts)'));
   const postFiles = (
-    await fs.readdir(path.join(process.cwd(), 'posts'), { withFileTypes: true })
+    await fs.readdir(path.join(process.cwd(), '(posts)'), { withFileTypes: true })
   ).filter((dirent) => dirent.name.includes('.mdx'));
 
   // Retrieve metadata from MDX files
   const postsRead = await Promise.all(
     postFiles.map(async ({ name }) => {
-      const filePath = path.join(path.join(process.cwd(), 'posts'), name);
+      const filePath = path.join(path.join(process.cwd(), '(posts)'), name);
       const blogPost = await fs.readFile(filePath, 'utf8');
       const { data, content } = matter(blogPost);
       return { ...data, content } as Post;
