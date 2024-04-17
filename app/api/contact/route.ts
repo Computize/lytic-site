@@ -7,6 +7,7 @@ const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD; //TODO: replace
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   port: 587,
+  secure: false,
   tls: {
     ciphers: "SSLv3",
     rejectUnauthorized: false,
