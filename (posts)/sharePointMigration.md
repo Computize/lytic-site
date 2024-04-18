@@ -2,7 +2,7 @@
 slug: sharepoint-migration
 title: Sharepoint Migration - The Pilot Group Manifesto
 publishDate: November 07, 2019
-categories: Consulting
+category: Sharepoint/Office 365
 previewText: If you're rolling out Office 365 and/or Sharepoint, Investing the time in a pilot group as your first champions and cheerleaders reaps big dividends in your orranization's buy-in and enthusiasm for the platform. Here's how to do it right.
 ---
 

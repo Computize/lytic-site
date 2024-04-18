@@ -1,4 +1,4 @@
-import { Post, getPosts } from '~/lib/getPosts';
+import { BlogPostCategory, Post, getPosts } from '~/lib/getPosts';
 import { BlogPreviewCardContainer } from '~/app/components/blogPage/blogPreviewCardContainer';
 import { PageTitle } from '~/app/components/pageTitle';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
@@ -10,7 +10,8 @@ export const metadata = generateMetadata('Blog');
 export type BlogPreview = Post;
 
 export default async function Page() {
-  const posts = await getPosts();
+  const posts = await getPosts(BlogPostCategory.SHAREPOINT);
+  console.log(posts.length);
   return (
     <main className="flex flex-col justify-center items-center w-full">
       <PageUpperImageContainer imageSource="/blog-page-banner.png">

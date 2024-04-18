@@ -2,7 +2,7 @@
 slug: on-prem-data-warehouse
 title: “My On-Prem Data Warehouse Is Just Fine Where It Is.”
 publishDate: October 06,2020
-categories: Consulting
+category: Consulting
 previewText: Your data warehouse and reporting databases may have preformed adequately for a while now and quietly stayed out of your way . But are they as ready for your next wave of data? Here are our Top 4 reasons why they're not.
 ---
 

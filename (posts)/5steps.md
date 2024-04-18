@@ -2,7 +2,7 @@
 slug: 5-steps-to-building
 title: 5 Steps to Building A Digital-Native Project Team
 publishDate: June 02,2020
-categories: Consulting
+category: Consulting
 previewText: Our best and favorite habits for leading an all-virtual team.
 ---
 

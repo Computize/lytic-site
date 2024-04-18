@@ -2,7 +2,7 @@
 slug: it-consulting-covid
 title: IT Consulting in the Time of COVID 19
 publishDate: March 25,2020
-categories: Consulting
+category: Consulting
 previewText: With the disruption of everyone's workplace by the coronavirus, how do you set your consulting practice up for success when customers are struggling to architect and support a storm of new issues?
 ---
 

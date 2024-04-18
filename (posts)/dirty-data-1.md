@@ -2,7 +2,7 @@
 slug: dirt-data-1
 title: Don't Get Caught with Dirty Data (Part One)
 publishDate: December 03,2020
-categories: Consulting
+category: Consulting
 previewText: Your data warehouses have so many sources of unclean data. How do you PROACTIVELY handle data hygiene?
 ---
 

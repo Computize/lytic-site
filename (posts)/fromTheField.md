@@ -2,7 +2,7 @@
 slug: from-the-field
 title: From the Field - The Importance of Sharepoint Governance
 publishDate: April 16, 2019
-categories: Consulting
+category: Consulting
 previewText: A true story of how the lack of a Sharepoint governance plan left an organization with nearly unmigratable environments when it came time to upgrade to Office365. The Lytic Group found a way to save the day.
 ---
 
