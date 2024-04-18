@@ -12,7 +12,7 @@ interface BlogPostProps {
 
 export async function BlogPost({ postContent, publishDate, title }: BlogPostProps) {
   const posts = await getPosts();
-  const twoLatestPosts = posts.slice(0, 2);
+  const twoLatestPosts = posts.filter(({ title: postTitle }) => title !== postTitle).slice(0, 2);
   return (
     <div className="flex flex-col md:flex-row gap-10 justify-center">
       <div className="w-11/12 md:w-8/12 lg:w-6/12">
