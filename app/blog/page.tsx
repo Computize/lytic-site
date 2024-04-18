@@ -8,18 +8,10 @@ import { BlogCategories } from '~/app/components/blogPage/blogCategories';
 
 export const metadata = generateMetadata('Blog');
 
-interface Params {
-  slug: string;
-}
-
-interface SearchParams {
-  [key: string]: string | string[] | undefined;
-}
-
 export type BlogPreview = Post;
 
-export default async function Page({ params }: { params: Params; searchParams: SearchParams }) {
-  const posts = await getPosts();
+export default async function Page({ params: _params, searchParams }: { params: { slug: string }; searchParams?: { [key: string]: string | string[] | undefined } }) {
+  const posts = await getPosts(searchParams ? (searchParams.category as BlogPostCategory) : BlogPostCategory.ALL);
   return (
     <main className="flex flex-col justify-center items-center w-full">
       <PageUpperImageContainer imageSource="/blog-page-banner.png">
@@ -28,9 +20,14 @@ export default async function Page({ params }: { params: Params; searchParams: S
           className="text-center"
         />
       </PageUpperImageContainer>
-      <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10 w-full md:w-10/12">
-        <BlogPreviewCardContainer blogItems={posts} />
-        <BlogCategories />
+      <div className="flex w-full flex-row justify-center border-2">
+        <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10 md:w-full">
+          <BlogPreviewCardContainer
+            blogItems={posts}
+            columnDisplay={false}
+          />
+          <BlogCategories />
+        </div>
       </div>
     </main>
   );

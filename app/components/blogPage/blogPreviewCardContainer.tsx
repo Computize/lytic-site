@@ -8,9 +8,13 @@ interface BlogPreviewCardContainerProps {
 }
 
 export const BlogPreviewCardContainer = ({ blogItems, columnDisplay }: BlogPreviewCardContainerProps) => {
+  // Route -> /shop/[tag]/[item]
+  // URL -> /shop/shoes/nike-air-max-97
+  // `params` -> { tag: 'shoes', item: 'nike-air-max-97' }
+
   return (
     <div>
-      <div className={columnDisplay ? 'flex flex-col gap-10' : 'grid grid-cols-2 gap-10 justify-center items-start'}>
+      <div className={columnDisplay ? 'flex flex-col gap-10' : 'grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-start'}>
         {blogItems.map((blogItem, idx) => {
           return (
             <BlogPreviewCard
@@ -19,7 +23,6 @@ export const BlogPreviewCardContainer = ({ blogItems, columnDisplay }: BlogPrevi
             />
           );
         })}
-        <BlogCategories />
       </div>
     </div>
   );

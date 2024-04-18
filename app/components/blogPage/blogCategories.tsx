@@ -14,26 +14,20 @@ export enum BlogPostCategory {
 export function BlogCategories() {
   const router = useRouter();
   return (
-    <div className="flex flex-col w-3/12 gap-2">
+    <div className="flex flex-col items-start gap-2">
       <p className="text-xl font-bold">CATEGORIES:</p>
       {Object.values(BlogPostCategory).map((category, idx) => {
         return (
-          <Link
-            href={''}
+          <Button
+            variant={'link'}
             key={idx}
+            onClick={() => {
+              router.push(`?category=${category}`);
+            }}
             className="text-xl hover:underline hover:font-bold"
           >
-            <Button
-              variant={'link'}
-              key={idx}
-              onClick={() => {
-                router.push(`?category=${category}`);
-              }}
-              className="text-xl hover:underline hover:font-bold"
-            >
-              {category}
-            </Button>
-          </Link>
+            {category}
+          </Button>
         );
       })}
     </div>

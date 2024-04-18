@@ -16,7 +16,6 @@ export default async function Page({
     slug: string;
   };
 }) {
-  const testAcces: string = 'hello';
   const { slug } = params;
   const posts = await getPosts();
   const post = posts.find((post) => post.slug === slug);
