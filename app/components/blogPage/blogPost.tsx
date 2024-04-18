@@ -1,6 +1,5 @@
 // app/(subpages)/blog/[slug]/components/post-body.tsx
-import { MDXRemote } from 'next-mdx-remote/rsc';
-import { useMDXComponents } from '~/mdx-components';
+import markdownStyles from './markdown-styles.module.css';
 import dayjs from 'dayjs';
 import { BlogPreviewCardContainer } from '~/app/components/blogPage/blogPreviewCardContainer';
 import { getPosts } from '~/lib/getPosts';
@@ -21,15 +20,14 @@ export async function BlogPost({ postContent, publishDate, title }: BlogPostProp
           <p className="text-[16px] font-semibold">{title}</p>
           <p className="">{dayjs(publishDate).format('MMMM D, YYYY')}</p>
         </div>
-        <div className="mdx">
-          <MDXRemote
-            source={postContent}
-            components={useMDXComponents}
+        <article>
+          <div
+            className={markdownStyles['markdown']}
+            dangerouslySetInnerHTML={{ __html: postContent }}
           />
-        </div>
+        </article>
       </div>
       <div className="flex flex-col gap-4">
-        {/* RECENT POST CONTAINER */}
         <p className="font-semibold text-2xl text-left">RECENT POSTS:</p>
         <div className="gap-10 flex pb-10 flex-col justify-center items-center">
           <BlogPreviewCardContainer

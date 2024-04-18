@@ -1,4 +1,6 @@
+'use-client';
 import Link from 'next/link';
+import { Button } from '~/components/ui/button';
 import { BlogPostCategory } from '~/lib/getPosts';
 
 export function BlogCategories() {
@@ -7,13 +9,15 @@ export function BlogCategories() {
       <p className="text-xl font-bold">CATEGORIES:</p>
       {Object.values(BlogPostCategory).map((category, idx) => {
         return (
-          <Link
-            href={''}
-            key={idx}
-            className="text-xl hover:underline hover:font-bold"
-          >
-            {category}
-          </Link>
+          <Button key={idx}>
+            <Link
+              href={''}
+              key={idx}
+              className="text-xl hover:underline hover:font-bold"
+            >
+              {category}
+            </Link>
+          </Button>
         );
       })}
     </div>

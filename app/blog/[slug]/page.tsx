@@ -5,6 +5,7 @@ import { generateMetadata } from '~/app/constants/pageMetadata';
 import { getPosts } from '~/lib/getPosts';
 import { AlertCircle } from 'lucide-react';
 import { Alert, AlertTitle, AlertDescription } from '~/components/ui/alert';
+import markdownToHtml from '~/lib/markdownToHtml';
 
 export const metadata = generateMetadata('Blog');
 
@@ -34,6 +35,7 @@ export default async function Page({
     );
   }
   const { content, title, publishDate } = post;
+  const postContent = await markdownToHtml(content || '');
   return (
     <main className="flex flex-col w-full items-center overflow-x-hidden">
       <PageUpperImageContainer imageSource="/blog-page-banner.png">
@@ -44,7 +46,7 @@ export default async function Page({
       </PageUpperImageContainer>
       <div className="p-10 md:px-16 lg:px-28 pt-10">
         <BlogPost
-          postContent={content}
+          postContent={postContent}
           title={title}
           publishDate={publishDate}
         />
