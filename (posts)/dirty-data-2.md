@@ -2,7 +2,7 @@
 slug: dirt-data-2
 title: Dirty Data Part 2 - Data Quality Techniques
 publishDate: April 15,2021
-category: Consulting
+category: Analytics, B.I.
 previewText: “An ounce of prevention is worth a pound of cure,” said Ben Franklin. Second of my two-part look at winning against dirty data, I'll apply this idea to your data quality and data hygiene efforts.
 ---
 

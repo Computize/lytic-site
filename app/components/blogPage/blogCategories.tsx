@@ -24,7 +24,7 @@ export function BlogCategories() {
             onClick={() => {
               router.push(`?category=${category}`);
             }}
-            className="text-xl hover:underline hover:font-bold"
+            className="text-xl hover:underline"
           >
             {category}
           </Button>

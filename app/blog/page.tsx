@@ -22,10 +22,17 @@ export default async function Page({ params: _params, searchParams }: { params: 
       </PageUpperImageContainer>
       <div className="flex w-full flex-row justify-center border-2">
         <div className="py-10 p-6 flex flex-col sm:flex-col lg:flex-row justify-center gap-10 md:w-full">
-          <BlogPreviewCardContainer
-            blogItems={posts}
-            columnDisplay={false}
-          />
+          {posts.length > 0 ? (
+            <BlogPreviewCardContainer
+              blogItems={posts}
+              columnDisplay={false}
+            />
+          ) : (
+            <div className="text-center text-2xl">
+              <p>We do not have any blog posts for that category.</p>
+              <p>Stay tuned!</p>
+            </div>
+          )}
           <BlogCategories />
         </div>
       </div>

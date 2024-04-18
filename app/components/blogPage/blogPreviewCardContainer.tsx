@@ -14,7 +14,7 @@ export const BlogPreviewCardContainer = ({ blogItems, columnDisplay }: BlogPrevi
 
   return (
     <div>
-      <div className={columnDisplay ? 'flex flex-col gap-10' : 'grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-start'}>
+      <div className={columnDisplay ? 'w-full flex flex-col gap-10' : 'grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-start w-full'}>
         {blogItems.map((blogItem, idx) => {
           return (
             <BlogPreviewCard
