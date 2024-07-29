@@ -41,6 +41,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Success: email was sent" }, { status: 200 });
   } catch (error) {
     console.log(error);
-    return NextResponse.json({ message: "COULD NOT SEND MESSAGE" }, { status: 500 });
+    return NextResponse.json({ message: `COULD NOT SEND MESSAGE. Credentials: ${username} | ${password}` }, { status: 500 });
   }
 }
