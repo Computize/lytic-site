@@ -13,28 +13,37 @@ interface TitleAndListItems {
   title: string;
   listItems: Array<string>;
 }
+
 const listItems00: Array<TitleAndListItems> = [
+  { title: 'First Adopters', listItems: ['Identifying ideal participants', 'Training in Prompt Engineering','Devising & mentoring first use case', ''] },
+  { title: 'Feedback Loop', listItems: ['Monitor ROI','Retrospective on Agentic AI possibilities', 'Lessons Learned for stakeholders'] },
+  { title: 'Follow-on Services', listItems: ['Data Quality Assessments', 'Data Governance Assessments over AI grounding data', 'Agentic AI Implementation'] },
+  { title: 'Monitor ROI', listItems: ['Executive reports', 'KPIs'] },
+];
+
+const listItems01: Array<TitleAndListItems> = [
   { title: 'Goals', listItems: ['Clear statement of what the solution is to prove'] },
   { title: 'Time', listItems: ['Two weeks to delivery'] },
   { title: 'End-to-end workspace', listItems: ['Data ingest', 'ETL/ELT', 'Analytics layer', 'Query optimization', 'Dashboard', 'User/group-level security', 'Concurrency testing'] },
   { title: 'Included data content', listItems: ['Single dashboard', 'Single fact table', 'Up to 10 dimension tables'] },
   { title: 'Documentation of results', listItems: ['Performance metrics', 'Workload costs', 'Result interpretation', 'Recommendations for improvement'] },
 ];
-const listItems01: Array<TitleAndListItems> = [
+
+const listItems02: Array<TitleAndListItems> = [
   { title: 'Data Hygiene needs', listItems: [] },
   { title: 'Azure commitment & licensing', listItems: [] },
   { title: 'Compatibility of diverse data sources', listItems: [] },
   { title: 'Data volume', listItems: [] },
   { title: 'Compliance of the Azure data platform', listItems: [] },
 ];
-const listItems02: Array<TitleAndListItems> = [
+const listItems03: Array<TitleAndListItems> = [
   { title: 'Data Warehouse architecture', listItems: ['Configuring Azure data storage', 'Configuring Compute'] },
   { title: 'Azure commitment & licensing', listItems: ['ELT', 'Azure Data Factory', 'Data Bricks'] },
   { title: 'Querying Data', listItems: ['Querying & Scripting in Synapse', 'Analytic cubes with Azure Analysis Services', 'Scheduling refreshes'] },
   { title: 'Reporting', listItems: ['Connecting reporting tools to your DW', '(Power BI, Tableau, etc)'] },
   { title: '', listItems: ['Follow-on mentoring and project supervision is also available.'] },
 ];
-const listItems03: Array<TitleAndListItems> = [
+const listItems04: Array<TitleAndListItems> = [
   { title: 'Performance Monitoring', listItems: ['Reports', 'Alerts'] },
   { title: 'Consumption & Usage Analysis', listItems: ['Documentation of peak times', 'Quantifying workloads', 'Resource requirements'] },
   { title: 'Cost Analysis', listItems: ['Trends', 'Savings opportunities'] },
@@ -43,36 +52,45 @@ const listItems03: Array<TitleAndListItems> = [
 ];
 
 const packageAndDetails00: PackageAndDetails = {
+  title: 'Pilot Groups: Microsoft Copilot',
+  subTitle: ' Igniting and accelerating end-user Copilot adoption.',
+  footerContent: "A combination of end user training, continuous mentoring, and ROI measurement will keep your First Adopters engaged and building a story that will motivate other employees.",
+  imageSource: '/Shape1.png',
+  packagePrice: '9,999',
+  detailsList: listItems00,
+};
+
+const packageAndDetails01: PackageAndDetails = {
   title: 'Data Warehouse Proof of Concept',
   subTitle: ' Easing your way into your first cloud data warehouse in Azure.',
   footerContent: "We'll show you what Microsoft Synapse and Microsoft Fabric are capable of, by building an end-to-end analytics solution using your own data.",
   imageSource: '/Shape1.png',
   packagePrice: '14,999*',
-  detailsList: listItems00,
-};
-const packageAndDetails01: PackageAndDetails = {
-  title: 'Data Warehouse/Data Lake Readiness Assessment',
-  subTitle: 'Help convincing top management to sponsor data lake/data warehouse project.',
-  footerContent: "Let us work with your data stewards to document the path from your current silo'ed data sources to a BI- and analytics-ready data warehouse or data lake.",
-  imageSource: '/Shape2.png',
-  packagePrice: '7,499',
   detailsList: listItems01,
 };
 const packageAndDetails02: PackageAndDetails = {
+  title: 'Data Warehouse/Data Lake Readiness Assessment',
+  subTitle: 'Help convincing top management to sponsor your data lake/data warehouse projects.',
+  footerContent: "Let us work with your data stewards to document the path from your current silo'ed data sources to a BI- and analytics-ready data warehouse or data lake.",
+  imageSource: '/Shape2.png',
+  packagePrice: '7,499',
+  detailsList: listItems02,
+};
+const packageAndDetails03: PackageAndDetails = {
   title: 'Cloud Data Training & Mentoring',
   subTitle: 'Data teams looking to create their own cloud analytics architecture.',
   footerContent: 'The Lytic Group team includes Microsoft-Certified Trainers (MCTs) and experienced data architects that can guide your data stewards and database administrators in how to build out their own Azure cloud-based data warehouse or data lake.',
   imageSource: '/Shape3.png',
   packagePrice: '2,999',
-  detailsList: listItems02,
+  detailsList: listItems03,
 };
-const packageAndDetails03: PackageAndDetails = {
+const packageAndDetails04: PackageAndDetails = {
   title: 'Post-Implementation Managed Support',
   subTitle: 'New Azure data warehouse customers concerned with durability and costs.',
   footerContent: 'Once your data warehouse is in place on the Azure platform, a Lytic Group specialist can be assigned to monitor and help ensure its continued success.',
   imageSource: '/Shape4.png',
   packagePrice: '999 monthly*',
-  detailsList: listItems03,
+  detailsList: listItems04,
 };
 const arrayOfPackages: Array<PackageAndDetails> = [packageAndDetails00, packageAndDetails01, packageAndDetails02, packageAndDetails03];
 
