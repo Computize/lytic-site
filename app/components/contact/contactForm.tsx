@@ -80,13 +80,18 @@ export const ContactForm = () => {
             });
             setIsLoading(false);
           } else {
+            form.setValue('emailAddress', '');
+            form.setValue('fullName', '');
+            form.setValue('howCanWeHelp', '');
+            form.setValue('state', '');
+            form.setValue('phoneNumber', '');
             toast({
               className: 'bg-primary-green',
               variant: 'default',
               title: 'Success!',
               description: 'Your contact request has been sent.',
             });
-            setIsLoading(true);
+            setIsLoading(false);
           }
         }}
       >

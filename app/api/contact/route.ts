@@ -2,16 +2,13 @@ import { NextResponse } from 'next/server';
 const nodemailer = require('nodemailer');
 
 
-const username = process.env.NEXT_PUBLIC_EMAIL_USERNAME;
-const password = process.env.NEXT_PUBLIC_EMAIL_PASSWORD; //TODO: replace
+const username = process.env.EMAIL_USERNAME;
+const password = process.env.EMAIL_PASSWORD;
+
 const transporter = nodemailer.createTransport({
   host: "smtp.office365.com",
   port: 587,
   secure: false,
-  // tls: {
-  //   ciphers: "SSLv3",
-  //   rejectUnauthorized: false,
-  // },
   auth: {
     user: username,
     pass: password
@@ -32,7 +29,7 @@ export async function POST(request: Request) {
       from: username,
       to: username,
       replyTo: emailAddress,
-      subject: `Contact from ${fullName}`,
+      subject: `Lytic Website Request from ${fullName}`,
       html: `
       <p>Name: ${fullName} </p>
       <p>Phone: ${phoneNumber} </p>
