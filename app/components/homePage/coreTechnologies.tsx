@@ -30,11 +30,11 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
               isOnHomePage
                 ? [
                     { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '100' },
-                    { src: '/Fabric_final_x256.png', width: '100' },
+                    //{ src: '/Fabric_final_x256.png', width: '100' },
                   ]
                 : [
                     { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '100' },
-                    { src: '/Fabric_final_x256.png', width: '100' },
+                    //{ src: '/Fabric_final_x256.png', width: '100' },
                   ]
             }
           />
