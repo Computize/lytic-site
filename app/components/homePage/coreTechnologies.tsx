@@ -3,9 +3,9 @@ import { AnimateDiv } from '~/app/components/animationWrappers/animateDiv';
 import { TechnologyAndImage } from '~/app/components/service/technologyAndImage';
 import { cn } from '~/lib/utils';
 
-const techArray0: Array<string> = ['Data Warehouse & Data Lake', 'ETL & ELT', 'Azure Analysis Services', 'Azure DataFactory & DataBricks', 'Assessments, Monitoring'];
-const techArray1: Array<string> = ['Dashboard Development', 'Data Modeling', 'Cloud & On-Prem Integration', 'Data Strategy', 'Training'];
-const techArray2: Array<string> = ['Migrations – Cloud & On-Prem', 'Governance & Compliance', 'Development & Automation Solutions', 'Sharepoint Site Planning & Architecture', 'Training'];
+const techArray0: Array<string> = ['Data Warehouses & Data Lakes', 'Data Quality for AI', 'Streaming Data', 'Azure DataFactory & DataBricks', 'ETL & ELT'];
+const techArray1: Array<string> = ['Administration and Governance', 'Dashboard Development', 'Data Modeling',  'Data Strategy', 'Training'];
+const techArray2: Array<string> = [' Sharepoint & Teams Migrations', 'Governance, Compliance, Purview', 'Development & Automation Solutions', 'Sharepoint Site Planning & Architecture', 'Training'];
 
 interface CoreTechnologiesProps {
   isOnHomePage: boolean;
