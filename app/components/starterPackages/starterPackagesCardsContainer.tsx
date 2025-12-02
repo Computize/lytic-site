@@ -15,9 +15,9 @@ interface TitleAndListItems {
 }
 
 const listItems00: Array<TitleAndListItems> = [
-  { title: 'First Adopters', listItems: ['Identifying ideal participants', 'Training in Prompt Engineering','Devising & mentoring first use case', ''] },
+  { title: 'First Adopters', listItems: ['Identifying ideal participants', 'Training in Prompt Engineering','Devising & mentoring first use case'] },
   { title: 'Feedback Loop', listItems: ['Monitor ROI','Retrospective on Agentic AI possibilities', 'Lessons Learned for stakeholders'] },
-  { title: 'Follow-on Services', listItems: ['Data Quality Assessments', 'Data Governance Assessments over AI grounding data', 'Agentic AI Implementation'] },
+  { title: 'Follow-on Services', listItems: ['Data Quality Assessments', 'Data Governance Assessments over AI grounding data', 'Agentic AI Implementation','AI Center of Excellence'] },
   { title: 'Monitor ROI', listItems: ['Executive reports', 'KPIs'] },
 ];
 
@@ -41,7 +41,7 @@ const listItems03: Array<TitleAndListItems> = [
   { title: 'Azure commitment & licensing', listItems: ['ELT', 'Azure Data Factory', 'Data Bricks'] },
   { title: 'Querying Data', listItems: ['Querying & Scripting in Synapse', 'Analytic cubes with Azure Analysis Services', 'Scheduling refreshes'] },
   { title: 'Reporting', listItems: ['Connecting reporting tools to your DW', '(Power BI, Tableau, etc)'] },
-  { title: '', listItems: ['Follow-on mentoring and project supervision is also available.'] },
+  { title: 'Follow-on Service', listItems: ['Follow-on mentoring and project supervision is also available.'] },
 ];
 const listItems04: Array<TitleAndListItems> = [
   { title: 'Performance Monitoring', listItems: ['Reports', 'Alerts'] },
@@ -92,7 +92,7 @@ const packageAndDetails04: PackageAndDetails = {
   packagePrice: '999 monthly*',
   detailsList: listItems04,
 };
-const arrayOfPackages: Array<PackageAndDetails> = [packageAndDetails00, packageAndDetails01, packageAndDetails02, packageAndDetails03];
+const arrayOfPackages: Array<PackageAndDetails> = [packageAndDetails00, packageAndDetails01, packageAndDetails02, packageAndDetails03, packageAndDetails04];
 
 export const StarterPackagesCardsContainer = () => {
   return (
