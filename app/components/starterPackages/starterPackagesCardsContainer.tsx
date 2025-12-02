@@ -17,8 +17,8 @@ interface TitleAndListItems {
 const listItems00: Array<TitleAndListItems> = [
   { title: 'First Adopters', listItems: ['Identifying ideal participants', 'Training in Prompt Engineering','Devising & mentoring first use case'] },
   { title: 'Feedback Loop', listItems: ['Monitor ROI','Retrospective on Agentic AI possibilities', 'Lessons Learned for stakeholders'] },
-  { title: 'Follow-on Services', listItems: ['Data Quality Assessments', 'Data Governance Assessments over AI grounding data', 'Agentic AI Implementation','AI Center of Excellence'] },
-  { title: 'Monitor ROI', listItems: ['Executive reports', 'KPIs'] },
+   { title: 'Monitor ROI', listItems: ['Executive reports', 'KPIs'] },
+   { title: 'Follow-on Services', listItems: ['Data Quality Assessments', 'Data Governance Assessments over AI grounding data', 'Agentic AI Implementation','AI Center of Excellence'] },
 ];
 
 const listItems01: Array<TitleAndListItems> = [
