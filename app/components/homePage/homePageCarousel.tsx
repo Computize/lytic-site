@@ -76,7 +76,8 @@ export const HomePageCarousel = () => {
                     <AnimateDiv
                       viewPortOnce={false}
                       initialProps={{ opacity: '0', translateY: -50 }}
-                      delay={0.75}
+                      // delay={0.75}
+                      delay={1.5}
                     >
                       <p className="text-4xl md:text-5xl font-bold">{title}</p>
                     </AnimateDiv>
@@ -84,7 +85,8 @@ export const HomePageCarousel = () => {
                     <AnimateDiv
                       viewPortOnce={false}
                       initialProps={{ opacity: '0', translateX: -10 }}
-                      delay={0.75}
+                      // delay={0.75}
+                      delay={1.5}
                     >
                       <p className="text-white text-2xl">{description}</p>
                     </AnimateDiv>
@@ -92,7 +94,8 @@ export const HomePageCarousel = () => {
                     <AnimateDiv
                       viewPortOnce={false}
                       initialProps={{ opacity: '0', translateY: 50 }}
-                      delay={0.75}
+                      // delay={0.75}
+                      delay={1.5}
                     >
                       <Button className="bg-primary-green hover:bg-secondary-green w-auto h-auto border-b-4 border-green-100 text-white py-3 px-8 rounded-full">
                         <Link
