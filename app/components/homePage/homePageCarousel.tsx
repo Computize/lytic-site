@@ -21,7 +21,7 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
   },
   {
     title: 'TAKING CARE',
-    description: 'More than you have likely seen, the Lytic Group treats our customers’ projects, employees, and most of all their time, with the utmost respect. This comes baked-in to how we work and how we communicate.',
+    description: 'More than you have likely seen, the Lytic Group treats our customers’ projects, employees, and their time with the utmost respect. This comes baked-in to how we work and how we communicate.',
     colorBlend: 'bg-blue-900',
   },
   {
