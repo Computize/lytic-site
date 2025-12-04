@@ -44,7 +44,7 @@ function useCarousel() {
 
 const Carousel = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement> & CarouselProps>(({ orientation = 'horizontal', autoPlay, opts, setApi, plugins, className, children, ...props }, ref) => {
   //const useAutoPlay = autoPlay === true ? [Autoplay()] : plugins;
-  const useAutoPlay = autoPlay === true ? [Autoplay({ delay: 5000 })] : plugins;
+  const useAutoPlay = autoPlay === true ? [Autoplay({ delay: 10000 })] : plugins;
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
