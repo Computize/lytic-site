@@ -11,6 +11,31 @@ interface CoreTechnologiesProps {
   isOnHomePage: boolean;
   className?: string;
 }
+// Originally went right below the two <div className="..."> elements and before the third <AnimateDiv> element
+/*      <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
+          <TechnologyAndImage
+            arrayOfText={techArray0}
+            imageSources={[{ src: '/azure.png' }]}
+          />
+        </AnimateDiv>
+        <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
+          <TechnologyAndImage
+            arrayOfText={techArray1}
+            // NOTE: temp redundant ternary while
+            imageSources={
+              isOnHomePage
+                ? [
+                    { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '100' },
+                    //{ src: '/Fabric_final_x256.png', width: '100' },
+                  ]
+                : [
+                    { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '100' },
+                    //{ src: '/Fabric_final_x256.png', width: '100' },
+                  ]
+            }
+          />
+        </AnimateDiv> 
+*/
 
 export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesProps) => {
   return (
@@ -19,7 +44,22 @@ export const CoreTechnologies = ({ isOnHomePage, className }: CoreTechnologiesPr
         <AnimateDiv initialProps={{ opacity: 0, translateX: -50 }}>
           <TechnologyAndImage
             arrayOfText={techArray0}
-            imageSources={[{ src: '/azure.png' }]}
+            //imageSources={[{ src: '/azure.png' }]}
+            imageSources={
+              isOnHomePage
+                ? [
+                    { src: '/Fabric_final_x256.png', width: '100' },
+                    { src: '/azure.png' }
+                  ]
+                /* : [
+                    { src: '/Microsoft-Power-BI-Logo_PNG4.png', width: '100' },
+                    { src: '/Fabric_final_x256.png', width: '100' }] */
+               :[
+                    { src: '/Fabric_final_x256.png', width: '100' },
+                    { src: '/azure.png' }
+                  ]   
+            }            
+            
           />
         </AnimateDiv>
         <AnimateDiv initialProps={{ opacity: 0, translateY: 50 }}>
