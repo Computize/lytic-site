@@ -7,13 +7,16 @@ import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, Car
 
 const arrayOfSlides: Array<{ title: string; description: string; colorBlend: string }> = [
   {
-    title: 'BUSINESS INTELLIGENCE',
+    /* title: 'BUSINESS INTELLIGENCE',
     description: 'Re-focus your business to data-based decision-making. Let the Lytic Group turn your raw data into usable information.',
+    colorBlend: '', */
+     title: 'GET READY FOR AI',
+    description: 'The Lytic Group helps get your data to an AI-ready level. Prepare for future automation, keep your cloud data clean and consistent',
     colorBlend: '',
   },
   {
-    title: 'ENGAGEMENT',
-    description: "It's the soft skills that determine your comfort level and satisfaction with the consultants that you’ve hired.",
+    title: 'BUSINESS INTELLIGENCE',
+    description: "Re-focus your enterprise on data-driven decision-making. Let the Lytic Group turn your raw data into usable information.",
     colorBlend: 'bg-yellow-900',
   },
   {
@@ -22,7 +25,7 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
     colorBlend: 'bg-blue-900',
   },
   {
-    title: 'YOUR FAVORITE PROJECT',
+    title: 'ENGAGEMENT',
     description: "It's the soft skills that determine your comfort level and satisfaction with the consultants that you’ve hired.",
     colorBlend: 'bg-green-900',
   },
