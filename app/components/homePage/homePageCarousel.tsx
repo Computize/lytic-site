@@ -11,7 +11,7 @@ const arrayOfSlides: Array<{ title: string; description: string; colorBlend: str
     description: 'Re-focus your business to data-based decision-making. Let the Lytic Group turn your raw data into usable information.',
     colorBlend: '', */
      title: 'GET READY FOR AI',
-    description: 'The Lytic Group helps get your data to an AI-ready level. Prepare for future automation, keep your cloud data clean and consistent',
+    description: 'The Lytic Group helps get your data to an AI-ready level. Partnering with you to prepare for automation, and keep your cloud data clean and consistent',
     colorBlend: '',
   },
   {
