@@ -15,7 +15,7 @@ export const OwnerImageContainer = () => {
         {/* TODO: LinkedIn Logo, 2 line gap between founder text and logo */}
         {/* I would like that linked in logo 2 lines below "President", and flush with the left of that word. And then to the right of the logo the word "Connect". Both the logo and the text should both be links to the profile. */}
         <a
-          href="https://www.linkedin.com/in/edward-heraux-pmp-mcse-7308261/"
+          href="https://www.linkedin.com/in/edward-heraux/"
           className="text-blue-500"
         >
           <FaLinkedin size={40} />
