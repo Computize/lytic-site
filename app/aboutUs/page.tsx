@@ -4,7 +4,7 @@
 // points to /aboutUs instead of /about
 
 // app/aboutUs/page.tsx
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import { OurMission } from '~/app/components/about/ourMission';
 import { OurStory } from '~/app/components/about/ourStory';
 import { SomeOfOurClients } from '~/app/components/about/someOfOurClients';
@@ -12,8 +12,8 @@ import { PageBlurb } from '~/app/components/pageBlurb';
 import { PageUpperImageContainer } from '~/app/components/pageUpperImageContainer';
 import { generateMetadata } from '~/app/constants/pageMetadata';
 
-export const metadata: Metadata = generateMetadata('About Us');
- 
+export const metadata = generateMetadata('About Us');
+
 export default function Page() {
   const blurbString = 'The Lytic Group are architects of data...';
   return (
