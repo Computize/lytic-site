@@ -1,4 +1,3 @@
-
 //The whole purpose of this tsx file is to 
 //have a second URL for a page that mirrors the About page. 
 // This is only necessary because the QR code on current Lytic Group business cards
