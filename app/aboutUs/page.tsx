@@ -14,7 +14,7 @@ import { PageUpperImageContainer } from '~/app/components/pageUpperImageContaine
 import { generateMetadata } from '~/app/constants/pageMetadata';
 
 export const metadata = generateMetadata('About Us');
-
+ 
 export default function Page() {
   const blurbString = 'The Lytic Group are architects of data...';
   return (
