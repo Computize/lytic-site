@@ -3,7 +3,7 @@
 // This is only necessary because the QR code on current Lytic Group business cards
 // points to /aboutUs instead of /about
 
-// app/aboutUs/page.tsx
+// app/aboutus/page.tsx
 import { Metadata } from 'next';
 import { OurMission } from '~/app/components/about/ourMission';
 import { OurStory } from '~/app/components/about/ourStory';
