@@ -60,7 +60,8 @@ export function Nav() {
               <ServicesDropDown />
               <Link
                 className=""
-                href="/about"
+                href="/aboutus"
+                //href="/about"
               >
                 ABOUT
               </Link>
